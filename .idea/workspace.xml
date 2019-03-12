@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e5c2731e-6897-4dd7-882e-6f07d50a7832" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fxdemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fxdemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fxdemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fxdemo/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1741,6 +1744,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1753,22 +1767,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="db-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1960,12 +1958,14 @@
       <workItem from="1552153035350" duration="182000" />
       <workItem from="1552154536704" duration="27000" />
       <workItem from="1552419699900" duration="38000" />
-      <workItem from="1552419907081" duration="656000" />
+      <workItem from="1552419907081" duration="1071000" />
+      <workItem from="1552421045448" duration="86000" />
+      <workItem from="1552421675529" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38398000" />
+    <option name="totallyTimeSpent" value="38916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1978,7 +1978,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.44372293" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31733525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32664755" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2015,13 +2015,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/audio-video-tools/src/main/java/com/simplejcode/commons/av/improc/ImageProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/audio-video-tools/src/main/java/com/simplejcode/commons/av/improc/Rect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -2360,6 +2353,11 @@
         <state relative-caret-position="591">
           <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
       </provider>
     </entry>
   </component>
