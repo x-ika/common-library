@@ -34,10 +34,10 @@ subprojects {
 
     //-----------------------------------------------------------------------------------
     // IDEA
+
     apply plugin: 'idea'
     idea {
         module {
-//            inheritOutputDirs = true
             outputDir = new File(rootProject.projectDir, '.out')
             testOutputDir = new File(rootProject.projectDir, '.out')
         }
@@ -45,6 +45,7 @@ subprojects {
 
     //-----------------------------------------------------------------------------------
     // JAVA
+
     apply plugin: 'java'
 
     tasks.withType(JavaCompile) {
@@ -54,6 +55,7 @@ subprojects {
 
     //-----------------------------------------------------------------------------------
     // MAVEN
+
     apply plugin: 'maven-publish'
     publishing {
         repositories {
