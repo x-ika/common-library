@@ -1,0 +1,9 @@
+group 'com.simplejcode.commons'
+
+configurations {
+
+    testCompile.extendsFrom junit
+
+    compileOnly.extendsFrom hibernate
+
+}

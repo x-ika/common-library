@@ -1,0 +1,110 @@
+//---------------------------------------------------------------------------------------
+// PROJECT
+
+group 'com.simplejcode.commons'
+version '1.0'
+
+//---------------------------------------------------------------------------------------
+// IDEA
+
+apply plugin: 'idea'
+
+idea {
+    module {
+        excludeDirs = [file(".gradle"), file(".build"), file(".idea"), file(".out")]
+    }
+}
+
+//---------------------------------------------------------------------------------------
+// ALL
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+subprojects {
+
+    version '1.0'
+
+    def sub = projectDir.path.substring(rootProject.projectDir.path.length())
+    buildDir = new File(rootProject.projectDir, '.build/' + sub)
+
+    //-----------------------------------------------------------------------------------
+    // IDEA
+    apply plugin: 'idea'
+    idea {
+        module {
+//            inheritOutputDirs = true
+            outputDir = new File(rootProject.projectDir, '.out')
+            testOutputDir = new File(rootProject.projectDir, '.out')
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
+    // JAVA
+    apply plugin: 'java'
+
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = '10'
+        targetCompatibility = '10'
+    }
+
+    //-----------------------------------------------------------------------------------
+    // MAVEN
+    apply plugin: 'maven-publish'
+    publishing {
+        repositories {
+            mavenLocal()
+        }
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
+    // DEPENDENCIES
+
+    configurations {
+
+        // test dependencies
+        junit
+
+        // java ee api libraries
+        javaxXmlBind
+
+        // java ee implementation libraries
+        hibernate
+
+        // third party libraries
+        log4j
+        lombok
+        apacheCommons
+        gson
+
+    }
+
+    dependencies {
+
+        // test dependencies
+        junit                          'junit:junit:4.12'
+
+        // java ee api libraries
+        javaxXmlBind                   'javax.xml.bind:jaxb-api:2.1'
+
+        // java ee implementation libraries
+        hibernate                     'org.hibernate:hibernate-core:5.3.1.Final'
+
+        // third party libraries
+        log4j                          'log4j:log4j:1.2.17'
+        lombok                         'org.projectlombok:lombok:1.18.2'
+        apacheCommons                  'org.apache.commons:commons-configuration2:2.0'
+        gson                           'com.google.code.gson:gson:2.8.5'
+
+    }
+
+}
