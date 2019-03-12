@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/audio-video-tools/com.simplejcode.commons.audio-video-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/audio-video-tools/com.simplejcode.commons.audio-video-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.simplejcode.commons.common-library.iml" filepath="$PROJECT_DIR$/.idea/modules/com.simplejcode.commons.common-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-tools/com.simplejcode.commons.db-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/db-tools/com.simplejcode.commons.db-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphic-tools/com.simplejcode.commons.graphic-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/graphic-tools/com.simplejcode.commons.graphic-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/logical-analyzer/com.simplejcode.commons.logical-analyzer.iml" filepath="$PROJECT_DIR$/.idea/modules/logical-analyzer/com.simplejcode.commons.logical-analyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/misc/com.simplejcode.commons.misc.iml" filepath="$PROJECT_DIR$/.idea/modules/misc/com.simplejcode.commons.misc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net-tools/com.simplejcode.commons.net-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/net-tools/com.simplejcode.commons.net-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pdf-tools/com.simplejcode.commons.pdf-tools.iml" filepath="$PROJECT_DIR$/.idea/modules/pdf-tools/com.simplejcode.commons.pdf-tools.iml" />
+    </modules>
+  </component>
+</project>
