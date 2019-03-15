@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5c2731e-6897-4dd7-882e-6f07d50a7832" name="Default" comment="" />
+    <list default="true" id="e5c2731e-6897-4dd7-882e-6f07d50a7832" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules/clienta/clienta.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/modules/server/server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/modules/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/client/resources/client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/client/resources/client.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/client/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/client/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/library.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/resources/logo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/resources/logo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/resources/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/resources/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/run.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/server.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/gui/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/gui/AdminFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/main/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/main/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/sound/SoundManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/billiard/src/pool/utils/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/billiard/src/pool/utils/SoundManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/exam-checker/src/examchecker/core/ExamCheckerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/exam-checker/src/examchecker/core/ExamCheckerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/exam-checker/src/examchecker/core/PropertyManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/exam-checker/src/examchecker/processor/paper/PaperProcessor.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,7 +59,6 @@
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,1549 +143,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="myGradleHomes">
-      <map>
-        <entry key="$PROJECT_DIR$" value="C:\soft\gradle-4.9" />
-      </map>
-    </option>
-    <option name="myGradleVersions">
-      <map>
-        <entry key="$PROJECT_DIR$" value="4.9" />
-      </map>
-    </option>
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="common-library" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="common-library" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":audio-video-tools" />
-                <option name="path" value="$PROJECT_DIR$/audio-video-tools" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":db-tools" />
-                <option name="path" value="$PROJECT_DIR$/db-tools" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":graphic-tools" />
-                <option name="path" value="$PROJECT_DIR$/graphic-tools" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":logical-analyzer" />
-                <option name="path" value="$PROJECT_DIR$/logical-analyzer" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":misc" />
-                <option name="path" value="$PROJECT_DIR$/misc" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":net-tools" />
-                <option name="path" value="$PROJECT_DIR$/net-tools" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":pdf-tools" />
-                <option name="path" value="$PROJECT_DIR$/pdf-tools" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="availableTasks">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'common-library'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'common-library'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'common-library'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'common-library'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'common-library'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'common-library' (some of the displayed tasks may belong to subprojects)." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'common-library'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'common-library'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'common-library'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/audio-video-tools">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':audio-video-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':audio-video-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':audio-video-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':audio-video-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':audio-video-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':audio-video-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':audio-video-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':audio-video-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':audio-video-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/audio-video-tools" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/db-tools">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':db-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':db-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':db-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':db-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':db-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':db-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':db-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':db-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':db-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/db-tools" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/graphic-tools">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':graphic-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':graphic-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':graphic-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':graphic-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':graphic-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':graphic-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':graphic-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':graphic-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':graphic-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/graphic-tools" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/logical-analyzer">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':logical-analyzer'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':logical-analyzer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':logical-analyzer'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':logical-analyzer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':logical-analyzer'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':logical-analyzer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':logical-analyzer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':logical-analyzer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':logical-analyzer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/logical-analyzer" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/misc">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':misc'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':misc'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':misc'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':misc'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':misc'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':misc'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':misc'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':misc'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':misc'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/misc" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/net-tools">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':net-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':net-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':net-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':net-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':net-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':net-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':net-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':net-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':net-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/net-tools" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/pdf-tools">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':pdf-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':pdf-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':pdf-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':pdf-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':pdf-tools'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Gradle metadata file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="generateMetadataFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':pdf-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'MavenLocal'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocalRepository" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':pdf-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':pdf-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="publishToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':pdf-tools'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/pdf-tools" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$" value="15459414142681" />
-        <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/audio-video-tools/build.gradle" value="860849786" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="4203622009" />
-        <entry key="$PROJECT_DIR$/db-tools/build.gradle" value="3148406017" />
-        <entry key="$PROJECT_DIR$/graphic-tools/build.gradle" value="1196827895" />
-        <entry key="$PROJECT_DIR$/logical-analyzer/build.gradle" value="1196827895" />
-        <entry key="$PROJECT_DIR$/misc/build.gradle" value="4211354274" />
-        <entry key="$PROJECT_DIR$/net-tools/build.gradle" value="1196827895" />
-        <entry key="$PROJECT_DIR$/pdf-tools/build.gradle" value="120049769" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="779534982" />
-        <entry key="$PROJECT_DIR$/tmp/build.gradle" value="988037258" />
-      </map>
-    </option>
-    <option name="projectBuildClasspath">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <ExternalProjectBuildClasspathPojo>
-              <option name="modulesBuildClasspath">
-                <map>
-                  <entry key="$PROJECT_DIR$">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/audio-video-tools">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/audio-video-tools" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/db-tools">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/db-tools" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/graphic-tools">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/graphic-tools" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/logical-analyzer">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/logical-analyzer" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/misc">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/misc" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/net-tools">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/net-tools" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/pdf-tools">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/pdf-tools" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/tmp">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/tmp" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="name" value="common-library" />
-              <option name="projectBuildClasspath">
-                <list>
-                  <option value="C:/soft/gradle-4.9/lib/ant-1.9.11.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/ant-launcher-1.9.11.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-base-services-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-base-services-groovy-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-build-cache-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-build-option-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-cli-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-core-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-core-api-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-docs-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-installation-beacon-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-jvm-services-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-kotlin-dsl-0.18.4.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-kotlin-dsl-provider-plugins-0.18.4.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-kotlin-dsl-tooling-builders-0.18.4.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-kotlin-dsl-tooling-models-0.18.4.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-launcher-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-logging-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-messaging-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-model-core-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-model-groovy-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-native-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-persistent-cache-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-process-services-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-resources-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-runtime-api-info-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-tooling-api-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/gradle-wrapper-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/groovy-all-2.4.12.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-announce-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-antlr-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-build-cache-http-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-build-comparison-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-build-init-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-code-quality-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-composite-builds-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-dependency-management-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-diagnostics-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-ear-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-ide-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-ide-native-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-ide-play-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-ivy-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-jacoco-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-javascript-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-language-groovy-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-language-java-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-language-jvm-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-language-native-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-language-scala-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-maven-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-osgi-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-platform-base-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-platform-jvm-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-platform-native-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-platform-play-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-plugin-development-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-plugin-use-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-plugins-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-publish-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-reporting-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-resources-gcs-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-resources-http-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-resources-s3-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-resources-sftp-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-scala-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-signing-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-test-kit-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-testing-base-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-testing-junit-platform-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-testing-jvm-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-testing-native-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-tooling-api-builders-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-version-control-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/gradle-workers-4.9.jar" />
-                  <option value="C:/soft/gradle-4.9/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
-                </list>
-              </option>
-            </ExternalProjectBuildClasspathPojo>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-      </map>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -1718,15 +200,6 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -1762,7 +235,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1798,9 +270,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.build">
+  <component name="RunManager" selected="Gradle.publish">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="build" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -1818,6 +293,8 @@
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="publish" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -1835,44 +312,24 @@
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Gradle.build" />
@@ -1957,67 +414,56 @@
       <workItem from="1552421045448" duration="86000" />
       <workItem from="1552421675529" duration="17000" />
       <workItem from="1552460301721" duration="16000" />
+      <workItem from="1552679755012" duration="98000" />
+      <workItem from="1552682831784" duration="1005000" />
+      <workItem from="1552683900309" duration="455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38932000" />
+    <option name="totallyTimeSpent" value="40490000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3844086" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.44372293" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.32995737" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34455588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32987553" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.32987553" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32792208" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3835801" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32792208" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44372293" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32987553" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32987553" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/audio-video-tools/src/main/java/com/simplejcode/commons/av/improc/Rect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/audio-video-tools/src/main/java/com/simplejcode/commons/av/improc/ImageMetrics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -2344,16 +790,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
+        <state relative-caret-position="590">
           <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/PropertyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765" />
+        <state relative-caret-position="459">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+          <folding>
+            <element signature="method#setPropertiesFileName#0;class#PropertyManager#0" />
+            <element signature="method#PropertyManager#0;class#PropertyManager#0" />
+            <element signature="method#setProperty#0;class#PropertyManager#0" />
+            <element signature="method#getProperty#0;class#PropertyManager#0" />
+            <element signature="method#reloadIfNeeded#0;class#PropertyManager#0" />
+            <element signature="e#1467#2150#0" />
+            <element signature="e#1569#1664#1" />
+            <element signature="e#1783#2139#1" />
+            <element signature="e#1999#2087#0" />
+            <element signature="e#2171#2225#0" />
+            <element signature="method#saveProperties#0;class#PropertyManager#0" />
+            <element signature="e#2282#2359#0" />
+            <element signature="e#2380#2434#0" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
