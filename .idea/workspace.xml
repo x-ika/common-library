@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5c2731e-6897-4dd7-882e-6f07d50a7832" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/Manifest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/gen/sr/client/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/res/layout/main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/src/main/java/sr/client/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/src/main/java/sr/client/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/src/main/java/sr/client/Settings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../desktop/clienta/src/main/java/sr/client/SimpleAudioRecorder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -235,7 +221,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.14790697" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -411,16 +397,17 @@
       <workItem from="1552839749323" duration="81000" />
       <workItem from="1552848334911" duration="19000" />
       <workItem from="1552851967474" duration="27000" />
+      <workItem from="1553941996823" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40617000" />
+    <option name="totallyTimeSpent" value="40631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35959885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36461318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
