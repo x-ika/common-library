@@ -4,14 +4,5 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="com.simplejcode.commons.audio-video-tools" target="1.8" />
-      <module name="com.simplejcode.commons.pdf-tools" target="1.8" />
-    </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="com.simplejcode.commons.misc" options="--add-modules=java.xml.bind" />
-    </option>
   </component>
 </project>
