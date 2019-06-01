@@ -171,7 +171,7 @@ public final class ArrayUtils {
         }
     }
 
-    private static int median(int x[], int[] p, int a, int b, int c) {
+    private static int median(int[] x, int[] p, int a, int b, int c) {
         return x[p[a]] < x[p[b]] ?
                 x[p[b]] < x[p[c]] ? b : x[p[a]] < x[p[c]] ? c : a :
                 x[p[b]] > x[p[c]] ? b : x[p[a]] > x[p[c]] ? c : a;
@@ -229,7 +229,7 @@ public final class ArrayUtils {
         }
     }
 
-    private static int median(double x[], int[] p, int a, int b, int c) {
+    private static int median(double[] x, int[] p, int a, int b, int c) {
         return x[p[a]] < x[p[b]] ?
                 x[p[b]] < x[p[c]] ? b : x[p[a]] < x[p[c]] ? c : a :
                 x[p[b]] > x[p[c]] ? b : x[p[a]] > x[p[c]] ? c : a;

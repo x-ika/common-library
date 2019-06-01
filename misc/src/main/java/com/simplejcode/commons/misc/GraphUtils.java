@@ -288,7 +288,7 @@ public final class GraphUtils {
             return;
         }
         int x, y, root = -1, wr = 0, rd = 0;
-        int q[] = new int[n];
+        int[] q = new int[n];
         boolean[] S = new boolean[n];
         boolean[] T = new boolean[n];
         int[] prev = new int[n];

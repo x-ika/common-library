@@ -26,7 +26,7 @@ public final class FrameAccess implements ControllerListener, BufferTransferHand
         p.configure();
         while (p.getState() != Processor.Configured && stateTransitionOK) wait();
         p.setContentDescriptor(new ContentDescriptor(ContentDescriptor.RAW));
-        TrackControl tc[] = p.getTrackControls();
+        TrackControl[] tc = p.getTrackControls();
         for (TrackControl track : tc) {
             if (track.getFormat() instanceof VideoFormat) {
                 track.setFormat(new RGBFormat(null, -1, Format.intArray, -1.0F, 32, 255 << 16, 255 << 8, 255));
