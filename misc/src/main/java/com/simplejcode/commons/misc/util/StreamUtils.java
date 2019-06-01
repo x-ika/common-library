@@ -38,6 +38,13 @@ public final class StreamUtils {
 
     //-----------------------------------------------------------------------------------
 
+    public static <K, V> V reduce(Collection<K> collection, V initial, BiFunction<V, K, V> reducer) {
+        for (K k : collection) {
+            initial = reducer.apply(initial, k);
+        }
+        return initial;
+    }
+
     public static <K, V> V mapReduce(Collection<K> collection, Function<K, V> mapper, BinaryOperator<V> reducer) {
         return mapReduce(collection, mapper, reducer, null);
     }

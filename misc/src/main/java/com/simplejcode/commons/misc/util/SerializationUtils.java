@@ -17,7 +17,7 @@ public final class SerializationUtils {
             return result;
         }
         for (String item : string.split(delimiter)) {
-            result.add(URLDecoder.decode(item, StandardCharsets.UTF_8));
+            result.add(decode(item));
         }
 
         return result;
@@ -34,26 +34,8 @@ public final class SerializationUtils {
         return result;
     }
 
-    public static String listToString(List list, String delimiter) {
-        if (list == null || list.isEmpty()) {
-            return null;
-        }
-        StringBuilder sb = new StringBuilder();
-        for (Object item : list) {
-            if (sb.length() > 0) {
-                sb.append(delimiter);
-            }
-            sb.append(URLEncoder.encode(item.toString(), StandardCharsets.UTF_8));
-        }
-        return sb.toString();
-    }
-
-    public static <T> List<List<T>> split(List<T> list, int targetSize) {
-        List<List<T>> lists = new ArrayList<>();
-        for (int i = 0; i < list.size(); i += targetSize) {
-            lists.add(list.subList(i, Math.min(i + targetSize, list.size())));
-        }
-        return lists;
+    public static String listToString(List<?> list, String delimiter) {
+        return StreamUtils.reduce(list, new StringBuilder(), (s, t) -> s.append(delimiter).append(encode(t))).substring(1);
     }
 
     //-----------------------------------------------------------------------------------
@@ -66,9 +48,9 @@ public final class SerializationUtils {
                     stringBuilder.append("&");
                 }
                 String value = map.get(key);
-                stringBuilder.append((key != null ? URLEncoder.encode(key, StandardCharsets.UTF_8) : ""));
+                stringBuilder.append((key != null ? encode(key) : ""));
                 stringBuilder.append("=");
-                stringBuilder.append(value != null ? URLEncoder.encode(value, StandardCharsets.UTF_8) : "");
+                stringBuilder.append(value != null ? encode(value) : "");
             }
         }
         return stringBuilder.toString();
@@ -80,10 +62,20 @@ public final class SerializationUtils {
             String[] nameValuePairs = input.split("&");
             for (String nameValuePair : nameValuePairs) {
                 String[] nameValue = nameValuePair.split("=");
-                map.put(URLDecoder.decode(nameValue[0], StandardCharsets.UTF_8), nameValue.length > 1 ? URLDecoder.decode(nameValue[1], StandardCharsets.UTF_8) : "");
+                map.put(decode(nameValue[0]), nameValue.length > 1 ? decode(nameValue[1]) : "");
             }
         }
         return map;
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static String encode(Object t) {
+        return URLEncoder.encode(t.toString(), StandardCharsets.UTF_8);
+    }
+
+    private static String decode(String s) {
+        return URLDecoder.decode(s, StandardCharsets.UTF_8);
     }
 
 }
