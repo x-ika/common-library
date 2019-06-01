@@ -7,13 +7,14 @@ import java.util.*;
 
 public final class DateUtils {
 
+    private DateUtils() {
+    }
+
+    //-----------------------------------------------------------------------------------
+
     public static final String DEFAULT_FORMAT = "dd.MM.yyyy HH:mm:ss";
 
     public static final String DEFAULT_DATE_FORMAT = "dd/MM/yyyy";
-
-
-    private DateUtils() {
-    }
 
 
     public static SimpleDateFormat create(String pattern) {

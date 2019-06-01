@@ -8,6 +8,8 @@ public final class ExceptionUtils {
     private ExceptionUtils() {
     }
 
+    //-----------------------------------------------------------------------------------
+
     public static ExceptionWrapper wrap(Throwable throwable) {
         return new ExceptionWrapper(throwable);
     }

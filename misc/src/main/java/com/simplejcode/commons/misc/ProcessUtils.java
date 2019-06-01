@@ -4,12 +4,13 @@ import java.io.File;
 
 public final class ProcessUtils {
 
-    public static final int TIME_LIMIT_ERROR_CODE = -1;
-
     private ProcessUtils() {
     }
 
     //-----------------------------------------------------------------------------------
+
+    public static final int TIME_LIMIT_ERROR_CODE = -1;
+
 
     public static int execute(File exec, int waitTime, String... params) throws Exception {
 

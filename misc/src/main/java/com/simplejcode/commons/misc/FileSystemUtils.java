@@ -9,6 +9,8 @@ public final class FileSystemUtils {
     private FileSystemUtils() {
     }
 
+    //-----------------------------------------------------------------------------------
+
     private static final int DEFAULT_BUFFER_SIZE = 1 << 16;
 
     private static final String UTF8 = "UTF-8";

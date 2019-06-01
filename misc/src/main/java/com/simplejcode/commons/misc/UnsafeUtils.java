@@ -9,6 +9,8 @@ public final class UnsafeUtils {
     private UnsafeUtils() {
     }
 
+    //-----------------------------------------------------------------------------------
+
     private static final int VM_ADD = 12;
 
     private static final Unsafe unsafe;

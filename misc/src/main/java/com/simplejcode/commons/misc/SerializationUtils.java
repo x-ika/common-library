@@ -4,9 +4,9 @@ import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public final class CustomSerializer {
+public final class SerializationUtils {
 
-    private CustomSerializer() {
+    private SerializationUtils() {
     }
 
     //-----------------------------------------------------------------------------------
