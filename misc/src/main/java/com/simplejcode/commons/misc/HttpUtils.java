@@ -12,6 +12,10 @@ public final class HttpUtils {
     private HttpUtils() {
     }
 
+    //-----------------------------------------------------------------------------------
+
+    public static final String JSON_CONTENT_TYPE = "application/json";
+
     private static final String UTF8 = "UTF-8";
 
     private static final Gson GSON = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").create();

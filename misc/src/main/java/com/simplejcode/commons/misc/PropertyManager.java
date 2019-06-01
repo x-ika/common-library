@@ -7,13 +7,11 @@ import java.net.*;
 
 public final class PropertyManager {
 
-    private static String propertiesFileName;
-
-    private static PropertyManager instance = new PropertyManager();
+    private static PropertyManager instance;
 
 
     public static void setPropertiesFileName(String propertiesFileName) {
-        PropertyManager.propertiesFileName = propertiesFileName;
+        instance = new PropertyManager(propertiesFileName);
     }
 
     public static PropertyManager getInstance() {
@@ -22,12 +20,15 @@ public final class PropertyManager {
 
     //-----------------------------------------------------------------------------------
 
+    private final String propertiesFileName;
+
     private long lastUpdateTimestamp;
 
     private PropertiesConfiguration properties;
 
 
-    public PropertyManager() {
+    public PropertyManager(String propertiesFileName) {
+        this.propertiesFileName = propertiesFileName;
     }
 
 

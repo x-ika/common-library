@@ -39,14 +39,14 @@ public final class MMTester {
             System.out.print("Seed: " + seed + "\n                       ");
             for (int i = 0; i <= n; i++) {
                 sum[i] += sc[i] = calc(sc[i], map.get(seed), type);
-                printAlligned(String.valueOf(sc[i]));
+                printAligned(String.valueOf(sc[i]));
             }
             System.out.println('\n');
         }
         map.close();
         System.out.print("                       ");
         for (double score : sum) {
-            printAlligned(String.valueOf(score));
+            printAligned(String.valueOf(score));
         }
         System.out.println();
     }
@@ -56,7 +56,7 @@ public final class MMTester {
                 type == RELATIVE_KEEP_MAX ? best == 0 ? 1 : score / best : score == 0 ? 1 : best / score;
     }
 
-    private static void printAlligned(String s) {
+    private static void printAligned(String s) {
         System.out.print(s + "                        ".substring(s.length()));
     }
 

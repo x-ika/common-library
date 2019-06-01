@@ -9,6 +9,8 @@ public final class ThreadUtils {
     private ThreadUtils() {
     }
 
+    //-----------------------------------------------------------------------------------
+
     public static void sleep(long millis) {
         try {
             Thread.sleep(millis);
@@ -29,6 +31,8 @@ public final class ThreadUtils {
         return sb.toString();
     }
 
+    //-----------------------------------------------------------------------------------
+
     public static Thread createThread(Runnable runnable) {
         return new Thread(runnable);
     }
@@ -48,6 +52,8 @@ public final class ThreadUtils {
     public static void executeInNewThread(String name, Runnable runnable) {
         createThread(name, runnable).start();
     }
+
+    //-----------------------------------------------------------------------------------
 
     public static void wait(Object lock, long timeout) {
         try {

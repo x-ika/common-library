@@ -10,6 +10,7 @@ public final class DecimalUtils {
     //-----------------------------------------------------------------------------------
 
     public static final BigDecimal HALF = new BigDecimal("0.5");
+    public static final BigDecimal TWO = new BigDecimal("2");
     public static final BigDecimal HUNDRED = new BigDecimal("100");
 
 
@@ -34,6 +35,20 @@ public final class DecimalUtils {
     public static BigDecimal setScale(BigDecimal d, int newScale) {
         return d.setScale(newScale, RoundingMode.HALF_UP).stripTrailingZeros();
     }
+
+    //-----------------------------------------------------------------------------------
+
+    public static BigDecimal inPercents(BigDecimal a, BigDecimal b) {
+        return inPercents(a, b, 0);
+    }
+
+    public static BigDecimal inPercents(BigDecimal a, BigDecimal b, int scale) {
+        BigDecimal percent = a == null || b == null || b.signum() == 0 ? BigDecimal.ZERO :
+                a.divide(b, MathContext.DECIMAL64).movePointRight(2);
+        return setScale(percent, scale);
+    }
+
+    //-----------------------------------------------------------------------------------
 
     public static boolean isPositive(BigDecimal decimal) {
         return decimal.signum() > 0;

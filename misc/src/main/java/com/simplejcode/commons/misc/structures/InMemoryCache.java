@@ -80,13 +80,13 @@ public class InMemoryCache {
         return removeEntry(key);
     }
 
-    public synchronized <P, T> T getCached(P param, Function<P, T> getter) {
-        return getCached(param, getter, cache.length - 1);
+    public synchronized <P, T> T getCached(String name, P param, Function<P, T> getter) {
+        return getCached(name, param, getter, cache.length - 1);
     }
 
-    public synchronized <P, T> T getCached(P param, Function<P, T> getter, int duration) {
+    public synchronized <P, T> T getCached(String name, P param, Function<P, T> getter, int duration) {
         update();
-        String key = generateCacheKey(param);
+        String key = generateCacheKey(name, param);
         T value = get(key);
         if (value == null) {
             put(key, value = getter.apply(param), duration);
@@ -178,56 +178,6 @@ public class InMemoryCache {
             sb.append('#').append(p);
         }
         return sb.toString();
-    }
-
-    //-----------------------------------------------------------------------------------
-    /*
-    Tests
-     */
-
-    public static void main(String[] args) throws Exception {
-        InMemoryCache cache = new InMemoryCache(TimeUnit.SECONDS, 13);
-
-//        Function<String, Long> stringLongFunction = cache.cacheOf(InMemoryCache::getTime, 3);
-
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println(cache.getCached("1", InMemoryCache::getTime, 3));
-            Thread.sleep(1050);
-        }
-
-        cache.put("1", "me", 10);
-        System.out.println(cache);
-
-        dodo(cache);
-        cache.put("2", "shen", 10);
-        System.out.println(cache);
-
-        dodo(cache);
-        cache.put("3", "is", 10);
-        System.out.println(cache);
-
-        dodo(cache);
-        cache.put("4", "Sxva", 10);
-        System.out.println(cache);
-    }
-
-    private static void dodo(InMemoryCache cache) throws InterruptedException {
-        wait(cache, 1100);
-        wait(cache, 1200);
-        wait(cache, 1300);
-        wait(cache, 1400);
-    }
-
-    private static void wait(InMemoryCache cache, int t) throws InterruptedException {
-        Thread.sleep(t);
-        cache.update();
-//        System.out.println(cache.currentIndex + " " + cache.lastUpdateTime);
-        System.out.println(cache);
-    }
-
-    public static long getTime(String s) {
-        return System.currentTimeMillis();
     }
 
 }

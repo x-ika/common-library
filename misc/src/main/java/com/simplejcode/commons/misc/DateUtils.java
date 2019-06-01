@@ -9,6 +9,8 @@ public final class DateUtils {
 
     public static final String DEFAULT_FORMAT = "dd.MM.yyyy HH:mm:ss";
 
+    public static final String DEFAULT_DATE_FORMAT = "dd/MM/yyyy";
+
 
     private DateUtils() {
     }
@@ -49,6 +51,10 @@ public final class DateUtils {
 
     public static String formatTime(long time) {
         return formatTime(time, DEFAULT_FORMAT);
+    }
+
+    public static String formatDate(long time) {
+        return formatTime(time, DEFAULT_DATE_FORMAT);
     }
 
     public static String currentTime(String pattern, String zone) {

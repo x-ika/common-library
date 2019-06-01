@@ -1,4 +1,4 @@
-package com.simplejcode.commons.misc;
+package com.simplejcode.commons.misc.structures;
 
 import java.util.Queue;
 import java.util.concurrent.*;
@@ -8,7 +8,7 @@ public class EventDispatcher {
 
     private Queue<Object> queue;
 
-    private ScheduledExecutorService executorService;
+    private ExecutorService executorService;
 
     private Consumer<Object> consumer;
 
@@ -19,7 +19,7 @@ public class EventDispatcher {
     }
 
 
-    public void setExecutorService(ScheduledExecutorService executorService) {
+    public void setExecutorService(ExecutorService executorService) {
         this.executorService = executorService;
     }
 
@@ -38,8 +38,13 @@ public class EventDispatcher {
     }
 
     public void handle() {
-        for (Object event; (event = queue.poll()) != null; ) {
-            consumer.accept(event);
+        try {
+            for (Object event; (event = queue.poll()) != null; ) {
+                consumer.accept(event);
+            }
+        } catch (RuntimeException e) {
+            Thread thread = Thread.currentThread();
+            thread.getUncaughtExceptionHandler().uncaughtException(thread, e);
         }
     }
 

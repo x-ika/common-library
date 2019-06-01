@@ -86,18 +86,4 @@ public final class CustomSerializer {
         return map;
     }
 
-    //-----------------------------------------------------------------------------------
-
-    public static String botConfigToStr(String[] configParameters) {
-        StringBuilder sb = new StringBuilder();
-        for (String s : configParameters) {
-            sb.append('_').append(s);
-        }
-        return sb.substring(1);
-    }
-
-    public static String[] strToBotConfig(String config) {
-        return config.split("_", -1);
-    }
-
 }
