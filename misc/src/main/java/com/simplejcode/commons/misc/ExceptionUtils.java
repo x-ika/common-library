@@ -1,7 +1,5 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.helpers.UnrecoverableExceptionWrapper;
-
 import java.io.*;
 import java.lang.reflect.*;
 
@@ -10,8 +8,8 @@ public final class ExceptionUtils {
     private ExceptionUtils() {
     }
 
-    public static UnrecoverableExceptionWrapper wrap(Throwable throwable) {
-        return new UnrecoverableExceptionWrapper(throwable);
+    public static ExceptionWrapper wrap(Throwable throwable) {
+        return new ExceptionWrapper(throwable);
     }
 
     public static String stringifyException(Throwable e) {
@@ -32,7 +30,7 @@ public final class ExceptionUtils {
         return retrieveCause(throwable,
                 UndeclaredThrowableException.class,
                 InvocationTargetException.class,
-                UnrecoverableExceptionWrapper.class);
+                ExceptionWrapper.class);
     }
 
     public static Throwable retrieveCause(Throwable throwable, Class... boxes) {

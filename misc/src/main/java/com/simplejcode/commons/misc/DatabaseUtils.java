@@ -1,7 +1,5 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.helpers.RDBRowModel;
-
 import javax.naming.*;
 import javax.sql.DataSource;
 import java.beans.*;
@@ -168,8 +166,8 @@ public final class DatabaseUtils {
     Statement Wrappers
      */
 
-    public static List<RDBRowModel> executeSelect(PreparedStatement statement) throws SQLException {
-        List<RDBRowModel> ret = cursorToList(statement.executeQuery());
+    public static List<DatabaseRowModel> executeSelect(PreparedStatement statement) throws SQLException {
+        List<DatabaseRowModel> ret = cursorToList(statement.executeQuery());
         statement.clearParameters();
         return ret;
     }
@@ -187,16 +185,16 @@ public final class DatabaseUtils {
 
     private static final Map<Class, Method[]> settersByClass = new HashMap<>();
 
-    public static List<RDBRowModel> cursorToList(ResultSet rset) throws SQLException {
-        List<RDBRowModel> list = new ArrayList<>();
+    public static List<DatabaseRowModel> cursorToList(ResultSet rset) throws SQLException {
+        List<DatabaseRowModel> list = new ArrayList<>();
         cursorToList(rset, list);
         return list;
     }
 
-    public static void cursorToList(ResultSet rset, Collection<RDBRowModel> rows) throws SQLException {
+    public static void cursorToList(ResultSet rset, Collection<DatabaseRowModel> rows) throws SQLException {
         ResultSetMetaData data = rset.getMetaData();
         while (rset.next()) {
-            RDBRowModel row = new RDBRowModel();
+            DatabaseRowModel row = new DatabaseRowModel();
             for (int i = 1; i <= data.getColumnCount(); i++) {
 
                 Object value = null;
@@ -241,7 +239,7 @@ public final class DatabaseUtils {
                         value = rset.getTimestamp(i);
                         break;
                     case Types.REF:
-                        List<RDBRowModel> list = new ArrayList<>();
+                        List<DatabaseRowModel> list = new ArrayList<>();
                         value = list;
                         cursorToList((ResultSet) rset.getObject(i), list);
                         break;
@@ -257,17 +255,17 @@ public final class DatabaseUtils {
         closeResultSet(rset);
     }
 
-    public static <T> List<T> convertToBeans(Collection<RDBRowModel> rows, Class<T> clazz) {
+    public static <T> List<T> convertToBeans(Collection<DatabaseRowModel> rows, Class<T> clazz) {
 
         List<T> list = new ArrayList<>(rows.size());
-        for (RDBRowModel row : rows) {
+        for (DatabaseRowModel row : rows) {
             list.add(convertToBean(row, clazz));
         }
         return list;
 
     }
 
-    public static <T> T convertToBean(RDBRowModel row, Class<T> clazz) {
+    public static <T> T convertToBean(DatabaseRowModel row, Class<T> clazz) {
         try {
 
             T entity = clazz.getConstructor().newInstance();

@@ -1,6 +1,5 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.helpers.HttpResponse;
 import com.google.gson.*;
 
 import java.io.*;

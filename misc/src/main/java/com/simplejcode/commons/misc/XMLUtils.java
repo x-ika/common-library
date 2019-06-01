@@ -16,6 +16,8 @@ public final class XMLUtils {
     private XMLUtils() {
     }
 
+    //-----------------------------------------------------------------------------------
+
     public static DocumentBuilder createDocumentBuilder() throws ParserConfigurationException {
         return createDocumentBuilder(true);
     }
@@ -48,6 +50,7 @@ public final class XMLUtils {
         return normalize(createDocumentBuilder(namespaceAware).parse(new InputSource(new StringReader(source))));
     }
 
+    //-----------------------------------------------------------------------------------
 
     public static String getValue(Node node, String... key) {
         return getValue(node, 0, key);

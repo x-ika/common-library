@@ -13,7 +13,7 @@ public final class FlatJsonParser {
 
     //-----------------------------------------------------------------------------------
 
-    private static Gson gson = new GsonBuilder().create();
+    private static final Gson GSON = new GsonBuilder().create();
 
 
     public static Object parse(String json) {
@@ -27,7 +27,7 @@ public final class FlatJsonParser {
     }
 
     public static <T> T parse(String json, Class<T> clazz) {
-        return gson.fromJson(json, clazz);
+        return GSON.fromJson(json, clazz);
     }
 
     //-----------------------------------------------------------------------------------

@@ -1,22 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e1851f7-0b13-49f0-a57d-0b902b31826b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/TwoWayMap.java" afterDir="false" />
+    <list default="true" id="3e1851f7-0b13-49f0-a57d-0b902b31826b" name="Default Changelist" comment="Major update starting">
+      <change afterPath="$PROJECT_DIR$/algorithms/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/ImageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/ImageRect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/_pattern/pool/IPoolHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/CustomSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/CustomSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DecimalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DecimalUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/EventDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/EventDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio-video-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/audio-video-tools/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/AlgUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/AlgUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/ArrayUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/AudioClipWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/AudioClipWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/AudioSystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/AudioSystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DatabaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DatabaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ExceptionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ExceptionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastBinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastBinaryHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastBitSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastBitSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastBucketHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastBucketHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastHeapG.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastHeapG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FlatJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FlatJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/GeometryUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/GeometryUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/GraphUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/HttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/InMemoryCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ListUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MMTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MMTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/PropertyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/PropertyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/StreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/StreamUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ThreadUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ThreadUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/InMemoryCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/InMemoryCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/Knapsack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MMTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/MMTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MatrixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/MatrixUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ProgramRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ProcessUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/PropertyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/PropertyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/LevenshteinDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/XMLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/XMLUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/helpers/HttpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/HttpResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/helpers/RDBRowModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DatabaseRowModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/helpers/UnrecoverableExceptionWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ExceptionWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/observable/IModelListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/_pattern/observable/IModelListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/observable/ObservableDelta.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/_pattern/observable/ObservableDelta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/observable/ObservableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/_pattern/observable/ObservableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/pool/GPoolHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/pool/GPooler.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/_pattern/pool/ObjectPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/DynamicMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/DynamicMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/DynamicStruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/DynamicStruct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/EventDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/EventDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/FastLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/FastLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/FenwickTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FenwickTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/FibonacciHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FibonacciHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/InMemoryCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/InMemoryCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/IntBitSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/IntBitSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/IntMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/IntMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/LongBitSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/LongBitSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/MersenneTwister.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/MersenneTwister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/MultiSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/MultiSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/MultiStateObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/MultiStateObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/Polinom.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/Polinom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/Rational.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/Rational.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/SegmentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/SegmentList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/StableSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/ArraySort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/TwoWayMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/TwoWayMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/Alg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/d3/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/d3/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/Polyhedron.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/d3/Polyhedron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/TankVolumeCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-tools/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pdf-tools/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desktop/.idea/libraries/Gradle__com_simplejcode_commons_graphic_tools_1_0.xml" beforeDir="false" />
@@ -49,6 +104,7 @@
     <ignored path="$PROJECT_DIR$/misc/.gradle/" />
     <ignored path="$PROJECT_DIR$/net-tools/.gradle/" />
     <ignored path="$PROJECT_DIR$/pdf-tools/.gradle/" />
+    <ignored path="$PROJECT_DIR$/algorithms/.gradle/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,239 +120,29 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ArrayUtils.java">
+        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/BeanUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="method#ArrayUtils#0;class#ArrayUtils#0" />
-                <element signature="e#759#796#1" />
-                <element signature="method#restore#0;class#ArrayUtils#0" />
-                <element signature="e#1075#1223#1" />
-                <element signature="e#1117#1164#1" />
-                <element signature="method#restore#1;class#ArrayUtils#0" />
-                <element signature="e#1374#1522#1" />
-                <element signature="e#1416#1463#1" />
-                <element signature="method#sortBy#0;class#ArrayUtils#0" />
-                <element signature="e#1648#1796#1" />
-                <element signature="e#1690#1737#1" />
-                <element signature="method#sortBy#1;class#ArrayUtils#0" />
-                <element signature="e#1934#2082#1" />
-                <element signature="e#1976#2023#1" />
-                <element signature="method#sortBy#2;class#ArrayUtils#0" />
-                <element signature="e#2220#2368#1" />
-                <element signature="e#2262#2309#1" />
-                <element signature="method#transformBy#0;class#ArrayUtils#0" />
-                <element signature="e#2481#2520#1" />
-                <element signature="method#quicksort#0;class#ArrayUtils#0" />
-                <element signature="e#2829#2866#1" />
-                <element signature="method#quicksort#1;class#ArrayUtils#0" />
-                <element signature="e#3115#3152#1" />
-                <element signature="method#quicksort#2;class#ArrayUtils#0" />
-                <element signature="e#3392#3607#1" />
-                <element signature="e#3434#3577#1" />
-                <element signature="e#3505#3563#1" />
-                <element signature="e#3661#3998#1" />
-                <element signature="e#3739#3949#1" />
-                <element signature="e#4092#4506#1" />
-                <element signature="e#4142#4248#1" />
-                <element signature="e#4178#4234#1" />
-                <element signature="e#4297#4403#1" />
-                <element signature="e#4333#4389#1" />
-                <element signature="e#4427#4465#1" />
-                <element signature="e#4662#4712#1" />
-                <element signature="e#4742#4792#1" />
-                <element signature="method#median#0;class#ArrayUtils#0" />
-                <element signature="method#quicksort#3;class#ArrayUtils#0" />
-                <element signature="e#5164#5379#1" />
-                <element signature="e#5206#5349#1" />
-                <element signature="e#5277#5335#1" />
-                <element signature="e#5433#5770#1" />
-                <element signature="e#5511#5721#1" />
-                <element signature="e#5867#6281#1" />
-                <element signature="e#5917#6023#1" />
-                <element signature="e#5953#6009#1" />
-                <element signature="e#6072#6178#1" />
-                <element signature="e#6108#6164#1" />
-                <element signature="e#6202#6240#1" />
-                <element signature="e#6437#6487#1" />
-                <element signature="e#6517#6567#1" />
-                <element signature="method#median#1;class#ArrayUtils#0" />
-                <element signature="method#shuffle#0;class#ArrayUtils#0" />
-                <element signature="e#7014#7073#1" />
-                <element signature="method#shuffle#1;class#ArrayUtils#0" />
-                <element signature="e#7180#7239#1" />
-                <element signature="method#shuffle#2;class#ArrayUtils#0" />
-                <element signature="e#7350#7405#1" />
-                <element signature="method#swap#0;class#ArrayUtils#0" />
-                <element signature="e#7598#7636#1" />
-                <element signature="method#swap#1;class#ArrayUtils#0" />
-                <element signature="e#7741#7779#1" />
-                <element signature="method#swap#2;class#ArrayUtils#0" />
-                <element signature="method#swap#3;class#ArrayUtils#0" />
-                <element signature="method#swap#4;class#ArrayUtils#0" />
-                <element signature="method#swap#5;class#ArrayUtils#0" />
-                <element signature="method#swap#6;class#ArrayUtils#0" />
-                <element signature="method#swap#7;class#ArrayUtils#0" />
-                <element signature="method#swap#8;class#ArrayUtils#0" />
-                <element signature="method#swap#9;class#ArrayUtils#0" />
-                <element signature="method#swap#10;class#ArrayUtils#0" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/StreamUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-              <folding>
-                <element signature="method#StreamUtils#0;class#StreamUtils#0" />
-                <element signature="method#find#0;class#StreamUtils#0" />
-                <element signature="e#397#485#1" />
-                <element signature="e#434#475#1" />
-                <element signature="method#filter#0;class#StreamUtils#0" />
-                <element signature="method#map#0;class#StreamUtils#0" />
-                <element signature="method#map#1;class#StreamUtils#0" />
-                <element signature="method#mapDistinct#0;class#StreamUtils#0" />
-                <element signature="method#mapReduce#0;class#StreamUtils#0" />
-                <element signature="method#mapReduce#1;class#StreamUtils#0" />
-                <element signature="method#list2map#0;class#StreamUtils#0" />
-                <element signature="method#list2map#1;class#StreamUtils#0" />
-                <element signature="method#list2list#0;class#StreamUtils#0" />
-                <element signature="method#list2list#1;class#StreamUtils#0" />
-                <element signature="e#2320#2490#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/HttpUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-              <folding>
-                <element signature="method#HttpUtils#0;class#HttpUtils#0" />
-                <element signature="method#concatHttpParameters#0;class#HttpUtils#0" />
-                <element signature="e#660#694#1" />
-                <element signature="e#785#933#1" />
-                <element signature="e#822#923#1" />
-                <element signature="method#concatHttpParameters#1;class#HttpUtils#0" />
-                <element signature="e#1120#1154#1" />
-                <element signature="e#1248#1415#1" />
-                <element signature="e#1292#1405#1" />
-                <element signature="method#concatHttpParameters#2;class#HttpUtils#0" />
-                <element signature="e#1606#1640#1" />
-                <element signature="e#1738#1833#1" />
-                <element signature="method#encode#0;class#HttpUtils#0" />
-                <element signature="e#1958#2031#0" />
-                <element signature="e#2071#2112#0" />
-                <element signature="method#getResponseData#0;class#HttpUtils#0" />
-                <element signature="e#2227#2299#1" />
-                <element signature="method#get#3;class#HttpUtils#0" />
-                <element signature="method#post#2;class#HttpUtils#0" />
-                <element signature="method#post#3;class#HttpUtils#0" />
-                <element signature="method#post#4;class#HttpUtils#0" />
-                <element signature="method#post#5;class#HttpUtils#0" />
-                <element signature="method#put#0;class#HttpUtils#0" />
-                <element signature="method#delete#2;class#HttpUtils#0" />
-                <element signature="method#delete#3;class#HttpUtils#0" />
-                <element signature="e#4757#4792#0" />
-                <element signature="method#request#0;class#HttpUtils#0" />
-                <element signature="method#request#1;class#HttpUtils#0" />
-                <element signature="e#5123#5917#0" />
-                <element signature="e#5296#5354#1" />
-                <element signature="e#5386#5462#1" />
-                <element signature="e#5662#5790#1" />
-                <element signature="e#5940#5981#0" />
-                <element signature="method#setHeaders#0;class#HttpUtils#0" />
-                <element signature="e#6146#6228#1" />
-                <element signature="method#setData#0;class#HttpUtils#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/AudioSystemManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-              <folding>
-                <element signature="method#AudioSystemManager#0;class#AudioSystemManager#0" />
-                <element signature="method#loadResource#0;class#AudioSystemManager#0" />
-                <element signature="method#setSoundEnabled#0;class#AudioSystemManager#0" />
-                <element signature="e#996#1223#1" />
-                <element signature="e#1049#1213#1" />
-                <element signature="e#1085#1141#1" />
-                <element signature="e#1147#1199#1" />
-                <element signature="method#play#1;class#AudioSystemManager#0" />
-                <element signature="e#1390#1421#1" />
-                <element signature="method#dispose#0;class#AudioSystemManager#0" />
-                <element signature="e#1642#1678#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/EventDispatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/InMemoryCache.java">
+        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/AudioClipWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+            <state relative-caret-position="459">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="class#CacheEntry#0;class#InMemoryCache#0" />
-                <element signature="method#CacheEntry#0;class#CacheEntry#0;class#InMemoryCache#0" />
-                <element signature="method#InMemoryCache#0;class#InMemoryCache#0" />
-                <element signature="method#get#0;class#InMemoryCache#0" />
-                <element signature="method#put#1;class#InMemoryCache#0" />
-                <element signature="method#remove#0;class#InMemoryCache#0" />
-                <element signature="method#getCached#0;class#InMemoryCache#0" />
-                <element signature="method#getCached#1;class#InMemoryCache#0" />
-                <element signature="method#toString#0;class#InMemoryCache#0" />
-                <element signature="method#putEntry#0;class#InMemoryCache#0" />
-                <element signature="method#removeEntry#0;class#InMemoryCache#0" />
-                <element signature="method#update#0;class#InMemoryCache#0" />
-                <element signature="method#clear#0;class#InMemoryCache#0" />
-                <element signature="method#clearAll#0;class#InMemoryCache#0" />
-                <element signature="method#clear#1;class#InMemoryCache#0" />
-                <element signature="method#generateCacheKey#0;class#InMemoryCache#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MMTester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="method#MMTester#0;class#MMTester#0" />
-                <element signature="method#test#0;class#MMTester#0" />
-                <element signature="e#616#766#1" />
-                <element signature="e#711#756#1" />
-                <element signature="e#772#901#1" />
-                <element signature="e#824#891#1" />
-                <element signature="e#1090#1619#1" />
-                <element signature="e#1212#1315#1" />
-                <element signature="e#1434#1571#1" />
-                <element signature="e#1727#1788#1" />
-                <element signature="method#calc#0;class#MMTester#0" />
-                <element signature="method#printAlligned#0;class#MMTester#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#AudioClipWrapper#0;class#AudioClipWrapper#0" />
+                <element signature="method#play#0;class#AudioClipWrapper#0" />
+                <element signature="method#stop#0;class#AudioClipWrapper#0" />
               </folding>
             </state>
           </provider>
@@ -304,16 +150,76 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>import com.simplejcode.commons.misc.opt</find>
+      <find>import com.simplejcode.commons.misc.he</find>
+      <find>import com.simplejcode.commons.misc.</find>
+      <find>import com.simplejcode.commons.misc[.].*[.]</find>
+      <find>import com.simplejcode.commons.misc.[a-zA-Z].*;</find>
+      <find>import com.simplejcode.commons.misc.util.[a-zA-Z].*;</find>
+      <find>import com.simplejcode.commons.misc</find>
+      <find>import com.simplejcode.commons.misc.algo</find>
+      <find>sourceCompatibility</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/TwoWayMap.java" />
-        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MMTester.java" />
-        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/StreamUtils.java" />
-        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/ArraySort.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/GeometryUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/opt/GeometryUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/opt/ImageProcessor.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/opt/Rect.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/EventDispatcher.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/AudioSystemManager.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/BeanUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/MatrixUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/FastLogger.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/DynamicStruct.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/LevenshteinDistance.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/opt/LevenshteinDistance.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/Plane.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/FlatJsonParser.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FlatJsonParser.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/ArraySort.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/helpers/UnrecoverableExceptionWrapper.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/helpers/ExceptionWrapper.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/AudioClipWrapper.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/ImageProcessor.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ee/TankVolumeCalculator.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/ImageRect.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ExceptionWrapper.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/RDBRowModel.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DatabaseRowModel.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/AudioClipWrapper.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/pattern/pool/GPooler.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/pattern/pool/ObjectPool.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/pattern/pool/PoolHandler.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/pattern/pool/IPoolHandler.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/Statistics.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/FastGraph.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/CustomSerializer.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/GraphUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MatrixUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/ArrayUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/StringUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/algo/Polinom.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/MMTester.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/FastTimer.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/TankVolumeCalculator.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/opt/GeometryUtils.java" />
+        <option value="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/TestRunner.java" />
+        <option value="$PROJECT_DIR$/audio-video-tools/build.gradle" />
+        <option value="$PROJECT_DIR$/pdf-tools/build.gradle" />
+        <option value="$PROJECT_DIR$/algorithms/build.gradle" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/TestRunner.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/GraphUtils.java" />
+        <option value="$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/GeometryUtils.java" />
       </list>
     </option>
   </component>
@@ -329,7 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,6 +246,96 @@
             <path>
               <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
               <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="av" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="av" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="audio-video-tools" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="av" type="462c0819:PsiDirectoryNode" />
+              <item name="improc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -380,23 +376,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="observable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="structures" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,6 +399,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.simplejcode.commons.misc.algo" />
+      <recent name="com.simplejcode.commons.misc.algo.opt" />
+      <recent name="com.simplejcode.commons.misc" />
       <recent name="com.simplejcode.commons.misc.structures" />
     </key>
   </component>
@@ -480,25 +469,48 @@
       <updated>1558875071662</updated>
       <workItem from="1558875073024" duration="98000" />
       <workItem from="1559394972356" duration="55000" />
-      <workItem from="1559412846643" duration="1540000" />
+      <workItem from="1559412846643" duration="6177000" />
+      <workItem from="1559419130867" duration="6462000" />
+      <workItem from="1559425855137" duration="328000" />
     </task>
+    <task id="LOCAL-00001" summary="Major update starting">
+      <created>1559414651372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559414651372</updated>
+    </task>
+    <task id="LOCAL-00002" summary="IDE">
+      <created>1559415255779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559415255779</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Array utils separation">
+      <created>1559416498755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559416498755</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1693000" />
+    <option name="totallyTimeSpent" value="13120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -507,10 +519,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6370531" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -524,321 +537,786 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Major update starting" />
+    <MESSAGE value="IDE" />
+    <MESSAGE value="Array utils separation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Array utils separation" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/PropertyManager.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/d3/Point3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="method#Point3D#0;class#Point3D#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DatabaseRowModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="class#Item#0;class#DatabaseRowModel#0" />
+            <element signature="method#Item#0;class#Item#0;class#DatabaseRowModel#0" />
+            <element signature="method#Item#1;class#Item#0;class#DatabaseRowModel#0" />
+            <element signature="method#DatabaseRowModel#0;class#DatabaseRowModel#0" />
+            <element signature="method#put#0;class#DatabaseRowModel#0" />
+            <element signature="method#remove#0;class#DatabaseRowModel#0" />
+            <element signature="e#1012#1254#1" />
+            <element signature="e#1049#1244#1" />
+            <element signature="e#1082#1141#1" />
+            <element signature="e#1147#1206#1" />
+            <element signature="method#get#0;class#DatabaseRowModel#0" />
+            <element signature="e#1395#1489#1" />
+            <element signature="e#1432#1479#1" />
+            <element signature="method#get#1;class#DatabaseRowModel#0" />
+            <element signature="e#1615#1747#1" />
+            <element signature="e#1693#1737#1" />
+            <element signature="method#getMap#0;class#DatabaseRowModel#0" />
+            <element signature="e#3649#3772#1" />
+            <element signature="e#3706#3762#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FlatJsonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="method#FlatJsonParser#0;class#FlatJsonParser#0" />
+            <element signature="method#parse#0;class#FlatJsonParser#0" />
+            <element signature="method#extractObject#0;class#FlatJsonParser#0" />
+            <element signature="method#extractString#0;class#FlatJsonParser#0" />
+            <element signature="method#extractListOrEmpty#0;class#FlatJsonParser#0" />
+            <element signature="method#extractInt#0;class#FlatJsonParser#0" />
+            <element signature="method#extractLong#0;class#FlatJsonParser#0" />
+            <element signature="method#extractBoolean#0;class#FlatJsonParser#0" />
+            <element signature="method#extractDecimal#0;class#FlatJsonParser#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/LevenshteinDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#LevenshteinDistance#0;class#LevenshteinDistance#0" />
+            <element signature="method#prepare#0;class#LevenshteinDistance#0" />
+            <element signature="method#distanceToX#0;class#LevenshteinDistance#0" />
+            <element signature="method#distanceTo#0;class#LevenshteinDistance#0" />
+            <element signature="method#getLevenshteinDistancce#0;class#LevenshteinDistance#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/LongBitSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="method#setPropertiesFileName#0;class#PropertyManager#0" />
-            <element signature="method#PropertyManager#0;class#PropertyManager#0" />
-            <element signature="method#setProperty#0;class#PropertyManager#0" />
-            <element signature="method#getProperty#0;class#PropertyManager#0" />
-            <element signature="method#reloadIfNeeded#0;class#PropertyManager#0" />
-            <element signature="e#1467#2150#0" />
-            <element signature="e#1569#1664#1" />
-            <element signature="e#1783#2139#1" />
-            <element signature="e#1999#2087#0" />
-            <element signature="e#2171#2225#0" />
-            <element signature="method#saveProperties#0;class#PropertyManager#0" />
-            <element signature="e#2282#2359#0" />
-            <element signature="e#2380#2434#0" />
+            <element signature="method#cardinality#0;class#LongBitSet#0" />
+            <element signature="method#init#0;class#LongBitSet#0" />
+            <element signature="method#init#1;class#LongBitSet#0" />
+            <element signature="method#shiftLeft#0;class#LongBitSet#0" />
+            <element signature="method#shiftRight#0;class#LongBitSet#0" />
+            <element signature="method#not#0;class#LongBitSet#0" />
+            <element signature="method#or#0;class#LongBitSet#0" />
+            <element signature="method#and#0;class#LongBitSet#0" />
+            <element signature="method#xor#0;class#LongBitSet#0" />
+            <element signature="method#add#0;class#LongBitSet#0" />
+            <element signature="method#andNot#0;class#LongBitSet#0" />
+            <element signature="method#nextSetBit#0;class#LongBitSet#0" />
+            <element signature="method#toString#0;class#LongBitSet#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/IntMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        <state relative-caret-position="17">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/IntBitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="method#cardinality#0;class#IntBitSet#0" />
+            <element signature="e#590#641#1" />
+            <element signature="method#init#0;class#IntBitSet#0" />
+            <element signature="method#init#1;class#IntBitSet#0" />
+            <element signature="method#shiftLeft#0;class#IntBitSet#0" />
+            <element signature="e#1294#1373#1" />
+            <element signature="method#shiftRight#0;class#IntBitSet#0" />
+            <element signature="e#1590#1663#1" />
+            <element signature="method#not#0;class#IntBitSet#0" />
+            <element signature="e#1798#1841#1" />
+            <element signature="method#or#0;class#IntBitSet#0" />
+            <element signature="e#1957#2004#1" />
+            <element signature="method#and#0;class#IntBitSet#0" />
+            <element signature="e#2121#2168#1" />
+            <element signature="method#xor#0;class#IntBitSet#0" />
+            <element signature="e#2285#2332#1" />
+            <element signature="method#add#0;class#IntBitSet#0" />
+            <element signature="e#2468#2699#1" />
+            <element signature="method#andNot#0;class#IntBitSet#0" />
+            <element signature="e#2819#2866#1" />
+            <element signature="method#nextSetBit#0;class#IntBitSet#0" />
+            <element signature="e#3081#3267#1" />
+            <element signature="method#toString#0;class#IntBitSet#0" />
+            <element signature="e#3430#3485#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/TwoWayMap.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/DynamicStruct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="method#put#0;class#TwoWayMap#0" />
+            <element signature="method#DynamicStruct#0;class#DynamicStruct#0" />
+            <element signature="method#tryput#0;class#DynamicStruct#0" />
+            <element signature="method#put#1;class#DynamicStruct#0" />
+            <element signature="method#get#1;class#DynamicStruct#0" />
+            <element signature="method#load#1;class#DynamicStruct#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MatrixUtils.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/DynamicMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="method#DynamicMap#0;class#DynamicMap#0" />
+            <element signature="e#407#595#0" />
+            <element signature="e#533#585#1" />
+            <element signature="method#close#0;class#DynamicMap#0" />
+            <element signature="e#673#836#0" />
+            <element signature="e#859#903#0" />
+            <element signature="method#get#0;class#DynamicMap#0" />
+            <element signature="method#update#0;class#DynamicMap#0" />
+            <element signature="e#1231#1300#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ProcessUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="method#ProcessUtils#0;class#ProcessUtils#0" />
+            <element signature="method#execute#0;class#ProcessUtils#0" />
+            <element signature="e#418#673#1" />
+            <element signature="e#722#1154#1" />
+            <element signature="e#1201#1624#1" />
+            <element signature="method#execute#1;class#ProcessUtils#0" />
+            <element signature="method#run#0;class#ProcessUtils#0" />
+            <element signature="method#run#1;class#ProcessUtils#0" />
+            <element signature="e#2310#2524#1" />
+            <element signature="e#2401#2460#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/CryptoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CryptoUtils#0;class#CryptoUtils#0" />
+            <element signature="method#encryptUsing#0;class#CryptoUtils#0" />
+            <element signature="e#865#1050#0" />
+            <element signature="e#1071#1112#0" />
+            <element signature="method#getDigest#0;class#CryptoUtils#0" />
+            <element signature="e#1203#1596#0" />
+            <element signature="e#1374#1551#1" />
+            <element signature="e#1403#1452#1" />
+            <element signature="e#1617#1658#0" />
+            <element signature="method#toHex#1;class#CryptoUtils#0" />
+            <element signature="e#1892#2037#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastBitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="e#81#109#0" />
+            <element signature="e#615#633#0" />
+            <element signature="e#727#919#0" />
+            <element signature="e#839#893#1" />
+            <element signature="e#925#1257#0" />
+            <element signature="e#1132#1184#1" />
+            <element signature="e#1369#1825#0" />
+            <element signature="e#1609#1656#1" />
+            <element signature="e#1662#1819#1" />
+            <element signature="e#1740#1781#1" />
+            <element signature="e#1951#2408#0" />
+            <element signature="e#2189#2233#1" />
+            <element signature="e#2239#2402#1" />
+            <element signature="e#2316#2365#1" />
+            <element signature="e#2414#2544#0" />
+            <element signature="e#2550#3146#0" />
+            <element signature="e#2791#2848#1" />
+            <element signature="e#2854#3118#1" />
+            <element signature="e#2916#2960#1" />
+            <element signature="e#3009#3108#1" />
+            <element signature="e#3042#3094#1" />
+            <element signature="e#3152#3291#0" />
+            <element signature="e#3230#3267#1" />
+            <element signature="e#3297#3505#0" />
+            <element signature="e#3383#3477#1" />
+            <element signature="e#3423#3467#1" />
+            <element signature="e#3511#3628#0" />
+            <element signature="e#3634#3787#0" />
+            <element signature="e#3723#3762#1" />
+            <element signature="e#3793#3947#0" />
+            <element signature="e#3883#3922#1" />
+            <element signature="e#3953#4107#0" />
+            <element signature="e#4043#4082#1" />
+            <element signature="e#4113#4449#0" />
+            <element signature="e#4222#4424#1" />
+            <element signature="e#4455#4613#0" />
+            <element signature="e#4548#4588#1" />
+            <element signature="e#4619#4908#0" />
+            <element signature="e#4790#4860#1" />
+            <element signature="e#4914#5196#0" />
+            <element signature="e#5080#5144#1" />
+            <element signature="e#5202#5580#0" />
+            <element signature="e#5394#5574#1" />
+            <element signature="e#5586#5843#0" />
+            <element signature="e#5748#5806#1" />
+            <element signature="e#5849#6185#0" />
+            <element signature="e#5963#5996#1" />
+            <element signature="e#6033#6161#1" />
+            <element signature="e#6097#6151#1" />
+            <element signature="e#6281#6300#0" />
+            <element signature="e#6397#6587#0" />
+            <element signature="e#6510#6561#1" />
+            <element signature="e#6593#6928#0" />
+            <element signature="e#6803#6855#1" />
+            <element signature="e#7042#7501#0" />
+            <element signature="e#7285#7332#1" />
+            <element signature="e#7338#7495#1" />
+            <element signature="e#7416#7457#1" />
+            <element signature="e#7629#8089#0" />
+            <element signature="e#7870#7914#1" />
+            <element signature="e#7920#8083#1" />
+            <element signature="e#7997#8046#1" />
+            <element signature="e#8095#8227#0" />
+            <element signature="e#8233#8832#0" />
+            <element signature="e#8477#8534#1" />
+            <element signature="e#8540#8804#1" />
+            <element signature="e#8602#8646#1" />
+            <element signature="e#8695#8794#1" />
+            <element signature="e#8728#8780#1" />
+            <element signature="e#8838#8979#0" />
+            <element signature="e#8918#8955#1" />
+            <element signature="e#8985#9195#0" />
+            <element signature="e#9073#9167#1" />
+            <element signature="e#9113#9157#1" />
+            <element signature="e#9201#9321#0" />
+            <element signature="e#9327#9483#0" />
+            <element signature="e#9419#9458#1" />
+            <element signature="e#9489#9646#0" />
+            <element signature="e#9582#9621#1" />
+            <element signature="e#9652#9809#0" />
+            <element signature="e#9745#9784#1" />
+            <element signature="e#9815#10156#0" />
+            <element signature="e#9928#10131#1" />
+            <element signature="e#10162#10323#0" />
+            <element signature="e#10258#10298#1" />
+            <element signature="e#10329#10622#0" />
+            <element signature="e#10504#10574#1" />
+            <element signature="e#10628#10912#0" />
+            <element signature="e#10796#10860#1" />
+            <element signature="e#10918#11288#0" />
+            <element signature="e#11105#11282#1" />
+            <element signature="e#11294#11552#0" />
+            <element signature="e#11457#11515#1" />
+            <element signature="e#11558#11897#0" />
+            <element signature="e#11674#11707#1" />
+            <element signature="e#11744#11873#1" />
+            <element signature="e#11809#11863#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/TwoWayMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/AlgUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AlgUtils#0;class#AlgUtils#0" />
+            <element signature="method#harmonicSum#0;class#AlgUtils#0" />
+            <element signature="method#fact#0;class#AlgUtils#0" />
+            <element signature="method#gcd#0;class#AlgUtils#0" />
+            <element signature="method#gcd#1;class#AlgUtils#0" />
+            <element signature="method#getPower#0;class#AlgUtils#0" />
+            <element signature="method#pow#0;class#AlgUtils#0" />
+            <element signature="method#getDigits#0;class#AlgUtils#0" />
+            <element signature="method#getNumber#0;class#AlgUtils#0" />
+            <element signature="method#getPrimes#0;class#AlgUtils#0" />
+            <element signature="method#getSieve#0;class#AlgUtils#0" />
+            <element signature="method#getInverse#0;class#AlgUtils#0" />
+            <element signature="method#getFactorization#0;class#AlgUtils#0" />
+            <element signature="method#getFactors#0;class#AlgUtils#0" />
+            <element signature="method#go#0;class#AlgUtils#0" />
+            <element signature="method#fi#0;class#AlgUtils#0" />
+            <element signature="method#toDouble#0;class#AlgUtils#0" />
+            <element signature="method#getCombs#0;class#AlgUtils#0" />
+            <element signature="method#getCombsMod#0;class#AlgUtils#0" />
+            <element signature="method#nextPermutation#0;class#AlgUtils#0" />
+            <element signature="method#reverse#0;class#AlgUtils#0" />
+            <element signature="method#swap#0;class#AlgUtils#0" />
+            <element signature="method#indexOf#0;class#AlgUtils#0" />
+            <element signature="method#getPermutation#0;class#AlgUtils#0" />
+            <element signature="method#getCycles#0;class#AlgUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/Knapsack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="method#Knapsack#0;class#Knapsack#0" />
+            <element signature="method#dpkp#0;class#Knapsack#0" />
+            <element signature="method#expkp#0;class#Knapsack#0" />
+            <element signature="method#generickp#0;class#Knapsack#0" />
+            <element signature="method#knapsack#0;class#Knapsack#0" />
+            <element signature="method#subsetsum#0;class#Knapsack#0" />
+            <element signature="method#fill#0;class#Knapsack#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/MatrixUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#MatrixUtils#0;class#MatrixUtils#0" />
+            <element signature="method#det9#0;class#MatrixUtils#0" />
+            <element signature="e#331#339#0" />
             <element signature="method#getCopy#0;class#MatrixUtils#0" />
-            <element signature="e#430#482#1" />
+            <element signature="e#819#871#1" />
             <element signature="method#getCopy#1;class#MatrixUtils#0" />
-            <element signature="e#673#798#1" />
-            <element signature="e#722#788#1" />
+            <element signature="e#1062#1187#1" />
+            <element signature="e#1111#1177#1" />
             <element signature="method#normalize#0;class#MatrixUtils#0" />
-            <element signature="e#934#1424#1" />
-            <element signature="e#1000#1414#1" />
-            <element signature="e#1049#1098#1" />
-            <element signature="e#1267#1400#1" />
+            <element signature="e#1323#1813#1" />
+            <element signature="e#1389#1803#1" />
+            <element signature="e#1438#1487#1" />
+            <element signature="e#1656#1789#1" />
             <element signature="method#normalize#1;class#MatrixUtils#0" />
-            <element signature="e#1559#2152#1" />
-            <element signature="e#1628#2142#1" />
-            <element signature="e#1678#1727#1" />
-            <element signature="e#1897#2031#1" />
+            <element signature="e#1948#2541#1" />
+            <element signature="e#2017#2531#1" />
+            <element signature="e#2067#2116#1" />
+            <element signature="e#2286#2420#1" />
             <element signature="method#diagProduct#0;class#MatrixUtils#0" />
-            <element signature="e#2314#2369#1" />
+            <element signature="e#2703#2758#1" />
             <element signature="method#det#0;class#MatrixUtils#0" />
             <element signature="method#solution#0;class#MatrixUtils#0" />
-            <element signature="e#2792#3183#1" />
-            <element signature="e#2832#2999#1" />
-            <element signature="e#2874#2959#1" />
-            <element signature="e#3089#3173#1" />
+            <element signature="e#3181#3572#1" />
+            <element signature="e#3221#3388#1" />
+            <element signature="e#3263#3348#1" />
+            <element signature="e#3478#3562#1" />
             <element signature="method#solve#0;class#MatrixUtils#0" />
-            <element signature="e#3413#3534#1" />
-            <element signature="e#3455#3524#1" />
-            <element signature="e#3613#3670#1" />
-            <element signature="e#3743#4199#1" />
-            <element signature="e#3797#4189#1" />
-            <element signature="e#3841#3890#1" />
-            <element signature="e#4012#4106#1" />
-            <element signature="e#4263#4574#1" />
-            <element signature="e#4303#4390#1" />
-            <element signature="e#4480#4564#1" />
+            <element signature="e#3802#3923#1" />
+            <element signature="e#3844#3913#1" />
+            <element signature="e#4002#4059#1" />
+            <element signature="e#4132#4588#1" />
+            <element signature="e#4186#4578#1" />
+            <element signature="e#4230#4279#1" />
+            <element signature="e#4401#4495#1" />
+            <element signature="e#4652#4963#1" />
+            <element signature="e#4692#4779#1" />
+            <element signature="e#4869#4953#1" />
             <element signature="method#toString#0;class#MatrixUtils#0" />
-            <element signature="e#4758#4905#1" />
-            <element signature="e#4807#4857#1" />
+            <element signature="e#5147#5294#1" />
+            <element signature="e#5196#5246#1" />
             <element signature="method#iterative#0;class#MatrixUtils#0" />
-            <element signature="e#5306#5440#1" />
-            <element signature="e#5625#5759#1" />
-            <element signature="e#5696#5749#1" />
+            <element signature="e#5695#5829#1" />
+            <element signature="e#6014#6148#1" />
+            <element signature="e#6085#6138#1" />
             <element signature="method#mult#0;class#MatrixUtils#0" />
-            <element signature="e#5920#6154#1" />
-            <element signature="e#5962#6144#1" />
-            <element signature="e#6038#6101#1" />
+            <element signature="e#6309#6543#1" />
+            <element signature="e#6351#6533#1" />
+            <element signature="e#6427#6490#1" />
             <element signature="method#mult#1;class#MatrixUtils#0" />
-            <element signature="e#6293#6445#1" />
-            <element signature="e#6361#6413#1" />
+            <element signature="e#6682#6834#1" />
+            <element signature="e#6750#6802#1" />
             <element signature="method#solveXtXA#0;class#MatrixUtils#0" />
             <element signature="method#normalize#2;class#MatrixUtils#0" />
-            <element signature="e#6955#7397#1" />
-            <element signature="e#7024#7387#1" />
-            <element signature="e#7070#7119#1" />
-            <element signature="e#7244#7325#1" />
+            <element signature="e#7344#7786#1" />
+            <element signature="e#7413#7776#1" />
+            <element signature="e#7459#7508#1" />
+            <element signature="e#7633#7714#1" />
             <element signature="method#solve#1;class#MatrixUtils#0" />
-            <element signature="e#7574#7623#1" />
-            <element signature="e#7736#8098#1" />
-            <element signature="e#7772#7934#1" />
-            <element signature="e#7809#7894#1" />
-            <element signature="e#8019#8088#1" />
+            <element signature="e#7963#8012#1" />
+            <element signature="e#8125#8487#1" />
+            <element signature="e#8161#8323#1" />
+            <element signature="e#8198#8283#1" />
+            <element signature="e#8408#8477#1" />
             <element signature="method#solveLower#0;class#MatrixUtils#0" />
-            <element signature="e#8265#8301#1" />
-            <element signature="e#8374#8551#1" />
-            <element signature="e#8444#8498#1" />
+            <element signature="e#8654#8690#1" />
+            <element signature="e#8763#8940#1" />
+            <element signature="e#8833#8887#1" />
             <element signature="method#solveUpper#0;class#MatrixUtils#0" />
-            <element signature="e#8716#8752#1" />
-            <element signature="e#8824#9005#1" />
-            <element signature="e#8898#8952#1" />
+            <element signature="e#9105#9141#1" />
+            <element signature="e#9213#9394#1" />
+            <element signature="e#9287#9341#1" />
             <element signature="method#cholesky#0;class#MatrixUtils#0" />
-            <element signature="e#9188#9746#1" />
-            <element signature="e#9231#9596#1" />
-            <element signature="e#9333#9392#1" />
-            <element signature="e#9421#9496#1" />
-            <element signature="e#9502#9582#1" />
-            <element signature="e#9627#9736#1" />
+            <element signature="e#9577#10135#1" />
+            <element signature="e#9620#9985#1" />
+            <element signature="e#9722#9781#1" />
+            <element signature="e#9810#9885#1" />
+            <element signature="e#9891#9971#1" />
+            <element signature="e#10016#10125#1" />
             <element signature="method#add#0;class#MatrixUtils#0" />
-            <element signature="e#9882#9918#1" />
-            <element signature="e#9991#10034#1" />
+            <element signature="e#10271#10307#1" />
+            <element signature="e#10380#10423#1" />
             <element signature="method#add#1;class#MatrixUtils#0" />
-            <element signature="e#10225#10261#1" />
-            <element signature="e#10339#10451#1" />
-            <element signature="e#10381#10441#1" />
+            <element signature="e#10614#10650#1" />
+            <element signature="e#10728#10840#1" />
+            <element signature="e#10770#10830#1" />
             <element signature="method#divide#0;class#MatrixUtils#0" />
-            <element signature="e#10593#10627#1" />
+            <element signature="e#10982#11016#1" />
             <element signature="method#mult#2;class#MatrixUtils#0" />
-            <element signature="e#10810#10846#1" />
-            <element signature="e#10924#11172#1" />
-            <element signature="e#10966#11162#1" />
-            <element signature="e#11057#11119#1" />
+            <element signature="e#11199#11235#1" />
+            <element signature="e#11313#11561#1" />
+            <element signature="e#11355#11551#1" />
+            <element signature="e#11446#11508#1" />
             <element signature="method#getAtA#0;class#MatrixUtils#0" />
-            <element signature="e#11382#11627#1" />
-            <element signature="e#11425#11617#1" />
-            <element signature="e#11501#11564#1" />
+            <element signature="e#11771#12016#1" />
+            <element signature="e#11814#12006#1" />
+            <element signature="e#11890#11953#1" />
             <element signature="method#getAAt#0;class#MatrixUtils#0" />
-            <element signature="e#11837#12100#1" />
-            <element signature="e#11880#12090#1" />
-            <element signature="e#11980#12037#1" />
+            <element signature="e#12226#12489#1" />
+            <element signature="e#12269#12479#1" />
+            <element signature="e#12369#12426#1" />
             <element signature="method#transposition#0;class#MatrixUtils#0" />
-            <element signature="e#12317#12419#1" />
-            <element signature="e#12359#12409#1" />
+            <element signature="e#12706#12808#1" />
+            <element signature="e#12748#12798#1" />
             <element signature="method#toColumn#0;class#MatrixUtils#0" />
-            <element signature="e#12690#12729#1" />
+            <element signature="e#13079#13118#1" />
             <element signature="method#toVector#0;class#MatrixUtils#0" />
-            <element signature="e#12853#12889#1" />
-            <element signature="e#12962#13001#1" />
+            <element signature="e#13242#13278#1" />
+            <element signature="e#13351#13390#1" />
             <element signature="method#createIMatrix#0;class#MatrixUtils#0" />
-            <element signature="e#13162#13198#1" />
+            <element signature="e#13551#13587#1" />
             <element signature="method#copy#0;class#MatrixUtils#0" />
-            <element signature="e#13364#13408#1" />
+            <element signature="e#13753#13797#1" />
             <element signature="method#print#0;class#MatrixUtils#0" />
-            <element signature="e#13508#13648#1" />
-            <element signature="e#13541#13604#1" />
+            <element signature="e#13897#14037#1" />
+            <element signature="e#13930#13993#1" />
             <element signature="method#mult#3;class#MatrixUtils#0" />
-            <element signature="e#13970#14188#1" />
-            <element signature="e#14012#14178#1" />
-            <element signature="e#14061#14132#1" />
+            <element signature="e#14359#14577#1" />
+            <element signature="e#14401#14567#1" />
+            <element signature="e#14450#14521#1" />
             <element signature="method#pow#0;class#MatrixUtils#0" />
-            <element signature="e#14297#14330#1" />
-            <element signature="e#14357#14421#1" />
+            <element signature="e#14686#14719#1" />
+            <element signature="e#14746#14810#1" />
             <element signature="method#transpose#0;class#MatrixUtils#0" />
-            <element signature="e#14591#14758#1" />
-            <element signature="e#14633#14748#1" />
+            <element signature="e#14980#15147#1" />
+            <element signature="e#15022#15137#1" />
             <element signature="method#pythag#0;class#MatrixUtils#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/InMemoryCache.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/Rational.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="770">
+          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
+          <folding>
+            <element signature="method#Rational#0;class#Rational#0" />
+            <element signature="method#Rational#2;class#Rational#0" />
+            <element signature="method#Rational#3;class#Rational#0" />
+            <element signature="method#gcd#0;class#Rational#0" />
+            <element signature="method#sum#0;class#Rational#0" />
+            <element signature="method#diff#0;class#Rational#0" />
+            <element signature="method#product#0;class#Rational#0" />
+            <element signature="method#division#0;class#Rational#0" />
+            <element signature="method#pow#0;class#Rational#0" />
+            <element signature="method#init#0;class#Rational#0" />
+            <element signature="method#minus#0;class#Rational#0" />
+            <element signature="method#add#0;class#Rational#0" />
+            <element signature="method#multiply#0;class#Rational#0" />
+            <element signature="method#toString#0;class#Rational#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/Polinom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="method#Polinom#1;class#Polinom#0" />
+            <element signature="method#Polinom#2;class#Polinom#0" />
+            <element signature="method#getPolinom#0;class#Polinom#0" />
+            <element signature="method#sum#0;class#Polinom#0" />
+            <element signature="method#value#0;class#Polinom#0" />
+            <element signature="method#add#0;class#Polinom#0" />
+            <element signature="method#multiply#0;class#Polinom#0" />
+            <element signature="method#divide#0;class#Polinom#0" />
+            <element signature="method#getRoots#0;class#Polinom#0" />
+            <element signature="method#toString#0;class#Polinom#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="method#StringUtils#0;class#StringUtils#0" />
+            <element signature="method#lis#0;class#StringUtils#0" />
+            <element signature="method#lcs#0;class#StringUtils#0" />
+            <element signature="method#lcs#1;class#StringUtils#0" />
+            <element signature="method#restoreLCS#0;class#StringUtils#0" />
+            <element signature="method#parse#0;class#StringUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/TankVolumeCalculator.java" />
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="85" column="8" lean-forward="true" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding>
+            <element signature="method#Statistics#0;class#Statistics#0" />
+            <element signature="docComment;field#P_LOW#0;class#StatUtil#0;class#Statistics#0" />
+            <element signature="method#getInvCDF#0;class#StatUtil#0;class#Statistics#0" />
+            <element signature="e#2042#2065#0" />
+            <element signature="e#2402#2670#1" />
+            <element signature="e#2761#3034#1" />
+            <element signature="e#3110#3415#1" />
+            <element signature="n#!!doc;n#ERF_C#0;n#StatUtil#0;n#Statistics#0" />
+            <element signature="n#!!doc;n#ERF_P#0;n#StatUtil#0;n#Statistics#0" />
+            <element signature="method#calerf#0;class#StatUtil#0;class#Statistics#0" />
+            <element signature="e#6719#9276#0" />
+            <element signature="e#9412#9966#1" />
+            <element signature="e#9605#9734#1" />
+            <element signature="e#9987#10547#1" />
+            <element signature="e#10098#10221#1" />
+            <element signature="e#10319#10533#1" />
+            <element signature="e#10553#11485#1" />
+            <element signature="e#10744#11471#1" />
+            <element signature="e#10916#11057#1" />
+            <element signature="e#11223#11453#1" />
+            <element signature="e#11514#11623#1" />
+            <element signature="e#11644#11710#1" />
+            <element signature="e#11716#12120#1" />
+            <element signature="e#11745#12106#1" />
+            <element signature="e#11823#12088#1" />
+            <element signature="method#refine#0;class#StatUtil#0;class#Statistics#0" />
+            <element signature="e#12519#12736#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/d3/Plane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="method#Plane#0;class#Plane#0" />
+            <element signature="method#Plane#1;class#Plane#0" />
+            <element signature="method#Plane#2;class#Plane#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/DataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="method#DataReader#0;class#DataReader#0" />
+            <element signature="method#nextLine#0;class#DataReader#0" />
+            <element signature="method#nextToken#0;class#DataReader#0" />
+            <element signature="method#close#0;class#DataReader#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/InMemoryCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="class#CacheEntry#0;class#InMemoryCache#0" />
             <element signature="method#CacheEntry#0;class#CacheEntry#0;class#InMemoryCache#0" />
             <element signature="method#InMemoryCache#0;class#InMemoryCache#0" />
-            <element signature="e#1302#1327#0" />
             <element signature="method#get#0;class#InMemoryCache#0" />
             <element signature="method#put#1;class#InMemoryCache#0" />
             <element signature="method#remove#0;class#InMemoryCache#0" />
             <element signature="method#getCached#0;class#InMemoryCache#0" />
             <element signature="method#getCached#1;class#InMemoryCache#0" />
-            <element signature="e#2306#2378#1" />
             <element signature="method#toString#0;class#InMemoryCache#0" />
-            <element signature="e#2605#2860#1" />
-            <element signature="e#2740#2850#1" />
-            <element signature="e#2992#3014#0" />
             <element signature="method#putEntry#0;class#InMemoryCache#0" />
-            <element signature="e#3267#3310#1" />
             <element signature="method#removeEntry#0;class#InMemoryCache#0" />
-            <element signature="e#3475#3511#1" />
             <element signature="method#update#0;class#InMemoryCache#0" />
-            <element signature="e#3863#3895#1" />
-            <element signature="e#3901#3942#1" />
             <element signature="method#clear#0;class#InMemoryCache#0" />
             <element signature="method#clearAll#0;class#InMemoryCache#0" />
-            <element signature="e#4203#4246#1" />
             <element signature="method#clear#1;class#InMemoryCache#0" />
-            <element signature="e#4371#4417#1" />
-            <element signature="e#4653#4678#0" />
             <element signature="method#generateCacheKey#0;class#InMemoryCache#0" />
-            <element signature="e#4812#4861#1" />
-            <element signature="e#4993#5013#0" />
-            <element signature="method#main#0;class#InMemoryCache#0" />
-            <element signature="e#5284#5408#1" />
-            <element signature="method#dodo#0;class#InMemoryCache#0" />
-            <element signature="method#wait#0;class#InMemoryCache#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ListUtils.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/ImageProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/MMTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="770">
+          <caret line="549" lean-forward="true" selection-start-line="549" selection-end-line="549" />
           <folding>
-            <element signature="method#MMTester#0;class#MMTester#0" />
-            <element signature="method#test#0;class#MMTester#0" />
-            <element signature="e#616#766#1" />
-            <element signature="e#711#756#1" />
-            <element signature="e#772#901#1" />
-            <element signature="e#824#891#1" />
-            <element signature="e#1090#1619#1" />
-            <element signature="e#1212#1315#1" />
-            <element signature="e#1434#1571#1" />
-            <element signature="e#1727#1788#1" />
-            <element signature="method#calc#0;class#MMTester#0" />
-            <element signature="method#printAlligned#0;class#MMTester#0" />
+            <element signature="docComment;class#ImageProcessor#0" />
+            <element signature="e#312#344#0" />
+            <element signature="e#441#598#0" />
+            <element signature="e#937#1132#0" />
+            <element signature="e#1138#1343#0" />
+            <element signature="e#1430#1569#0" />
+            <element signature="e#1575#1750#0" />
+            <element signature="e#1756#1889#0" />
+            <element signature="e#1991#2143#0" />
+            <element signature="e#2149#2299#0" />
+            <element signature="e#2305#2627#0" />
+            <element signature="e#2543#2603#1" />
+            <element signature="e#2633#2958#0" />
+            <element signature="e#2875#2934#1" />
+            <element signature="e#3373#3819#0" />
+            <element signature="e#3515#3548#1" />
+            <element signature="e#3592#3632#1" />
+            <element signature="e#3654#3698#1" />
+            <element signature="e#3720#3764#1" />
+            <element signature="e#3825#3961#0" />
+            <element signature="e#4062#4646#0" />
+            <element signature="e#4241#4286#1" />
+            <element signature="e#4308#4353#1" />
+            <element signature="e#4375#4420#1" />
+            <element signature="e#4442#4487#1" />
+            <element signature="e#4509#4554#1" />
+            <element signature="e#4576#4621#1" />
+            <element signature="e#4652#4816#0" />
+            <element signature="e#4822#5537#0" />
+            <element signature="e#5151#5531#0" />
+            <element signature="initializer##0;class#ImageProcessor#0" />
+            <element signature="e#5757#5878#1" />
+            <element signature="e#5810#5868#1" />
+            <element signature="e#6232#6415#0" />
+            <element signature="e#6511#6804#0" />
+            <element signature="e#6870#7090#0" />
+            <element signature="e#6978#7055#1" />
+            <element signature="e#7096#7644#0" />
+            <element signature="e#7214#7312#1" />
+            <element signature="e#7349#7412#1" />
+            <element signature="e#7456#7638#1" />
+            <element signature="e#7561#7628#1" />
+            <element signature="e#7740#7805#0" />
+            <element signature="e#7854#8074#0" />
+            <element signature="e#7943#7974#1" />
+            <element signature="e#8080#8248#0" />
+            <element signature="e#8080#8407#0" />
+            <element signature="e#8345#8401#1" />
+            <element signature="e#8413#8918#0" />
+            <element signature="e#8695#8810#1" />
+            <element signature="e#8847#8912#1" />
+            <element signature="e#9001#9440#0" />
+            <element signature="e#9109#9145#1" />
+            <element signature="e#9169#9243#1" />
+            <element signature="e#9267#9344#1" />
+            <element signature="e#9543#9714#0" />
+            <element signature="e#9817#10006#0" />
+            <element signature="e#10102#10136#0" />
+            <element signature="e#10211#10404#0" />
+            <element signature="e#10295#10326#1" />
+            <element signature="e#10410#10851#0" />
+            <element signature="e#10600#10804#1" />
+            <element signature="e#10642#10794#1" />
+            <element signature="e#10721#10780#1" />
+            <element signature="e#10857#11249#0" />
+            <element signature="e#11049#11160#1" />
+            <element signature="e#11078#11150#1" />
+            <element signature="e#11255#11755#0" />
+            <element signature="e#11446#11708#1" />
+            <element signature="e#11487#11698#1" />
+            <element signature="e#11596#11684#1" />
+            <element signature="e#11876#12283#0" />
+            <element signature="e#12000#12259#1" />
+            <element signature="e#12061#12249#1" />
+            <element signature="e#12175#12235#1" />
+            <element signature="e#12289#12719#0" />
+            <element signature="e#12419#12695#1" />
+            <element signature="e#12508#12685#1" />
+            <element signature="e#12614#12671#1" />
+            <element signature="e#12725#12951#0" />
+            <element signature="e#13047#13069#0" />
+            <element signature="e#13106#13290#0" />
+            <element signature="e#13178#13209#1" />
+            <element signature="e#13296#13540#0" />
+            <element signature="e#13388#13512#1" />
+            <element signature="e#13462#13502#1" />
+            <element signature="e#13546#13889#0" />
+            <element signature="e#13629#13883#1" />
+            <element signature="e#13895#14356#0" />
+            <element signature="e#14077#14350#1" />
+            <element signature="e#14105#14340#1" />
+            <element signature="e#14149#14326#1" />
+            <element signature="e#14251#14308#1" />
+            <element signature="e#14362#14774#0" />
+            <element signature="e#14461#14768#1" />
+            <element signature="e#14509#14610#1" />
+            <element signature="e#14657#14758#1" />
+            <element signature="e#14780#14967#0" />
+            <element signature="e#14847#14961#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/ArrayUtils.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/ArrayUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#ArrayUtils#0;class#ArrayUtils#0" />
-            <element signature="e#759#796#1" />
-            <element signature="method#restore#0;class#ArrayUtils#0" />
-            <element signature="e#1075#1223#1" />
-            <element signature="e#1117#1164#1" />
-            <element signature="method#restore#1;class#ArrayUtils#0" />
-            <element signature="e#1374#1522#1" />
-            <element signature="e#1416#1463#1" />
-            <element signature="method#sortBy#0;class#ArrayUtils#0" />
-            <element signature="e#1648#1796#1" />
-            <element signature="e#1690#1737#1" />
-            <element signature="method#sortBy#1;class#ArrayUtils#0" />
-            <element signature="e#1934#2082#1" />
-            <element signature="e#1976#2023#1" />
-            <element signature="method#sortBy#2;class#ArrayUtils#0" />
-            <element signature="e#2220#2368#1" />
-            <element signature="e#2262#2309#1" />
-            <element signature="method#transformBy#0;class#ArrayUtils#0" />
-            <element signature="e#2481#2520#1" />
             <element signature="method#quicksort#0;class#ArrayUtils#0" />
-            <element signature="e#2829#2866#1" />
-            <element signature="method#quicksort#1;class#ArrayUtils#0" />
-            <element signature="e#3115#3152#1" />
-            <element signature="method#quicksort#2;class#ArrayUtils#0" />
-            <element signature="e#3392#3607#1" />
-            <element signature="e#3434#3577#1" />
-            <element signature="e#3505#3563#1" />
-            <element signature="e#3661#3998#1" />
-            <element signature="e#3739#3949#1" />
-            <element signature="e#4092#4506#1" />
-            <element signature="e#4142#4248#1" />
-            <element signature="e#4178#4234#1" />
-            <element signature="e#4297#4403#1" />
-            <element signature="e#4333#4389#1" />
-            <element signature="e#4427#4465#1" />
-            <element signature="e#4662#4712#1" />
-            <element signature="e#4742#4792#1" />
             <element signature="method#median#0;class#ArrayUtils#0" />
-            <element signature="method#quicksort#3;class#ArrayUtils#0" />
-            <element signature="e#5164#5379#1" />
-            <element signature="e#5206#5349#1" />
-            <element signature="e#5277#5335#1" />
-            <element signature="e#5433#5770#1" />
-            <element signature="e#5511#5721#1" />
-            <element signature="e#5867#6281#1" />
-            <element signature="e#5917#6023#1" />
-            <element signature="e#5953#6009#1" />
-            <element signature="e#6072#6178#1" />
-            <element signature="e#6108#6164#1" />
-            <element signature="e#6202#6240#1" />
-            <element signature="e#6437#6487#1" />
-            <element signature="e#6517#6567#1" />
+            <element signature="method#quicksort#1;class#ArrayUtils#0" />
             <element signature="method#median#1;class#ArrayUtils#0" />
             <element signature="method#shuffle#0;class#ArrayUtils#0" />
-            <element signature="e#7014#7073#1" />
             <element signature="method#shuffle#1;class#ArrayUtils#0" />
-            <element signature="e#7180#7239#1" />
             <element signature="method#shuffle#2;class#ArrayUtils#0" />
-            <element signature="e#7350#7405#1" />
             <element signature="method#swap#0;class#ArrayUtils#0" />
-            <element signature="e#7598#7636#1" />
             <element signature="method#swap#1;class#ArrayUtils#0" />
-            <element signature="e#7741#7779#1" />
             <element signature="method#swap#2;class#ArrayUtils#0" />
             <element signature="method#swap#3;class#ArrayUtils#0" />
             <element signature="method#swap#4;class#ArrayUtils#0" />
@@ -852,34 +1330,516 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/StreamUtils.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/ArraySort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding>
-            <element signature="method#StreamUtils#0;class#StreamUtils#0" />
-            <element signature="method#find#0;class#StreamUtils#0" />
-            <element signature="e#397#485#1" />
-            <element signature="e#434#475#1" />
-            <element signature="method#filter#0;class#StreamUtils#0" />
-            <element signature="method#map#0;class#StreamUtils#0" />
-            <element signature="method#map#1;class#StreamUtils#0" />
-            <element signature="method#mapDistinct#0;class#StreamUtils#0" />
-            <element signature="method#mapReduce#0;class#StreamUtils#0" />
-            <element signature="method#mapReduce#1;class#StreamUtils#0" />
-            <element signature="method#list2map#0;class#StreamUtils#0" />
-            <element signature="method#list2map#1;class#StreamUtils#0" />
-            <element signature="method#list2list#0;class#StreamUtils#0" />
-            <element signature="method#list2list#1;class#StreamUtils#0" />
-            <element signature="e#2320#2490#1" />
+            <element signature="method#ArraySort#0;class#ArraySort#0" />
+            <element signature="method#init#0;class#ArraySort#0" />
+            <element signature="method#restore#0;class#ArraySort#0" />
+            <element signature="method#restore#1;class#ArraySort#0" />
+            <element signature="method#sortBy#0;class#ArraySort#0" />
+            <element signature="method#sortBy#1;class#ArraySort#0" />
+            <element signature="method#sortBy#2;class#ArraySort#0" />
+            <element signature="method#transformBy#0;class#ArraySort#0" />
+            <element signature="method#quicksort#0;class#ArraySort#0" />
+            <element signature="method#quicksort#1;class#ArraySort#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastBitSet.java">
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastBinaryHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastBucketHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="method#FastGraph#0;class#FastGraph#0" />
+            <element signature="class#Graph#0;class#FastGraph#0" />
+            <element signature="method#Graph#0;class#Graph#0;class#FastGraph#0" />
+            <element signature="method#add#0;class#Graph#0;class#FastGraph#0" />
+            <element signature="method#init#0;class#Graph#0;class#FastGraph#0" />
+            <element signature="method#edge#0;class#Graph#0;class#FastGraph#0" />
+            <element signature="method#init#0;class#FastGraph#0" />
+            <element signature="docComment;method#getComponents#0;class#FastGraph#0" />
+            <element signature="method#getComponents#0;class#FastGraph#0" />
+            <element signature="method#dfs#0;class#FastGraph#0" />
+            <element signature="method#getStronglyConnectedComponents#0;class#FastGraph#0" />
+            <element signature="method#dfs#1;class#FastGraph#0" />
+            <element signature="method#revertEdges#0;class#FastGraph#0" />
+            <element signature="method#projectGraph#0;class#FastGraph#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastHeapG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="method#FastHeapG#0;class#FastHeapG#0" />
+            <element signature="method#init#0;class#FastHeapG#0" />
+            <element signature="method#clear#0;class#FastHeapG#0" />
+            <element signature="method#poll#0;class#FastHeapG#0" />
+            <element signature="method#add#0;class#FastHeapG#0" />
+            <element signature="method#remove#0;class#FastHeapG#0" />
+            <element signature="method#poll#1;class#FastHeapG#0" />
+            <element signature="method#add#1;class#FastHeapG#0" />
+            <element signature="method#remove0#0;class#FastHeapG#0" />
+            <element signature="method#heapifyUp#0;class#FastHeapG#0" />
+            <element signature="method#heapifyDown#0;class#FastHeapG#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/FastTimer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="method#FastTimer#0;class#FastTimer#0" />
+            <element signature="method#init#0;class#FastTimer#0" />
+            <element signature="method#printAll#0;class#FastTimer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/GeometryUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/algo/GraphUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="e#151#179#0" />
+            <element signature="e#276#1209#0" />
+            <element signature="e#527#1065#1" />
+            <element signature="e#594#699#1" />
+            <element signature="e#637#685#1" />
+            <element signature="e#829#1055#1" />
+            <element signature="e#866#1041#1" />
+            <element signature="e#905#964#1" />
+            <element signature="e#1102#1185#1" />
+            <element signature="e#1133#1175#1" />
+            <element signature="e#1215#2353#0" />
+            <element signature="class#1273:1580" />
+            <element signature="method#V#0;class#1273:1580" />
+            <element signature="method#compareTo#0;class#1273:1580" />
+            <element signature="e#1811#2209#1" />
+            <element signature="e#1881#2199#1" />
+            <element signature="e#1920#2185#1" />
+            <element signature="e#2010#2167#1" />
+            <element signature="e#2246#2329#1" />
+            <element signature="e#2277#2319#1" />
+            <element signature="e#2359#3402#0" />
+            <element signature="e#2501#2787#0" />
+            <element signature="e#2588#2777#1" />
+            <element signature="e#2853#2953#0" />
+            <element signature="e#3151#3293#0" />
+            <element signature="e#3408#4635#0" />
+            <element signature="e#3659#4607#1" />
+            <element signature="e#3759#3976#1" />
+            <element signature="e#3849#3933#1" />
+            <element signature="e#4117#4596#1" />
+            <element signature="e#4211#4582#1" />
+            <element signature="e#4248#4480#1" />
+            <element signature="e#4732#5045#0" />
+            <element signature="e#4840#5039#1" />
+            <element signature="e#4882#5029#1" />
+            <element signature="e#4928#5015#1" />
+            <element signature="e#5051#5580#0" />
+            <element signature="e#5279#5556#1" />
+            <element signature="e#5321#5546#1" />
+            <element signature="e#5375#5532#1" />
+            <element signature="e#5455#5514#1" />
+            <element signature="e#5587#5987#0" />
+            <element signature="e#5824#5956#1" />
+            <element signature="e#5903#5946#1" />
+            <element signature="e#5993#6380#0" />
+            <element signature="e#6097#6134#1" />
+            <element signature="e#6194#6352#1" />
+            <element signature="e#6270#6342#1" />
+            <element signature="e#6386#6791#0" />
+            <element signature="e#6628#6760#1" />
+            <element signature="e#6707#6750#1" />
+            <element signature="e#6797#7178#0" />
+            <element signature="e#6899#6936#1" />
+            <element signature="e#6999#7150#1" />
+            <element signature="e#7068#7140#1" />
+            <element signature="e#7185#7302#0" />
+            <element signature="e#7185#7865#0" />
+            <element signature="e#7509#7661#1" />
+            <element signature="e#7583#7651#1" />
+            <element signature="e#7793#7839#1" />
+            <element signature="e#7871#10402#0" />
+            <element signature="e#8068#8099#1" />
+            <element signature="e#8347#8521#1" />
+            <element signature="e#8378#8511#1" />
+            <element signature="e#8554#8646#1" />
+            <element signature="e#8679#10128#1" />
+            <element signature="e#8709#9160#1" />
+            <element signature="e#8780#9146#1" />
+            <element signature="e#8844#9128#1" />
+            <element signature="e#8887#8951#1" />
+            <element signature="e#9240#9354#1" />
+            <element signature="e#9286#9340#1" />
+            <element signature="e#9395#9635#1" />
+            <element signature="e#9423#9478#1" />
+            <element signature="e#9505#9560#1" />
+            <element signature="e#9566#9621#1" />
+            <element signature="e#9697#10118#1" />
+            <element signature="e#9740#10104#1" />
+            <element signature="e#9779#9871#1" />
+            <element signature="e#9940#10086#1" />
+            <element signature="e#10148#10396#1" />
+            <element signature="e#10225#10327#1" />
+            <element signature="e#10408#10852#0" />
+            <element signature="e#10687#10846#1" />
+            <element signature="e#10741#10836#1" />
+            <element signature="e#10949#11630#0" />
+            <element signature="e#11232#11600#1" />
+            <element signature="e#11337#11410#1" />
+            <element signature="e#11472#11561#1" />
+            <element signature="e#11636#12232#0" />
+            <element signature="e#11835#12204#1" />
+            <element signature="e#11926#12194#1" />
+            <element signature="e#12006#12180#1" />
+            <element signature="e#12102#12162#1" />
+            <element signature="e#12239#13202#0" />
+            <element signature="e#12537#12629#1" />
+            <element signature="e#12573#12619#1" />
+            <element signature="e#12728#12767#1" />
+            <element signature="e#12809#13077#1" />
+            <element signature="e#12964#13067#1" />
+            <element signature="e#13133#13172#1" />
+            <element signature="e#13208#13723#0" />
+            <element signature="e#13324#13717#1" />
+            <element signature="e#13375#13620#1" />
+            <element signature="e#13495#13550#1" />
+            <element signature="e#13556#13606#1" />
+            <element signature="e#13626#13707#1" />
+            <element signature="e#13729#13973#0" />
+            <element signature="e#13979#14288#0" />
+            <element signature="e#14120#14282#1" />
+            <element signature="e#14159#14272#1" />
+            <element signature="e#14877#15591#0" />
+            <element signature="e#15049#15290#1" />
+            <element signature="e#15091#15280#1" />
+            <element signature="e#15141#15266#1" />
+            <element signature="e#15322#15561#1" />
+            <element signature="e#15400#15551#1" />
+            <element signature="e#15597#15796#0" />
+            <element signature="e#15802#16257#0" />
+            <element signature="e#15960#16222#1" />
+            <element signature="e#16027#16212#1" />
+            <element signature="e#16090#16198#1" />
+            <element signature="e#16263#16706#0" />
+            <element signature="e#16399#16682#1" />
+            <element signature="e#16561#16672#1" />
+            <element signature="e#16713#17424#0" />
+            <element signature="e#16897#17394#1" />
+            <element signature="e#16993#17031#1" />
+            <element signature="e#17137#17210#1" />
+            <element signature="e#17274#17355#1" />
+            <element signature="e#17430#17817#0" />
+            <element signature="e#17583#17789#1" />
+            <element signature="e#17630#17779#1" />
+            <element signature="e#17713#17765#1" />
+            <element signature="e#17824#18465#0" />
+            <element signature="e#18071#18435#1" />
+            <element signature="e#18178#18251#1" />
+            <element signature="e#18315#18396#1" />
+            <element signature="e#18471#19041#0" />
+            <element signature="e#18654#19013#1" />
+            <element signature="e#18764#19003#1" />
+            <element signature="e#18815#18989#1" />
+            <element signature="e#18911#18971#1" />
+            <element signature="e#19048#19813#0" />
+            <element signature="e#19320#19783#1" />
+            <element signature="e#19369#19773#1" />
+            <element signature="e#19484#19565#1" />
+            <element signature="e#19633#19726#1" />
+            <element signature="e#19819#20405#0" />
+            <element signature="e#20011#20377#1" />
+            <element signature="e#20121#20367#1" />
+            <element signature="e#20179#20353#1" />
+            <element signature="e#20275#20335#1" />
+            <element signature="e#20412#21488#0" />
+            <element signature="e#20701#20793#1" />
+            <element signature="e#20737#20783#1" />
+            <element signature="e#20986#21031#1" />
+            <element signature="e#21078#21363#1" />
+            <element signature="e#21233#21336#1" />
+            <element signature="e#21419#21458#1" />
+            <element signature="e#21494#22068#0" />
+            <element signature="e#21638#22062#1" />
+            <element signature="e#21669#21917#1" />
+            <element signature="e#21786#21847#1" />
+            <element signature="e#21853#21903#1" />
+            <element signature="e#21923#22052#1" />
+            <element signature="e#22074#22303#0" />
+            <element signature="e#22309#22738#0" />
+            <element signature="e#22411#22457#0" />
+            <element signature="e#22570#22732#1" />
+            <element signature="e#22611#22722#1" />
+            <element signature="e#22745#23523#0" />
+            <element signature="e#23032#23493#1" />
+            <element signature="e#23081#23483#1" />
+            <element signature="e#23194#23275#1" />
+            <element signature="e#23343#23436#1" />
+            <element signature="e#23529#24119#0" />
+            <element signature="e#23724#24091#1" />
+            <element signature="e#23835#24081#1" />
+            <element signature="e#23893#24067#1" />
+            <element signature="e#23989#24049#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/MMTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MMTester#0;class#MMTester#0" />
+            <element signature="method#test#0;class#MMTester#0" />
+            <element signature="method#calc#0;class#MMTester#0" />
+            <element signature="method#printAligned#0;class#MMTester#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="class#Edge#0;class#Graph#0" />
+            <element signature="method#Edge#0;class#Edge#0;class#Graph#0" />
+            <element signature="method#Graph#0;class#Graph#0" />
+            <element signature="method#Graph#1;class#Graph#0" />
+            <element signature="method#Graph#2;class#Graph#0" />
+            <element signature="method#addEdge#1;class#Graph#0" />
+            <element signature="method#removeEdge#0;class#Graph#0" />
+            <element signature="method#getUndirectedGraph#0;class#Graph#0" />
+            <element signature="method#getBridges#0;class#Graph#0" />
+            <element signature="method#dfs#0;class#Graph#0" />
+            <element signature="method#getComponents#0;class#Graph#0" />
+            <element signature="method#dfs#1;class#Graph#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FenwickTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="method#sum#0;class#FenwickTree#0" />
+            <element signature="method#search#0;class#FenwickTree#0" />
+            <element signature="method#getFree#1;class#FenwickTree#0" />
+            <element signature="method#getFreeKthElement#0;class#FenwickTree#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FibonacciHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="class#Node#0;class#FibonacciHeap#0" />
+            <element signature="method#Node#0;class#Node#0;class#FibonacciHeap#0" />
+            <element signature="method#FibonacciHeap#0;class#FibonacciHeap#0" />
+            <element signature="method#clear#0;class#FibonacciHeap#0" />
+            <element signature="method#insert#0;class#FibonacciHeap#0" />
+            <element signature="method#removeMin#0;class#FibonacciHeap#0" />
+            <element signature="method#toString#0;class#FibonacciHeap#0" />
+            <element signature="method#cascadingCut#0;class#FibonacciHeap#0" />
+            <element signature="method#consolidate#0;class#FibonacciHeap#0" />
+            <element signature="method#cut#0;class#FibonacciHeap#0" />
+            <element signature="method#link#0;class#FibonacciHeap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+          <folding>
+            <element signature="method#main#0;class#TestRunner#0" />
+            <element signature="method#test1#0;class#TestRunner#0" />
+            <element signature="e#674#858#1" />
+            <element signature="e#716#848#1" />
+            <element signature="e#760#834#1" />
+            <element signature="e#919#1023#1" />
+            <element signature="method#test2#0;class#TestRunner#0" />
+            <element signature="e#2633#3475#1" />
+            <element signature="e#2676#2728#1" />
+            <element signature="e#2803#2975#1" />
+            <element signature="e#2849#2961#1" />
+            <element signature="e#2888#2943#1" />
+            <element signature="e#3197#3291#1" />
+            <element signature="method#test3#0;class#TestRunner#0" />
+            <element signature="method#test4#0;class#TestRunner#0" />
+            <element signature="e#4114#4205#1" />
+            <element signature="method#test5#0;class#TestRunner#0" />
+            <element signature="e#4380#4746#1" />
+            <element signature="e#4422#4736#1" />
+            <element signature="e#4468#4722#1" />
+            <element signature="e#4522#4704#1" />
+            <element signature="method#test6#0;class#TestRunner#0" />
+            <element signature="e#4903#4960#1" />
+            <element signature="e#5050#5746#1" />
+            <element signature="e#5124#5195#1" />
+            <element signature="method#test7#0;class#TestRunner#0" />
+            <element signature="e#5883#7169#1" />
+            <element signature="e#5977#6960#1" />
+            <element signature="e#6100#6208#1" />
+            <element signature="e#6761#6945#1" />
+            <element signature="method#test8#0;class#TestRunner#0" />
+            <element signature="method#getCube#0;class#TestRunner#0" />
+            <element signature="e#7471#7546#1" />
+            <element signature="method#getPiramid#0;class#TestRunner#0" />
+            <element signature="method#testEnd#0;class#TestRunner#0" />
+            <element signature="e#8069#8116#0" />
+            <element signature="method#loanCalculator#0;class#TestRunner#0" />
+            <element signature="e#9301#10111#1" />
+            <element signature="e#9694#10100#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/ArrayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/GeometryUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#190#221#0" />
+            <element signature="e#317#338#0" />
+            <element signature="e#456#652#0" />
+            <element signature="e#658#816#0" />
+            <element signature="e#822#1380#0" />
+            <element signature="e#1046#1262#1" />
+            <element signature="e#1386#1680#0" />
+            <element signature="e#1686#2509#0" />
+            <element signature="e#2034#2391#1" />
+            <element signature="e#2515#2763#0" />
+            <element signature="e#2769#3192#0" />
+            <element signature="e#2995#3186#1" />
+            <element signature="e#3198#3330#0" />
+            <element signature="e#3336#3553#0" />
+            <element signature="e#3461#3547#1" />
+            <element signature="e#3682#3886#0" />
+            <element signature="e#3796#3880#1" />
+            <element signature="e#3982#4022#0" />
+            <element signature="e#4096#4234#0" />
+            <element signature="e#4240#4794#0" />
+            <element signature="e#4542#4579#1" />
+            <element signature="e#4800#5247#0" />
+            <element signature="e#4970#5007#1" />
+            <element signature="e#5253#6007#0" />
+            <element signature="e#5607#5644#1" />
+            <element signature="e#5716#5753#1" />
+            <element signature="e#6013#6157#0" />
+            <element signature="e#6285#6437#0" />
+            <element signature="e#6751#6783#0" />
+            <element signature="e#6789#6965#0" />
+            <element signature="e#6971#7129#0" />
+            <element signature="e#7135#7293#0" />
+            <element signature="e#7299#7516#0" />
+            <element signature="e#7414#7492#1" />
+            <element signature="e#7550#8772#0" />
+            <element signature="e#7655#7694#1" />
+            <element signature="e#7765#7900#1" />
+            <element signature="e#7821#7890#1" />
+            <element signature="e#7973#8137#1" />
+            <element signature="e#8260#8653#1" />
+            <element signature="e#8314#8643#1" />
+            <element signature="e#8550#8596#1" />
+            <element signature="e#8778#9404#0" />
+            <element signature="e#8886#8922#1" />
+            <element signature="e#9149#9377#1" />
+            <element signature="e#9322#9367#1" />
+            <element signature="e#9410#10971#0" />
+            <element signature="e#9653#9859#1" />
+            <element signature="e#9922#9959#1" />
+            <element signature="e#10139#10932#1" />
+            <element signature="e#10278#10319#1" />
+            <element signature="e#10373#10414#1" />
+            <element signature="e#10440#10613#1" />
+            <element signature="e#10619#10794#1" />
+            <element signature="e#10883#10922#1" />
+            <element signature="e#10977#11215#0" />
+            <element signature="e#11113#11191#1" />
+            <element signature="e#11221#12444#0" />
+            <element signature="e#11439#11566#1" />
+            <element signature="e#11772#12417#1" />
+            <element signature="e#11822#12407#1" />
+            <element signature="e#11868#12393#1" />
+            <element signature="e#12262#12375#1" />
+            <element signature="e#12540#12557#0" />
+            <element signature="e#12563#12937#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/FastBitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding>
             <element signature="e#76#104#0" />
             <element signature="e#610#628#0" />
@@ -982,416 +1942,241 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/LongBitSet.java">
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/ArraySort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
-          <folding>
-            <element signature="method#cardinality#0;class#LongBitSet#0" />
-            <element signature="e#621#669#1" />
-            <element signature="method#init#0;class#LongBitSet#0" />
-            <element signature="method#init#1;class#LongBitSet#0" />
-            <element signature="method#shiftLeft#0;class#LongBitSet#0" />
-            <element signature="e#1331#1410#1" />
-            <element signature="method#shiftRight#0;class#LongBitSet#0" />
-            <element signature="e#1628#1701#1" />
-            <element signature="method#not#0;class#LongBitSet#0" />
-            <element signature="e#1837#1880#1" />
-            <element signature="method#or#0;class#LongBitSet#0" />
-            <element signature="e#1998#2045#1" />
-            <element signature="method#and#0;class#LongBitSet#0" />
-            <element signature="e#2164#2211#1" />
-            <element signature="method#xor#0;class#LongBitSet#0" />
-            <element signature="e#2330#2377#1" />
-            <element signature="method#add#0;class#LongBitSet#0" />
-            <element signature="e#2516#2749#1" />
-            <element signature="method#andNot#0;class#LongBitSet#0" />
-            <element signature="e#2871#2918#1" />
-            <element signature="method#nextSetBit#0;class#LongBitSet#0" />
-            <element signature="e#3134#3317#1" />
-            <element signature="method#toString#0;class#LongBitSet#0" />
-            <element signature="e#3480#3535#1" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/Polyhedron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
-          <folding>
-            <element signature="method#Polyhedron#0;class#Polyhedron#0" />
-            <element signature="method#check#0;class#Polyhedron#0" />
-            <element signature="e#464#1034#1" />
-            <element signature="e#506#1024#1" />
-            <element signature="e#583#706#1" />
-            <element signature="e#751#1010#1" />
-            <element signature="e#856#992#1" />
-            <element signature="method#buildSurface#0;class#Polyhedron#0" />
-            <element signature="e#1106#1137#1" />
-            <element signature="e#1271#2955#1" />
-            <element signature="e#1313#2945#1" />
-            <element signature="e#1378#2931#1" />
-            <element signature="e#1534#2104#1" />
-            <element signature="e#1639#1878#1" />
-            <element signature="e#1777#1852#1" />
-            <element signature="e#1884#2082#1" />
-            <element signature="e#1931#2006#1" />
-            <element signature="e#2154#2851#1" />
-            <element signature="e#2235#2829#1" />
-            <element signature="e#2362#2635#1" />
-            <element signature="e#2522#2605#1" />
-            <element signature="method#divide#0;class#Polyhedron#0" />
-            <element signature="e#3232#3420#1" />
-            <element signature="e#3299#3341#1" />
-            <element signature="e#3368#3410#1" />
-            <element signature="e#3465#4373#1" />
-            <element signature="e#3520#4363#1" />
-            <element signature="e#3660#4349#1" />
-            <element signature="e#3762#4260#1" />
-            <element signature="e#3929#4034#1" />
-            <element signature="e#4091#4161#1" />
-            <element signature="e#4167#4238#1" />
-            <element signature="method#add#0;class#Polyhedron#0" />
-            <element signature="e#4631#4715#1" />
-            <element signature="e#4666#4705#1" />
-            <element signature="method#getVolume#0;class#Polyhedron#0" />
-            <element signature="e#4926#5208#1" />
-            <element signature="e#4981#5198#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/d3/TankVolumeCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="method#TankVolumeCalculator#0;class#TankVolumeCalculator#0" />
-            <element signature="method#getVolume#0;class#TankVolumeCalculator#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/observable/ObservableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="method#ObservableModel#0;class#ObservableModel#0" />
-            <element signature="e#653#678#0" />
-            <element signature="method#update#0;class#ObservableModel#0" />
-            <element signature="e#755#787#1" />
-            <element signature="e#793#878#1" />
-            <element signature="method#addListener#0;class#ObservableModel#0" />
-            <element signature="e#1065#1151#1" />
-            <element signature="e#1372#1396#0" />
-            <element signature="method#notifyListeners#0;class#ObservableModel#0" />
-            <element signature="e#1531#1660#1" />
-            <element signature="e#1567#1605#1" />
-            <element signature="method#notifyListener#0;class#ObservableModel#0" />
-            <element signature="e#1751#1810#0" />
-            <element signature="e#1831#1927#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/DatabaseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1355">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#347#378#0" />
-            <element signature="e#474#510#0" />
-            <element signature="e#516#752#0" />
-            <element signature="e#758#1260#0" />
-            <element signature="e#923#996#1" />
-            <element signature="e#1029#1092#1" />
-            <element signature="e#1130#1193#1" />
-            <element signature="e#1266#1410#0" />
-            <element signature="e#1416#1574#0" />
-            <element signature="e#1488#1531#0" />
-            <element signature="e#1580#1734#0" />
-            <element signature="e#1649#1691#0" />
-            <element signature="e#1740#1894#0" />
-            <element signature="e#1809#1851#0" />
-            <element signature="e#1901#2058#0" />
-            <element signature="e#1966#2012#0" />
-            <element signature="e#2064#2261#0" />
-            <element signature="e#2154#2215#0" />
-            <element signature="e#2357#2389#0" />
-            <element signature="e#2395#2738#0" />
-            <element signature="e#2632#2701#1" />
-            <element signature="e#2744#3135#0" />
-            <element signature="e#3029#3098#1" />
-            <element signature="e#3141#3679#0" />
-            <element signature="e#3418#3503#1" />
-            <element signature="e#3685#4220#0" />
-            <element signature="e#3923#3981#1" />
-            <element signature="e#4110#4183#1" />
-            <element signature="e#4226#4822#0" />
-            <element signature="e#4432#4529#1" />
-            <element signature="e#4598#4639#1" />
-            <element signature="e#4689#4754#1" />
-            <element signature="e#4828#5232#0" />
-            <element signature="e#5016#5068#1" />
-            <element signature="e#5118#5183#1" />
-            <element signature="e#5328#5361#0" />
-            <element signature="e#5367#5598#0" />
-            <element signature="e#5604#5803#0" />
-            <element signature="e#5899#5925#0" />
-            <element signature="e#6012#6207#0" />
-            <element signature="e#6213#8668#0" />
-            <element signature="e#6394#8632#1" />
-            <element signature="e#6506#8595#1" />
-            <element signature="e#6626#8524#0" />
-            <element signature="e#8674#8942#0" />
-            <element signature="e#8854#8914#1" />
-            <element signature="e#8948#9522#0" />
-            <element signature="e#9029#9454#0" />
-            <element signature="e#9216#9415#1" />
-            <element signature="e#9475#9516#0" />
-            <element signature="e#9529#9685#0" />
-            <element signature="e#9691#10276#0" />
-            <element signature="e#9764#10207#0" />
-            <element signature="e#9966#10133#1" />
-            <element signature="e#10059#10119#1" />
-            <element signature="e#10228#10269#0" />
-            <element signature="e#10282#10841#0" />
-            <element signature="e#10472#10790#1" />
-            <element signature="e#10556#10721#1" />
-            <element signature="e#10586#10648#1" />
-            <element signature="e#10727#10780#1" />
-            <element signature="e#10937#10978#0" />
-            <element signature="e#10984#11050#0" />
-            <element signature="e#11275#15020#0" />
-            <element signature="e#11678#11790#1" />
-            <element signature="e#11823#11903#1" />
-            <element signature="e#11957#12086#1" />
-            <element signature="e#12138#12263#1" />
-            <element signature="e#12337#12464#1" />
-            <element signature="e#12407#12454#1" />
-            <element signature="e#12598#12642#1" />
-            <element signature="e#12770#12841#1" />
-            <element signature="e#12891#12956#1" />
-            <element signature="e#13045#14861#0" />
-            <element signature="e#13158#13226#1" />
-            <element signature="e#13352#14294#1" />
-            <element signature="e#13396#13440#1" />
-            <element signature="e#13516#13607#1" />
-            <element signature="e#13649#14280#1" />
-            <element signature="e#13747#13804#1" />
-            <element signature="e#13867#13954#1" />
-            <element signature="e#13989#14176#1" />
-            <element signature="e#14182#14262#1" />
-            <element signature="e#14439#14826#1" />
-            <element signature="e#14483#14812#1" />
-            <element signature="e#14583#14760#1" />
-            <element signature="e#14885#14955#0" />
-            <element signature="e#14964#15014#0" />
-            <element signature="e#15117#15893#0" />
-            <element signature="e#15117#16214#0" />
-            <element signature="e#16220#16493#0" />
-            <element signature="e#16499#17238#0" />
-            <element signature="e#16755#17053#0" />
-            <element signature="e#16838#17019#1" />
-            <element signature="e#17074#17110#0" />
-            <element signature="e#17119#17166#0" />
-            <element signature="e#17244#17401#0" />
-            <element signature="e#17498#17707#0" />
-            <element signature="e#17713#18048#0" />
-            <element signature="e#18054#18261#0" />
-            <element signature="e#18267#18600#0" />
-            <element signature="e#18606#18826#0" />
-            <element signature="e#18832#19239#0" />
-            <element signature="e#19128#19207#1" />
-            <element signature="e#19245#19544#0" />
-            <element signature="e#19442#19538#1" />
-            <element signature="e#19640#19660#0" />
-            <element signature="e#19765#19916#0" />
-            <element signature="e#19922#19996#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/FastTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="method#init#0;class#FastTimer#0" />
-            <element signature="method#printAll#0;class#FastTimer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/HttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-          <folding>
-            <element signature="method#HttpUtils#0;class#HttpUtils#0" />
-            <element signature="method#concatHttpParameters#0;class#HttpUtils#0" />
-            <element signature="e#660#694#1" />
-            <element signature="e#785#933#1" />
-            <element signature="e#822#923#1" />
-            <element signature="method#concatHttpParameters#1;class#HttpUtils#0" />
-            <element signature="e#1120#1154#1" />
-            <element signature="e#1248#1415#1" />
-            <element signature="e#1292#1405#1" />
-            <element signature="method#concatHttpParameters#2;class#HttpUtils#0" />
-            <element signature="e#1606#1640#1" />
-            <element signature="e#1738#1833#1" />
-            <element signature="method#encode#0;class#HttpUtils#0" />
-            <element signature="e#1958#2031#0" />
-            <element signature="e#2071#2112#0" />
-            <element signature="method#getResponseData#0;class#HttpUtils#0" />
-            <element signature="e#2227#2299#1" />
-            <element signature="method#get#3;class#HttpUtils#0" />
-            <element signature="method#post#2;class#HttpUtils#0" />
-            <element signature="method#post#3;class#HttpUtils#0" />
-            <element signature="method#post#4;class#HttpUtils#0" />
-            <element signature="method#post#5;class#HttpUtils#0" />
-            <element signature="method#put#0;class#HttpUtils#0" />
-            <element signature="method#delete#2;class#HttpUtils#0" />
-            <element signature="method#delete#3;class#HttpUtils#0" />
-            <element signature="e#4757#4792#0" />
-            <element signature="method#request#0;class#HttpUtils#0" />
-            <element signature="method#request#1;class#HttpUtils#0" />
-            <element signature="e#5123#5917#0" />
-            <element signature="e#5296#5354#1" />
-            <element signature="e#5386#5462#1" />
-            <element signature="e#5662#5790#1" />
-            <element signature="e#5940#5981#0" />
-            <element signature="method#setHeaders#0;class#HttpUtils#0" />
-            <element signature="e#6146#6228#1" />
-            <element signature="method#setData#0;class#HttpUtils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/AudioSystemManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="method#AudioSystemManager#0;class#AudioSystemManager#0" />
-            <element signature="method#loadResource#0;class#AudioSystemManager#0" />
-            <element signature="method#setSoundEnabled#0;class#AudioSystemManager#0" />
-            <element signature="e#996#1223#1" />
-            <element signature="e#1049#1213#1" />
-            <element signature="e#1085#1141#1" />
-            <element signature="e#1147#1199#1" />
-            <element signature="method#play#1;class#AudioSystemManager#0" />
-            <element signature="e#1390#1421#1" />
-            <element signature="method#dispose#0;class#AudioSystemManager#0" />
-            <element signature="e#1642#1678#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/EventDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/MultiSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="method#count#0;class#MultiSet#0" />
-            <element signature="method#setCount#0;class#MultiSet#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="method#main#0;class#TestRunner#0" />
-            <element signature="method#test1#0;class#TestRunner#0" />
-            <element signature="e#540#724#1" />
-            <element signature="e#582#714#1" />
-            <element signature="e#626#700#1" />
-            <element signature="e#785#889#1" />
-            <element signature="method#test2#0;class#TestRunner#0" />
-            <element signature="e#2499#3341#1" />
-            <element signature="e#2542#2594#1" />
-            <element signature="e#2669#2841#1" />
-            <element signature="e#2715#2827#1" />
-            <element signature="e#2754#2809#1" />
-            <element signature="e#3063#3157#1" />
-            <element signature="method#test3#0;class#TestRunner#0" />
-            <element signature="method#test4#0;class#TestRunner#0" />
-            <element signature="e#3980#4071#1" />
-            <element signature="method#test5#0;class#TestRunner#0" />
-            <element signature="e#4246#4612#1" />
-            <element signature="e#4288#4602#1" />
-            <element signature="e#4334#4588#1" />
-            <element signature="e#4388#4570#1" />
-            <element signature="method#test6#0;class#TestRunner#0" />
-            <element signature="e#4769#4826#1" />
-            <element signature="e#4916#5588#1" />
-            <element signature="e#4990#5061#1" />
-            <element signature="method#test7#0;class#TestRunner#0" />
-            <element signature="e#5725#7011#1" />
-            <element signature="e#5819#6802#1" />
-            <element signature="e#5942#6050#1" />
-            <element signature="e#6603#6787#1" />
-            <element signature="method#test8#0;class#TestRunner#0" />
-            <element signature="method#getCube#0;class#TestRunner#0" />
-            <element signature="e#7379#7454#1" />
-            <element signature="method#getPiramid#0;class#TestRunner#0" />
-            <element signature="method#testEnd#0;class#TestRunner#0" />
-            <element signature="e#7977#8024#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/DataReader.java">
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/AlgUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/GraphUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <element signature="method#DataReader#0;class#DataReader#0" />
-            <element signature="e#350#424#0" />
-            <element signature="method#nextLine#0;class#DataReader#0" />
-            <element signature="e#635#680#0" />
-            <element signature="e#703#739#0" />
-            <element signature="method#nextToken#0;class#DataReader#0" />
-            <element signature="e#822#890#1" />
-            <element signature="method#close#0;class#DataReader#0" />
-            <element signature="e#1314#1349#0" />
+            <element signature="e#146#174#0" />
+            <element signature="e#271#1204#0" />
+            <element signature="e#522#1060#1" />
+            <element signature="e#589#694#1" />
+            <element signature="e#632#680#1" />
+            <element signature="e#824#1050#1" />
+            <element signature="e#861#1036#1" />
+            <element signature="e#900#959#1" />
+            <element signature="e#1097#1180#1" />
+            <element signature="e#1128#1170#1" />
+            <element signature="e#1210#2348#0" />
+            <element signature="class#1268:1575" />
+            <element signature="method#V#0;class#1268:1575" />
+            <element signature="method#compareTo#0;class#1268:1575" />
+            <element signature="e#1806#2204#1" />
+            <element signature="e#1876#2194#1" />
+            <element signature="e#1915#2180#1" />
+            <element signature="e#2005#2162#1" />
+            <element signature="e#2241#2324#1" />
+            <element signature="e#2272#2314#1" />
+            <element signature="e#2354#3397#0" />
+            <element signature="e#2496#2782#0" />
+            <element signature="e#2583#2772#1" />
+            <element signature="e#2848#2948#0" />
+            <element signature="e#3146#3288#0" />
+            <element signature="e#3403#4630#0" />
+            <element signature="e#3654#4602#1" />
+            <element signature="e#3754#3971#1" />
+            <element signature="e#3844#3928#1" />
+            <element signature="e#4112#4591#1" />
+            <element signature="e#4206#4577#1" />
+            <element signature="e#4243#4475#1" />
+            <element signature="e#4727#5040#0" />
+            <element signature="e#4835#5034#1" />
+            <element signature="e#4877#5024#1" />
+            <element signature="e#4923#5010#1" />
+            <element signature="e#5046#5575#0" />
+            <element signature="e#5274#5551#1" />
+            <element signature="e#5316#5541#1" />
+            <element signature="e#5370#5527#1" />
+            <element signature="e#5450#5509#1" />
+            <element signature="e#5582#5982#0" />
+            <element signature="e#5819#5951#1" />
+            <element signature="e#5898#5941#1" />
+            <element signature="e#5988#6375#0" />
+            <element signature="e#6092#6129#1" />
+            <element signature="e#6189#6347#1" />
+            <element signature="e#6265#6337#1" />
+            <element signature="e#6381#6786#0" />
+            <element signature="e#6623#6755#1" />
+            <element signature="e#6702#6745#1" />
+            <element signature="e#6792#7173#0" />
+            <element signature="e#6894#6931#1" />
+            <element signature="e#6994#7145#1" />
+            <element signature="e#7063#7135#1" />
+            <element signature="e#7180#7297#0" />
+            <element signature="e#7180#7860#0" />
+            <element signature="e#7504#7656#1" />
+            <element signature="e#7578#7646#1" />
+            <element signature="e#7788#7834#1" />
+            <element signature="e#7866#10397#0" />
+            <element signature="e#8063#8094#1" />
+            <element signature="e#8342#8516#1" />
+            <element signature="e#8373#8506#1" />
+            <element signature="e#8549#8641#1" />
+            <element signature="e#8674#10123#1" />
+            <element signature="e#8704#9155#1" />
+            <element signature="e#8775#9141#1" />
+            <element signature="e#8839#9123#1" />
+            <element signature="e#8882#8946#1" />
+            <element signature="e#9235#9349#1" />
+            <element signature="e#9281#9335#1" />
+            <element signature="e#9390#9630#1" />
+            <element signature="e#9418#9473#1" />
+            <element signature="e#9500#9555#1" />
+            <element signature="e#9561#9616#1" />
+            <element signature="e#9692#10113#1" />
+            <element signature="e#9735#10099#1" />
+            <element signature="e#9774#9866#1" />
+            <element signature="e#9935#10081#1" />
+            <element signature="e#10143#10391#1" />
+            <element signature="e#10220#10322#1" />
+            <element signature="e#10403#10847#0" />
+            <element signature="e#10682#10841#1" />
+            <element signature="e#10736#10831#1" />
+            <element signature="e#10944#11625#0" />
+            <element signature="e#11227#11595#1" />
+            <element signature="e#11332#11405#1" />
+            <element signature="e#11467#11556#1" />
+            <element signature="e#11631#12227#0" />
+            <element signature="e#11830#12199#1" />
+            <element signature="e#11921#12189#1" />
+            <element signature="e#12001#12175#1" />
+            <element signature="e#12097#12157#1" />
+            <element signature="e#12234#13197#0" />
+            <element signature="e#12532#12624#1" />
+            <element signature="e#12568#12614#1" />
+            <element signature="e#12723#12762#1" />
+            <element signature="e#12804#13072#1" />
+            <element signature="e#12959#13062#1" />
+            <element signature="e#13128#13167#1" />
+            <element signature="e#13203#13718#0" />
+            <element signature="e#13319#13712#1" />
+            <element signature="e#13370#13615#1" />
+            <element signature="e#13490#13545#1" />
+            <element signature="e#13551#13601#1" />
+            <element signature="e#13621#13702#1" />
+            <element signature="e#13724#13968#0" />
+            <element signature="e#13974#14283#0" />
+            <element signature="e#14115#14277#1" />
+            <element signature="e#14154#14267#1" />
+            <element signature="e#14872#15586#0" />
+            <element signature="e#15044#15285#1" />
+            <element signature="e#15086#15275#1" />
+            <element signature="e#15136#15261#1" />
+            <element signature="e#15317#15556#1" />
+            <element signature="e#15395#15546#1" />
+            <element signature="e#15592#15791#0" />
+            <element signature="e#15797#16252#0" />
+            <element signature="e#15955#16217#1" />
+            <element signature="e#16022#16207#1" />
+            <element signature="e#16085#16193#1" />
+            <element signature="e#16258#16701#0" />
+            <element signature="e#16394#16677#1" />
+            <element signature="e#16556#16667#1" />
+            <element signature="e#16708#17419#0" />
+            <element signature="e#16892#17389#1" />
+            <element signature="e#16988#17026#1" />
+            <element signature="e#17132#17205#1" />
+            <element signature="e#17269#17350#1" />
+            <element signature="e#17425#17812#0" />
+            <element signature="e#17578#17784#1" />
+            <element signature="e#17625#17774#1" />
+            <element signature="e#17708#17760#1" />
+            <element signature="e#17819#18460#0" />
+            <element signature="e#18066#18430#1" />
+            <element signature="e#18173#18246#1" />
+            <element signature="e#18310#18391#1" />
+            <element signature="e#18466#19036#0" />
+            <element signature="e#18649#19008#1" />
+            <element signature="e#18759#18998#1" />
+            <element signature="e#18810#18984#1" />
+            <element signature="e#18906#18966#1" />
+            <element signature="e#19043#19808#0" />
+            <element signature="e#19315#19778#1" />
+            <element signature="e#19364#19768#1" />
+            <element signature="e#19479#19560#1" />
+            <element signature="e#19628#19721#1" />
+            <element signature="e#19814#20400#0" />
+            <element signature="e#20006#20372#1" />
+            <element signature="e#20116#20362#1" />
+            <element signature="e#20174#20348#1" />
+            <element signature="e#20270#20330#1" />
+            <element signature="e#20407#21483#0" />
+            <element signature="e#20696#20788#1" />
+            <element signature="e#20732#20778#1" />
+            <element signature="e#20981#21026#1" />
+            <element signature="e#21073#21358#1" />
+            <element signature="e#21228#21331#1" />
+            <element signature="e#21414#21453#1" />
+            <element signature="e#21489#22063#0" />
+            <element signature="e#21633#22057#1" />
+            <element signature="e#21664#21912#1" />
+            <element signature="e#21781#21842#1" />
+            <element signature="e#21848#21898#1" />
+            <element signature="e#21918#22047#1" />
+            <element signature="e#22069#22298#0" />
+            <element signature="e#22304#22733#0" />
+            <element signature="e#22406#22452#0" />
+            <element signature="e#22565#22727#1" />
+            <element signature="e#22606#22717#1" />
+            <element signature="e#22740#23518#0" />
+            <element signature="e#23027#23488#1" />
+            <element signature="e#23076#23478#1" />
+            <element signature="e#23189#23270#1" />
+            <element signature="e#23338#23431#1" />
+            <element signature="e#23524#24114#0" />
+            <element signature="e#23719#24086#1" />
+            <element signature="e#23830#24076#1" />
+            <element signature="e#23888#24062#1" />
+            <element signature="e#23984#24044#1" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/structures/InMemoryCache.java">
+    <entry file="file://$PROJECT_DIR$/algorithms/src/main/java/com/simplejcode/commons/algo/d3/Plane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="183" lean-forward="true" selection-start-line="183" selection-end-line="183" />
+        <state relative-caret-position="289">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
-            <element signature="class#CacheEntry#0;class#InMemoryCache#0" />
-            <element signature="method#CacheEntry#0;class#CacheEntry#0;class#InMemoryCache#0" />
-            <element signature="method#InMemoryCache#0;class#InMemoryCache#0" />
-            <element signature="method#get#0;class#InMemoryCache#0" />
-            <element signature="method#put#1;class#InMemoryCache#0" />
-            <element signature="method#remove#0;class#InMemoryCache#0" />
-            <element signature="method#getCached#0;class#InMemoryCache#0" />
-            <element signature="method#getCached#1;class#InMemoryCache#0" />
-            <element signature="method#toString#0;class#InMemoryCache#0" />
-            <element signature="method#putEntry#0;class#InMemoryCache#0" />
-            <element signature="method#removeEntry#0;class#InMemoryCache#0" />
-            <element signature="method#update#0;class#InMemoryCache#0" />
-            <element signature="method#clear#0;class#InMemoryCache#0" />
-            <element signature="method#clearAll#0;class#InMemoryCache#0" />
-            <element signature="method#clear#1;class#InMemoryCache#0" />
-            <element signature="method#generateCacheKey#0;class#InMemoryCache#0" />
+            <element signature="method#Plane#0;class#Plane#0" />
+            <element signature="method#Plane#1;class#Plane#0" />
+            <element signature="method#Plane#2;class#Plane#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/AudioClipWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AudioClipWrapper#0;class#AudioClipWrapper#0" />
+            <element signature="method#play#0;class#AudioClipWrapper#0" />
+            <element signature="method#stop#0;class#AudioClipWrapper#0" />
           </folding>
         </state>
       </provider>
