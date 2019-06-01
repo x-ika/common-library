@@ -1,6 +1,6 @@
 package com.simplejcode.commons.misc._pattern.pool;
 
-import com.simplejcode.commons.misc.ThreadUtils;
+import com.simplejcode.commons.misc.util.ThreadUtils;
 
 import java.util.*;
 
