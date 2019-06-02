@@ -3,7 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="3e1851f7-0b13-49f0-a57d-0b902b31826b" name="Default Changelist" comment="Major update starting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/StreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/StreamUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/server/gui/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/server/gui/AdminFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop/server/src/server/main/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../desktop/server/src/server/main/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktopa/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktopa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktopa/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../desktopa/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../project/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pchallenge/client/src/api/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pchallenge/client/src/api/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pchallenge/client/src/gui/SolutionSubmitForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pchallenge/client/src/gui/SolutionSubmitForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pchallenge/server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pchallenge/server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pchallenge/server/src/logic/SubmissionProcessThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pchallenge/server/src/logic/SubmissionProcessThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/pchallenge/server/src/logic/SystemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/pchallenge/server/src/logic/SystemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/solvers/simplepoker/src/simplepoker/gui/PokerTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/solvers/sudoku/src/sudoku/SudokuTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/solvers/sudoku/src/sudoku/SudokuTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/table-games/game-admin/src/ika/games/admin/AdminPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/table-games/game-admin/src/ika/games/admin/AdminPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/table-games/game-controller/src/ika/games/base/controller/GameRandom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/table-games/game-server/src/ika/games/gameserver/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/table-games/game-server/src/ika/games/gameserver/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/table-games/games/joker-controller/src/ika/games/joker/server/logic/JokerLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/exam-checker/src/examchecker/processor/excel/ExcelIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/exam-checker/src/examchecker/processor/paper/PlanarTransformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/exam-checker/src/examchecker/processor/test/ICheckResultImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/exam-tools/src/LucidaRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/exam-tools/src/LucidaRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/excel-reader/src/proc/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/excel-reader/src/proc/DataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/onjob-client/src/onjobclient/OnJobClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/onjob-client/src/onjobclient/OnJobClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/queuemng/client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/queuemng/client/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/tools/queuemng/server/src/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/tools/queuemng/server/src/MainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/var/skileton/src/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project/var/skileton/src/gui/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.build/" />
@@ -34,66 +62,7 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/SerializationUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="method#SerializationUtils#0;class#SerializationUtils#0" />
-                <element signature="method#stringToStringsList#0;class#SerializationUtils#0" />
-                <element signature="e#483#521#1" />
-                <element signature="e#574#658#1" />
-                <element signature="method#stringToLongsList#0;class#SerializationUtils#0" />
-                <element signature="e#867#905#1" />
-                <element signature="e#958#1013#1" />
-                <element signature="method#listToString#0;class#SerializationUtils#0" />
-                <element signature="e#1157#1193#1" />
-                <element signature="e#1275#1456#1" />
-                <element signature="e#1310#1363#1" />
-                <element signature="method#split#0;class#SerializationUtils#0" />
-                <element signature="e#1675#1765#1" />
-                <element signature="method#mapToString#0;class#SerializationUtils#0" />
-                <element signature="e#2034#2524#1" />
-                <element signature="e#2080#2514#1" />
-                <element signature="e#2130#2196#1" />
-                <element signature="method#stringToMap#0;class#SerializationUtils#0" />
-                <element signature="e#2737#3106#1" />
-                <element signature="e#2851#3096#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/StreamUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-              <folding>
-                <element signature="method#StreamUtils#0;class#StreamUtils#0" />
-                <element signature="method#find#0;class#StreamUtils#0" />
-                <element signature="e#402#490#1" />
-                <element signature="e#439#480#1" />
-                <element signature="method#filter#0;class#StreamUtils#0" />
-                <element signature="method#map#0;class#StreamUtils#0" />
-                <element signature="method#map#1;class#StreamUtils#0" />
-                <element signature="method#mapDistinct#0;class#StreamUtils#0" />
-                <element signature="method#reduce#0;class#StreamUtils#0" />
-                <element signature="method#mapReduce#0;class#StreamUtils#0" />
-                <element signature="method#mapReduce#1;class#StreamUtils#0" />
-                <element signature="method#list2map#0;class#StreamUtils#0" />
-                <element signature="method#list2map#1;class#StreamUtils#0" />
-                <element signature="method#list2list#0;class#StreamUtils#0" />
-                <element signature="method#list2list#1;class#StreamUtils#0" />
-                <element signature="e#2554#2724#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -169,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
@@ -181,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -189,56 +159,10 @@
               <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
               <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common-library" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="misc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,6 +252,8 @@
       <workItem from="1559412846643" duration="6177000" />
       <workItem from="1559419130867" duration="6462000" />
       <workItem from="1559425855137" duration="3799000" />
+      <workItem from="1559475853452" duration="51000" />
+      <workItem from="1559509465257" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="Major update starting">
       <created>1559414651372</created>
@@ -382,13 +308,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16591000" />
+    <option name="totallyTimeSpent" value="16671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1805,39 +1730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/SerializationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="method#SerializationUtils#0;class#SerializationUtils#0" />
-            <element signature="method#stringToStringsList#0;class#SerializationUtils#0" />
-            <element signature="e#483#521#1" />
-            <element signature="e#574#658#1" />
-            <element signature="method#stringToLongsList#0;class#SerializationUtils#0" />
-            <element signature="e#867#905#1" />
-            <element signature="e#958#1013#1" />
-            <element signature="method#listToString#0;class#SerializationUtils#0" />
-            <element signature="e#1157#1193#1" />
-            <element signature="e#1275#1456#1" />
-            <element signature="e#1310#1363#1" />
-            <element signature="method#split#0;class#SerializationUtils#0" />
-            <element signature="e#1675#1765#1" />
-            <element signature="method#mapToString#0;class#SerializationUtils#0" />
-            <element signature="e#2034#2524#1" />
-            <element signature="e#2080#2514#1" />
-            <element signature="e#2130#2196#1" />
-            <element signature="method#stringToMap#0;class#SerializationUtils#0" />
-            <element signature="e#2737#3106#1" />
-            <element signature="e#2851#3096#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/StreamUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="method#StreamUtils#0;class#StreamUtils#0" />
             <element signature="method#find#0;class#StreamUtils#0" />
@@ -1854,7 +1750,22 @@
             <element signature="method#list2map#1;class#StreamUtils#0" />
             <element signature="method#list2list#0;class#StreamUtils#0" />
             <element signature="method#list2list#1;class#StreamUtils#0" />
-            <element signature="e#2554#2724#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/src/main/java/com/simplejcode/commons/misc/util/SerializationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="method#SerializationUtils#0;class#SerializationUtils#0" />
+            <element signature="method#stringToStringsList#0;class#SerializationUtils#0" />
+            <element signature="e#483#521#1" />
+            <element signature="method#stringToLongsList#0;class#SerializationUtils#0" />
+            <element signature="method#listToString#0;class#SerializationUtils#0" />
+            <element signature="method#mapToString#0;class#SerializationUtils#0" />
+            <element signature="method#stringToMap#0;class#SerializationUtils#0" />
           </folding>
         </state>
       </provider>
