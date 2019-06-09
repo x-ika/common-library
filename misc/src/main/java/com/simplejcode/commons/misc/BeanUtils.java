@@ -1,7 +1,6 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.util.BeanDescriptorsCache;
-import com.simplejcode.commons.misc.util.ExceptionUtils;
+import com.simplejcode.commons.misc.util.*;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
@@ -120,7 +119,7 @@ public class BeanUtils {
         try {
             t2 = clazz.getConstructor().newInstance();
         } catch (ReflectiveOperationException e) {
-            throw ExceptionUtils.wrap(e);
+            throw convert(e);
         }
         memory.put(t1, t2);
         copyProperties(t1, t2, memory, ignoreProperties, depth);
@@ -191,7 +190,7 @@ public class BeanUtils {
             }
 
         } catch (Exception e) {
-            throw ExceptionUtils.wrap(e);
+            throw convert(e);
         }
     }
 
@@ -206,6 +205,12 @@ public class BeanUtils {
             return new ArrayDeque<>();
         }
         throw new RuntimeException("Unknown collection type: " + clazz);
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static RuntimeException convert(Exception e) {
+        return ExceptionUtils.wrap(e);
     }
 
 }
