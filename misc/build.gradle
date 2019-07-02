@@ -8,5 +8,6 @@ configurations {
     compileOnly.extendsFrom log4j
     compileOnly.extendsFrom apacheCommons
     compileOnly.extendsFrom gson
+    compileOnly.extendsFrom poi
 
 }
