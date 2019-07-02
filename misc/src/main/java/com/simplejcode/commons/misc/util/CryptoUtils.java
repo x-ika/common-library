@@ -34,42 +34,51 @@ public final class CryptoUtils {
     //-----------------------------------------------------------------------------------
 
     public static String md5(String data) {
-        return getDigest("MD5", data.getBytes());
+        return toHex(md5(data.getBytes()));
+    }
+
+    public static byte[] md5(byte[] data) {
+        return getDigest("MD5", data);
     }
 
     public static String sha256(String data) {
-        return getDigest("SHA-256", data.getBytes());
+        return toHex(sha256(data.getBytes()));
+    }
+
+    public static byte[] sha256(byte[] data) {
+        return getDigest("SHA-256", data);
     }
 
     public static String hmacSha256(String key, String data) {
+        return toHex(hmacSha256(key.getBytes(), data.getBytes()));
+    }
+
+    public static byte[] hmacSha256(byte[] key, byte[] data) {
         return encryptUsing("HmacSHA256", key, data);
     }
 
     public static String hmacSha512(String key, String data) {
+        return toHex(hmacSha512(key.getBytes(), data.getBytes()));
+    }
+
+    public static byte[] hmacSha512(byte[] key, byte[] data) {
         return encryptUsing("HmacSHA512", key, data);
     }
 
-    public static String encryptUsing(String algorithm, String key, String data) {
+
+    public static byte[] encryptUsing(String algorithm, byte[] key, byte[] data) {
         try {
             Mac mac = Mac.getInstance(algorithm);
-            mac.init(new SecretKeySpec(key.getBytes(), algorithm));
-            return toHex(mac.doFinal(data.getBytes()));
+            mac.init(new SecretKeySpec(key, algorithm));
+            return mac.doFinal(data);
         } catch (Exception e) {
             throw convert(e);
         }
     }
 
-    public static String getDigest(String algorithm, byte[] data) {
+    public static byte[] getDigest(String algorithm, byte[] data) {
         try {
-            MessageDigest md = MessageDigest.getInstance(algorithm);
-            StringBuilder str = new StringBuilder(32);
-            for (int b : md.digest(data)) {
-                if (b < 0) {
-                    b += 256;
-                }
-                str.append((char) hexValue(b >> 4)).append((char) hexValue(b & 15));
-            }
-            return str.toString();
+            return MessageDigest.getInstance(algorithm).digest(data);
         } catch (Exception e) {
             throw convert(e);
         }

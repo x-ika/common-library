@@ -15,7 +15,7 @@ public final class ThreadUtils {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
-            throw ExceptionUtils.wrap(e);
+            throw convert(e);
         }
     }
 
@@ -59,7 +59,7 @@ public final class ThreadUtils {
         try {
             lock.wait(timeout);
         } catch (InterruptedException e) {
-            throw ExceptionUtils.wrap(e);
+            throw convert(e);
         }
     }
 
@@ -81,6 +81,12 @@ public final class ThreadUtils {
                 }
             }
         }
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static RuntimeException convert(Exception e) {
+        return ExceptionUtils.wrap(e);
     }
 
 }

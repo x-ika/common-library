@@ -1,8 +1,7 @@
 package com.simplejcode.commons.misc.util;
 
-import javax.xml.datatype.*;
-import java.sql.Timestamp;
 import java.text.*;
+import java.time.*;
 import java.util.*;
 
 public final class DateUtils {
@@ -11,6 +10,9 @@ public final class DateUtils {
     }
 
     //-----------------------------------------------------------------------------------
+    /*
+    Java 1.5
+     */
 
     public static final String DEFAULT_FORMAT = "dd.MM.yyyy HH:mm:ss";
 
@@ -91,62 +93,34 @@ public final class DateUtils {
         return parseDate(date, DEFAULT_FORMAT);
     }
 
+    //-----------------------------------------------------------------------------------
+    /*
+    Java 1.8
+     */
 
-    public static XMLGregorianCalendar convert(String date, String format) {
-        if (date == null) {
-            return null;
-        }
-        try {
-            GregorianCalendar c = new GregorianCalendar();
-            c.setTime(new SimpleDateFormat(format).parse(date));
-            return DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
-        } catch (Exception e) {
-            throw new RuntimeException(e.getMessage());
-        }
+    public static final ZoneOffset OFFSET = OffsetDateTime.now().getOffset();
+
+    public static LocalDateTime getCurrentTimestamp() {
+        return LocalDateTime.now();
     }
 
-    public static XMLGregorianCalendar long2XmlGregorian(long date) {
-        DatatypeFactory dataTypeFactory;
-        try {
-            dataTypeFactory = DatatypeFactory.newInstance();
-        } catch (DatatypeConfigurationException e) {
-            throw new RuntimeException(e);
-        }
-        GregorianCalendar gc = new GregorianCalendar();
-        gc.setTimeInMillis(date);
-        return dataTypeFactory.newXMLGregorianCalendar(gc);
+    public static LocalDateTime fromTimestamp(long millis) {
+        return LocalDateTime.ofEpochSecond(millis / 1000, (int) (millis % 1000 * 1000_000), ZoneOffset.UTC);
+//        return LocalDateTime.ofInstant(Instant.ofEpochMilli(time), ZoneId.systemDefault());
     }
 
-    public static XMLGregorianCalendar timestamp2XmlGregorian(Timestamp ts) {
-        if (ts == null) {
-            return null;
-        }
-
-        long date = ts.getTime();
-        DatatypeFactory dataTypeFactory;
-        try {
-            dataTypeFactory = DatatypeFactory.newInstance();
-        } catch (DatatypeConfigurationException e) {
-            throw new RuntimeException(e);
-        }
-        GregorianCalendar gc = new GregorianCalendar();
-        gc.setTimeInMillis(date);
-        return dataTypeFactory.newXMLGregorianCalendar(gc);
+    public static long toTimestamp(LocalDateTime time) {
+        return time.toInstant(ZoneOffset.UTC).toEpochMilli();
     }
 
-    public static Date xmlGregorian2Date(XMLGregorianCalendar xmlGregorianCalendar) {
-        if (xmlGregorianCalendar == null) {
-            return null;
-        }
-        return xmlGregorianCalendar.toGregorianCalendar().getTime();
+    public static LocalDateTime convertFrom(LocalDateTime dateTime, ZoneOffset offset) {
+        return dateTime.atOffset(offset).withOffsetSameInstant(OFFSET).toLocalDateTime();
     }
 
-    public static Timestamp date2Timestamp(Date date) {
-        return date == null ? null : new Timestamp(date.getTime());
-    }
+    //-----------------------------------------------------------------------------------
 
-    public static Timestamp getCurrentTimestamp() {
-        return new Timestamp(System.currentTimeMillis());
+    private static RuntimeException convert(Exception e) {
+        return ExceptionUtils.wrap(e);
     }
 
 }

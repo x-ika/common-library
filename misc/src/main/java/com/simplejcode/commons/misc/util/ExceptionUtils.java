@@ -14,6 +14,10 @@ public final class ExceptionUtils {
         return new ExceptionWrapper(throwable);
     }
 
+    public static RuntimeException generate(String message) {
+        return new RuntimeException(message);
+    }
+
     public static String stringifyException(Throwable e) {
         StringWriter stm = new StringWriter();
         PrintWriter wrt = new PrintWriter(stm);

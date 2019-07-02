@@ -74,7 +74,7 @@ public final class HttpUtils {
 
     public static String getResponseData(HttpResponse response) {
         if (response.getError() != null) {
-            throw new RuntimeException(response.getError());
+            throw generate(response.getError());
         }
         return response.getResponse();
     }
@@ -210,6 +210,10 @@ public final class HttpUtils {
 
     private static RuntimeException convert(IOException e) {
         return ExceptionUtils.wrap(e);
+    }
+
+    private static RuntimeException generate(String message) {
+        return ExceptionUtils.generate(message);
     }
 
 }

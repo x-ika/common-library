@@ -23,7 +23,7 @@ public final class FlatJsonParser {
         if (json.charAt(0) == '{') {
             return parse(json, Map.class);
         }
-        throw new RuntimeException("JSON type not supported");
+        throw generate("JSON type not supported");
     }
 
     public static <T> T parse(String json, Class<T> clazz) {
@@ -73,6 +73,12 @@ public final class FlatJsonParser {
     public static BigDecimal extractDecimal(Object content, Object... keys) {
         String val = extractString(content, keys);
         return val == null ? null : new BigDecimal(val);
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static RuntimeException generate(String message) {
+        return ExceptionUtils.generate(message);
     }
 
 }
