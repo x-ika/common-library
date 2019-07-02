@@ -100,7 +100,7 @@ subprojects {
         javaxXmlBind                   'javax.xml.bind:jaxb-api:2.1'
 
         // java ee implementation libraries
-        hibernate                     'org.hibernate:hibernate-core:5.3.1.Final'
+        hibernate                      'org.hibernate:hibernate-core:5.3.1.Final'
 
         // third party libraries
         log4j                          'log4j:log4j:1.2.17'

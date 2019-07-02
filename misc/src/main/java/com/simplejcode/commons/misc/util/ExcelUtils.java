@@ -1,8 +1,8 @@
 package com.simplejcode.commons.misc.util;
 
-import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 
+import java.io.*;
 import java.util.*;
 
 public final class ExcelUtils {
@@ -11,39 +11,10 @@ public final class ExcelUtils {
     }
 
     //-----------------------------------------------------------------------------------
-    /*
-    Heavily Custom
-     */
 
-    public static CellStyle createHeaderStyle(Workbook workbook) {
-
-        CellStyle style = createCellStyle(workbook);
-        style.setFont(createFont(workbook, (short) 300));
-
-        return style;
+    public static CellStyle createCellStyle(Workbook workbook) {
+        return createCellStyle(workbook, (short) 0);
     }
-
-    public static CellStyle createContentStyle(Workbook workbook) {
-
-        CellStyle style = createCellStyle(workbook);
-        style.setFont(createFont(workbook, (short) 200));
-
-        return style;
-    }
-
-    public static CellStyle createWarnStyle(Workbook workbook) {
-
-        CellStyle style = createCellStyle(workbook, HSSFColor.HSSFColorPredefined.LIGHT_YELLOW.getIndex());
-        style.setFont(createFont(workbook, (short) 200));
-
-
-        return style;
-    }
-
-    //-----------------------------------------------------------------------------------
-    /*
-    More General
-     */
 
     public static CellStyle createCellStyle(Workbook workbook, short predefinedColor) {
         CellStyle style = workbook.createCellStyle();
@@ -63,19 +34,6 @@ public final class ExcelUtils {
         return style;
     }
 
-    public static CellStyle createCellStyle(Workbook workbook) {
-        CellStyle style = workbook.createCellStyle();
-        style.setAlignment(HorizontalAlignment.CENTER);
-        style.setVerticalAlignment(VerticalAlignment.CENTER);
-
-        style.setBorderLeft(BorderStyle.THIN);
-        style.setBorderRight(BorderStyle.THIN);
-        style.setBorderTop(BorderStyle.THIN);
-        style.setBorderBottom(BorderStyle.THIN);
-
-        return style;
-    }
-
     public static Font createFont(Workbook workbook, int height) {
         Font font = workbook.createFont();
         font.setBold(true);
@@ -90,6 +48,35 @@ public final class ExcelUtils {
             col.setCellValue(value == null ? "" : value.toString());
             col.setCellStyle(style);
         }
+    }
+
+    public static byte[] toByteArray(Workbook workbook) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        writeTo(workbook, out);
+        return out.toByteArray();
+    }
+
+    public static void writeToFile(Workbook workbook, File file) {
+        try {
+            writeTo(workbook, new FileOutputStream(file));
+        } catch (FileNotFoundException e) {
+            throw convert(e);
+        }
+    }
+
+    public static void writeTo(Workbook workbook, OutputStream out) {
+        try {
+            workbook.write(out);
+            out.close();
+        } catch (IOException e) {
+            throw convert(e);
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static RuntimeException convert(Exception e) {
+        return ExceptionUtils.wrap(e);
     }
 
 }
