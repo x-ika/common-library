@@ -12,6 +12,14 @@ public final class ExcelUtils {
 
     //-----------------------------------------------------------------------------------
 
+    public static Workbook createWorkbook(boolean xssf) {
+        try {
+            return WorkbookFactory.create(xssf);
+        } catch (IOException e) {
+            throw convert(e);
+        }
+    }
+
     public static CellStyle createCellStyle(Workbook workbook) {
         return createCellStyle(workbook, (short) 0);
     }

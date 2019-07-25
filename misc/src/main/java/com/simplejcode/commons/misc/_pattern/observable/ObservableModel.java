@@ -12,14 +12,11 @@ public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends
 
     protected int version;
 
-    protected List<IModelListener<T, D>> eventListeners;
-
-    private IModelListener[] _copy;
+    protected final List<IModelListener<T, D>> eventListeners;
 
 
     protected ObservableModel() {
         eventListeners = new Vector<>();
-        _copy = new IModelListener[9];
     }
 
     //-----------------------------------------------------------------------------------
@@ -27,28 +24,36 @@ public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends
     Public API
      */
 
-    public synchronized void update(D delta) {
+    public void update(D delta) {
 
-        if (delta == null) {
-            clear();
-        } else {
-            updateInternal(delta);
-            delta.version = version++;
+        synchronized (this) {
+            if (delta == null) {
+                clear();
+            } else {
+                updateInternal(delta);
+                delta.version = version++;
+            }
         }
 
         notifyListeners(delta);
 
     }
 
-    public synchronized void addListener(IModelListener listener) {
-        eventListeners.add(listener);
-        for (D delta : getFullState()) {
-            delta.version = version++;
-            notifyListeners(delta);
+    public void addListener(IModelListener<T, D> listener) {
+        Iterable<D> fullState;
+        synchronized (this) {
+            fullState = getFullState();
+        }
+        synchronized (eventListeners) {
+            for (D delta : fullState) {
+                notifyListener(listener, delta);
+            }
+            eventListeners.add(listener);
         }
     }
 
-    public synchronized void removeListener(IModelListener listener) {
+    public void removeListener(IModelListener listener) {
+        notifyListener(listener, null);
         eventListeners.remove(listener);
     }
 
@@ -58,23 +63,21 @@ public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends
      */
 
     protected void notifyListeners(D delta) {
-
-        eventListeners.toArray(_copy);
-
-        for (IModelListener listener : _copy) {
-            if (listener == null) {
-                break;
+        synchronized (eventListeners) {
+            for (IModelListener listener : eventListeners) {
+                if (listener == null) {
+                    break;
+                }
+                notifyListener(listener, delta);
             }
-            notifyListener(listener, delta);
         }
-
     }
 
     protected void notifyListener(IModelListener listener, D delta) {
         try {
             listener.modelChanged(this, delta);
         } catch (Exception e) {
-            logger.fatal("Error occurred while handling the model change event", e);
+            logger.error("Error occurred while handling the model change event", e);
         }
     }
 

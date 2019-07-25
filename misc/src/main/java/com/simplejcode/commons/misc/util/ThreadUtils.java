@@ -1,13 +1,18 @@
 package com.simplejcode.commons.misc.util;
 
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Supplier;
 
 public final class ThreadUtils {
 
     private ThreadUtils() {
     }
+
+    //-----------------------------------------------------------------------------------
+
+    private static Map<String, AtomicInteger> threadNumbers = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
 
@@ -38,6 +43,13 @@ public final class ThreadUtils {
     }
 
     public static Thread createThread(String name, Runnable runnable) {
+        return createThread(name, false, runnable);
+    }
+
+    public static Thread createThread(String name, boolean countThreads, Runnable runnable) {
+        if (countThreads) {
+            name += "-" + threadNumbers.computeIfAbsent(name, k -> new AtomicInteger()).incrementAndGet();
+        }
         return new Thread(runnable, name);
     }
 
@@ -50,7 +62,11 @@ public final class ThreadUtils {
     }
 
     public static void executeInNewThread(String name, Runnable runnable) {
-        createThread(name, runnable).start();
+        executeInNewThread(name, false, runnable);
+    }
+
+    public static void executeInNewThread(String name, boolean countThreads, Runnable runnable) {
+        createThread(name, countThreads, runnable).start();
     }
 
     //-----------------------------------------------------------------------------------

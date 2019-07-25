@@ -9,6 +9,16 @@ public final class ObjectUtils {
 
     //-----------------------------------------------------------------------------------
 
+    @SafeVarargs
+    public static <T> T nvl(T... ts) {
+        for (T t : ts) {
+            if (t != null) {
+                return t;
+            }
+        }
+        return null;
+    }
+
     public static <T> T nvl(T t, T def) {
         return t != null ? t : def;
     }

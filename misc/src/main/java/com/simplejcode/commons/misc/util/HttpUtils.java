@@ -13,6 +13,11 @@ public final class HttpUtils {
 
     //-----------------------------------------------------------------------------------
 
+    public static final String METHOD_GET =     "GET";
+    public static final String METHOD_POST =    "POST";
+    public static final String METHOD_PUT =     "PUT";
+    public static final String METHOD_DELETE =  "DELETE";
+
     public static final String JSON_CONTENT_TYPE = "application/json";
 
     private static final String UTF8 = "UTF-8";
@@ -52,7 +57,7 @@ public final class HttpUtils {
         return sb.length() == 0 ? "" : sb.substring(1);
     }
 
-    public static String concatHttpParameters(Map<Object, Object> params) {
+    public static String concatHttpParameters(Map<?, ?> params) {
         int n = params.size();
         if (n == 0) {
             return "";
@@ -97,7 +102,7 @@ public final class HttpUtils {
     }
 
     public static HttpResponse get(String uri, Map<String, String> headers, String charsetName) {
-        return request(uri, "GET", headers, null, charsetName);
+        return request(uri, METHOD_GET, headers, null, charsetName);
     }
 
 
@@ -119,16 +124,16 @@ public final class HttpUtils {
 
     public static HttpResponse post(String uri, Map<String, String> headers, Object requestBodyObject) {
         headers.put("Content-Type", "application/json");
-        return request(uri, "POST", headers, GSON.toJson(requestBodyObject), UTF8);
+        return request(uri, METHOD_POST, headers, GSON.toJson(requestBodyObject), UTF8);
     }
 
     public static HttpResponse post(String uri, Map<String, String> headers, String data, String charsetName) {
-        return request(uri, "POST", headers, data, charsetName);
+        return request(uri, METHOD_POST, headers, data, charsetName);
     }
 
 
     public static HttpResponse put(String uri, Map<String, String> headers, String data) {
-        return request(uri, "PUT", headers, data, UTF8);
+        return request(uri, METHOD_PUT, headers, data, UTF8);
     }
 
 
@@ -141,11 +146,11 @@ public final class HttpUtils {
     }
 
     public static HttpResponse delete(String uri, Map<String, String> headers, String data) {
-        return request(uri, "DELETE", headers, data, UTF8);
+        return request(uri, METHOD_DELETE, headers, data, UTF8);
     }
 
     public static HttpResponse delete(String uri, Map<String, String> headers, String data, String charsetName) {
-        return request(uri, "DELETE", headers, data, charsetName);
+        return request(uri, METHOD_DELETE, headers, data, charsetName);
     }
 
     //-----------------------------------------------------------------------------------
