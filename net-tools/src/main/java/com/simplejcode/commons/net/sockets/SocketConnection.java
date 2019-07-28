@@ -60,24 +60,12 @@ public abstract class SocketConnection<T> {
             return;
         }
         started = true;
-        new Thread() {
-            public void run() {
-                receiving();
-            }
-        }.start();
+        new Thread(this::receiving).start();
         if (queueCapacity > 0) {
-            new Thread() {
-                public void run() {
-                    sending();
-                }
-            }.start();
+            new Thread(this::sending).start();
         }
         if (pingIterval > 0) {
-            new Thread() {
-                public void run() {
-                    pinging();
-                }
-            }.start();
+            new Thread(this::pinging).start();
         }
     }
 

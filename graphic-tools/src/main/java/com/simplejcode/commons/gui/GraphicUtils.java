@@ -312,24 +312,22 @@ public final class GraphicUtils {
                 if (action == null) {
                     return;
                 }
-                new Thread() {
-                    public void run() {
-                        try {
-                            action.invoke(handler);
-                        } catch (Exception ex) {
-                            if (onException != null) {
-                                try {
-                                    onException.invoke(handler, ex);
-                                } catch (Exception e1) {
-                                    // how many times?
-                                }
-                            } else {
-                                ex.printStackTrace();
-                                System.out.println("Exception thrown when handling the action.");
+                new Thread(() -> {
+                    try {
+                        action.invoke(handler);
+                    } catch (Exception ex) {
+                        if (onException != null) {
+                            try {
+                                onException.invoke(handler, ex);
+                            } catch (Exception e1) {
+                                // how many times?
                             }
+                        } else {
+                            ex.printStackTrace();
+                            System.out.println("Exception thrown when handling the action.");
                         }
                     }
-                }.start();
+                }).start();
             }
         };
     }

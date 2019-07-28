@@ -22,17 +22,15 @@ public class GameWindow extends Frame implements KeyListener, MouseMotionListene
 
         buffer = GraphicUtils.getDevice().getDefaultConfiguration().createCompatibleImage(W, H);
 
-        new Thread() {
-            public void run() {
-                while (isVisible()) {
-                    if (repaint) {
-                        render(buffer.createGraphics());
-                        getGraphics().drawImage(buffer, 0, 0, null);
-                        yield();
-                    }
+        new Thread(() -> {
+            while (isVisible()) {
+                if (repaint) {
+                    render(buffer.createGraphics());
+                    getGraphics().drawImage(buffer, 0, 0, null);
+                    Thread.yield();
                 }
             }
-        }.start();
+        }).start();
 
         addKeyListener(this);
         addMouseMotionListener(this);

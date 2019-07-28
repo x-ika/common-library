@@ -53,12 +53,10 @@ public class MultiStateObject {
     }
 
     public synchronized void sleep(final long millis, final int slot) {
-        new Thread() {
-            public void run() {
-                ThreadUtils.sleep(millis);
-                MultiStateObject.this.notify(slot);
-            }
-        }.start();
+        new Thread(() -> {
+            ThreadUtils.sleep(millis);
+            MultiStateObject.this.notify(slot);
+        }).start();
         waitFor(slot);
         clear(slot);
     }

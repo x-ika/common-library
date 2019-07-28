@@ -32,35 +32,31 @@ public abstract class ConnectionsManager<T> extends ConnectionAdapter<T> {
         running = true;
         if (port > 0) {
             serverSocket = new ServerSocket(port);
-            new Thread() {
-                public void run() {
-                    while (running) {
-                        try {
-                            addConnection(create(serverSocket.accept()));
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+            new Thread(() -> {
+                while (running) {
+                    try {
+                        addConnection(create(serverSocket.accept()));
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
                 }
-            }.start();
+            }).start();
         }
         if (pingInterval > 0) {
-            new Thread() {
-                public void run() {
-                    while (running) {
-                        try {
-                            Thread.sleep(pingInterval);
-                        } catch (InterruptedException e) {
-                            // empty
-                        }
-                        synchronized (ConnectionsManager.this) {
-                            for (SocketConnection<T> connection : connections) {
-                                connection.sendPing();
-                            }
+            new Thread(() -> {
+                while (running) {
+                    try {
+                        Thread.sleep(pingInterval);
+                    } catch (InterruptedException e) {
+                        // empty
+                    }
+                    synchronized (ConnectionsManager.this) {
+                        for (SocketConnection<T> connection : connections) {
+                            connection.sendPing();
                         }
                     }
                 }
-            }.start();
+            }).start();
         }
     }
 
@@ -114,11 +110,7 @@ public abstract class ConnectionsManager<T> extends ConnectionAdapter<T> {
     //-----------------------------------------------------------------------------------
 
     public void messageReceived(final SocketConnection<T> source, final T message) {
-        new Thread() {
-            public void run() {
-                handleMessageReceived(source, message);
-            }
-        }.start();
+        new Thread(() -> handleMessageReceived(source, message)).start();
     }
 
     public void disconnected(final SocketConnection<T> source) {

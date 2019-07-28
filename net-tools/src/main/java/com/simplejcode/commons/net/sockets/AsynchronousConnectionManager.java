@@ -114,78 +114,70 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
     private void startListening() throws IOException {
         serverChannel = AsynchronousServerSocketChannel.open();
         serverChannel.bind(new InetSocketAddress(port));
-        new Thread() {
-            public void run() {
-                while (running) {
-                    try {
-                        addConnection(create(serverChannel.accept().get()));
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+        new Thread(() -> {
+            while (running) {
+                try {
+                    addConnection(create(serverChannel.accept().get()));
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
-        }.start();
+        }).start();
     }
 
     private void startReading() {
-        new Thread() {
-            public void run() {
-                while (running) {
-                    synchronized (connections) {
-                        for (AsynchronousConnection connection : connections) {
-                            connection.tryRead(soTimout);
-                        }
-                    }
-                    synchronized (readerThreadLock) {
-                        try {
-                            readerThreadLock.wait(1000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
+        new Thread(() -> {
+            while (running) {
+                synchronized (connections) {
+                    for (AsynchronousConnection connection : connections) {
+                        connection.tryRead(soTimout);
                     }
                 }
-            }
-        }.start();
-    }
-
-    private void startWritting() {
-        new Thread() {
-            public void run() {
-                while (running) {
-                    synchronized (connections) {
-                        for (AsynchronousConnection connection : connections) {
-                            connection.tryWrite();
-                        }
-                    }
-                    synchronized (writerThreadLock) {
-                        try {
-                            writerThreadLock.wait(1000);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
-        }.start();
-    }
-
-    private void startPinging() {
-        new Thread() {
-            public void run() {
-                while (running) {
-                    synchronized (connections) {
-                        for (AsynchronousConnection connection : connections) {
-                            connection.ping();
-                        }
-                    }
+                synchronized (readerThreadLock) {
                     try {
-                        sleep(pingInterval);
+                        readerThreadLock.wait(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
             }
-        }.start();
+        }).start();
+    }
+
+    private void startWritting() {
+        new Thread(() -> {
+            while (running) {
+                synchronized (connections) {
+                    for (AsynchronousConnection connection : connections) {
+                        connection.tryWrite();
+                    }
+                }
+                synchronized (writerThreadLock) {
+                    try {
+                        writerThreadLock.wait(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+    }
+
+    private void startPinging() {
+        new Thread(() -> {
+            while (running) {
+                synchronized (connections) {
+                    for (AsynchronousConnection connection : connections) {
+                        connection.ping();
+                    }
+                }
+                try {
+                    Thread.sleep(pingInterval);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 
     private void notifyThread(final Object threadLockObject) {
