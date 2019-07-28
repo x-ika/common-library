@@ -9,9 +9,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class AsynchronousConnection {
 
-    private static final int EVENT_MESASAGE_RECEIVED = 1;
+    private static final int EVENT_MESSAGE_RECEIVED = 1;
     private static final int EVENT_RECEIVING_FAILED = 2;
-    private static final int EVENT_MESASAGE_SENT = 3;
+    private static final int EVENT_MESSAGE_SENT = 3;
     private static final int EVENT_SENDING_FAILED = 4;
     private static final int EVENT_DISCONNECTED = 5;
 
@@ -212,7 +212,7 @@ public class AsynchronousConnection {
                 return;
             }
         }
-        notifyListeners(EVENT_MESASAGE_RECEIVED, Arrays.copyOf(readQueue, index), null);
+        notifyListeners(EVENT_MESSAGE_RECEIVED, Arrays.copyOf(readQueue, index), null);
     }
 
     private void readFailed(Throwable e) {
@@ -230,7 +230,7 @@ public class AsynchronousConnection {
         writeLock.lock();
         writting = false;
         writeLock.unlock();
-        notifyListeners(EVENT_MESASAGE_SENT, message, null);
+        notifyListeners(EVENT_MESSAGE_SENT, message, null);
     }
 
     private void writeFailed(Throwable e, byte[] message) {
@@ -245,13 +245,13 @@ public class AsynchronousConnection {
         for (AsynchronousConnectionListener listener : array) {
             try {
                 switch (eventType) {
-                    case EVENT_MESASAGE_RECEIVED:
+                    case EVENT_MESSAGE_RECEIVED:
                         listener.messageReceived(this, message);
                         break;
                     case EVENT_RECEIVING_FAILED:
                         listener.receivingFailed(this, ex);
                         break;
-                    case EVENT_MESASAGE_SENT:
+                    case EVENT_MESSAGE_SENT:
                         listener.messageSent(this, message);
                         break;
                     case EVENT_SENDING_FAILED:
