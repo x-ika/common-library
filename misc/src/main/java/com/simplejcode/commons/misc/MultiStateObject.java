@@ -7,7 +7,7 @@ public class MultiStateObject {
 
     private long[] endWait = new long[33];
     private int waiting;
-    private int state;
+    private volatile int state;
 
     public synchronized boolean isWaitingFor(int event) {
         return (waiting & 1 << event) != 0;
@@ -26,7 +26,7 @@ public class MultiStateObject {
 
     public synchronized long setWaitFlags(int event, long timeout) {
         waiting |= 1 << event;
-        return endWait[event] = System.currentTimeMillis() + timeout;
+        return endWait[event] = timeout == 0 ? 0 : System.currentTimeMillis() + timeout;
     }
 
     public synchronized void clear(int event) {
