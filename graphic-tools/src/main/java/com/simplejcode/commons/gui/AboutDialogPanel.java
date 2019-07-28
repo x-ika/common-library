@@ -29,7 +29,7 @@ public class AboutDialogPanel extends JPanel {
         g.setColor(Color.black);
         g.setFont(new Font("Curier", Font.PLAIN, 14));
         g.drawString("Program Version 1.0", 10, 20);
-        g.drawString("\u00A9 Irakli Merabishvili", 10, 50);
+        g.drawString("© Irakli Merabishvili", 10, 50);
         g.drawString("All rights reserved.", 10, 100);
 
         Point p1 = new Point(0, 120);
@@ -80,4 +80,5 @@ public class AboutDialogPanel extends JPanel {
     public void paint(Graphics gr) {
         gr.drawImage(content, 0, 0, this);
     }
+
 }
