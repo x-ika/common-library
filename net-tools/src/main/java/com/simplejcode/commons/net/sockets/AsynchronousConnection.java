@@ -53,7 +53,7 @@ public class AsynchronousConnection {
         readBuffer = ByteBuffer.allocateDirect(bufferCapacity);
         writeBuffer = ByteBuffer.allocateDirect(bufferCapacity);
 
-        readHandler = new CompletionHandler<Integer, Void>() {
+        readHandler = new CompletionHandler<>() {
             public void completed(Integer result, Void attachment) {
                 readCompleted(result);
             }
@@ -62,7 +62,7 @@ public class AsynchronousConnection {
                 readFailed(exc);
             }
         };
-        writeHandler = new CompletionHandler<Integer, byte[]>() {
+        writeHandler = new CompletionHandler<>() {
             public void completed(Integer result, byte[] attachment) {
                 writeCompleted(result, attachment);
             }

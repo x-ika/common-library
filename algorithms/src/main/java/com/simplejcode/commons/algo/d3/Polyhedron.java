@@ -96,8 +96,8 @@ public class Polyhedron {
 
         buildSurface();
 
-        Collection<Point3D> c1 = new ArrayList<Point3D>();
-        Collection<Point3D> c2 = new ArrayList<Point3D>();
+        Collection<Point3D> c1 = new ArrayList<>();
+        Collection<Point3D> c2 = new ArrayList<>();
 
         for (Point3D p : ps) {
             double s = plane.signum(p);
