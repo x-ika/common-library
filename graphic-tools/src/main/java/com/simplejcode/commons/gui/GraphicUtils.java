@@ -61,11 +61,11 @@ public final class GraphicUtils {
         return ((int) (255.99 * r) << 16) | ((int) (255.99 * g) << 8) | (int) (255.99 * b);
     }
 
-    public static void showImage(final BufferedImage image) {
+    public static void showImage(BufferedImage image) {
         showImage(image, 1, 1);
     }
 
-    public static void showImage(final BufferedImage image, final double sx, final double sy) {
+    public static void showImage(BufferedImage image, double sx, double sy) {
         JFrame f = new JFrame(VIS);
         f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         f.setSize((int) (image.getWidth() * sx + 10), (int) (image.getHeight() * sy + 50));
@@ -79,14 +79,14 @@ public final class GraphicUtils {
         centerOnScreen(f);
     }
 
-    public static void showPixels(final int[] pixels, int w, int h) {
+    public static void showPixels(int[] pixels, int w, int h) {
         final BufferedImage image = new BufferedImage(
                 w, h, BufferedImage.TYPE_INT_RGB);
         image.setRGB(0, 0, w, h, pixels, 0, w);
         showImage(image);
     }
 
-    public static void showPixels(final float[] pixels, int w, int h) {
+    public static void showPixels(float[] pixels, int w, int h) {
         int[] p = new int[w * h];
         for (int i = 0; i < pixels.length; i++) {
             p[i] = grayScale((int) (256 * pixels[i]));
@@ -112,7 +112,7 @@ public final class GraphicUtils {
         showPixels(p, w, h);
     }
 
-    public static void showMatrix(final int[][] a) {
+    public static void showMatrix(int[][] a) {
         final int d1 = 40, d2 = 40, x = 10, y = 20, n = a.length, m = a[0].length;
         JFrame f = new JFrame(VIS);
         f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -148,9 +148,9 @@ public final class GraphicUtils {
      * @param sy yourself
      * @param fs functions
      */
-    public static void showFunctions(final int a, final int b, final int d,
-                                     final double sx, final double sy,
-                                     final double[]... fs)
+    public static void showFunctions(int a, int b, int d,
+                                     double sx, double sy,
+                                     double[]... fs)
     {
         JFrame frame = new JFrame(VIS);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -184,7 +184,7 @@ public final class GraphicUtils {
      * @param y y
      * @param b graph
      */
-    public static void showGraph(final int w, final int h, final int[] x, final int[] y, final boolean[][] b) {
+    public static void showGraph(int w, int h, int[] x, int[] y, boolean[][] b) {
         JFrame f = new JFrame(VIS);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(w + 20, h + 50);
@@ -216,7 +216,7 @@ public final class GraphicUtils {
         centerOnScreen(f);
     }
 
-    public static void showGraph(final boolean[][] b) {
+    public static void showGraph(boolean[][] b) {
         JFrame f = new JFrame(VIS);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setSize(900, 600);
@@ -241,7 +241,7 @@ public final class GraphicUtils {
         centerOnScreen(f);
     }
 
-    public static void showGraph(final int[] a, int n) {
+    public static void showGraph(int[] a, int n) {
         boolean[][] b = new boolean[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
@@ -302,13 +302,13 @@ public final class GraphicUtils {
         return menuBar;
     }
 
-    public static AbstractAction createAction(String name, final Object handler, final Method action) {
+    public static AbstractAction createAction(String name, Object handler, Method action) {
         return createAction(name, handler, action, null);
     }
 
-    public static AbstractAction createAction(String name, final Object handler, final Method action, final Method onException) {
+    public static AbstractAction createAction(String name, Object handler, Method action, Method onException) {
         return new AbstractAction(name) {
-            public void actionPerformed(final ActionEvent e) {
+            public void actionPerformed(ActionEvent e) {
                 if (action == null) {
                     return;
                 }

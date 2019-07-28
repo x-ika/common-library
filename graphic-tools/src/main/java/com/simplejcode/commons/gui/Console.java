@@ -126,7 +126,7 @@ public class Console extends JPanel implements ActionListener, KeyListener {
         }
     }
 
-    private void appendToTextArea(final String line) {
+    private void appendToTextArea(String line) {
         if (EventQueue.isDispatchThread()) {
             doAppend(line);
         } else {

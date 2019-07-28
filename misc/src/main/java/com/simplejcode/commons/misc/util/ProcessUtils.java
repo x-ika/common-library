@@ -60,7 +60,7 @@ public final class ProcessUtils {
     private static int run(Process process, int waitTime) throws InterruptedException {
         long endTime = System.nanoTime() + (long) 1e6 * waitTime;
         do {
-            Thread.sleep(20);
+            ThreadUtils.sleep(20);
             //noinspection EmptyCatchBlock
             try {
                 return process.exitValue();

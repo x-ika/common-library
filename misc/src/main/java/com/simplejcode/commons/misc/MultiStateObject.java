@@ -36,15 +36,7 @@ public class MultiStateObject {
 
     public synchronized void waitFor(int event, long timeout) {
         long end = setWaitFlags(event, timeout);
-        while ((state & 1 << event) == 0) {
-            try {
-                wait(100);
-                if (timeout != 0 && System.currentTimeMillis() > end) {
-                    break;
-                }
-            } catch (InterruptedException ignore) {
-            }
-        }
+        ThreadUtils.waitUntil(this, () -> (state & 1 << event) != 0, end);
         state &= ~(1 << event);
     }
 
@@ -52,7 +44,7 @@ public class MultiStateObject {
         waitFor(event, 0);
     }
 
-    public synchronized void sleep(final long millis, final int slot) {
+    public synchronized void sleep(long millis, int slot) {
         new Thread(() -> {
             ThreadUtils.sleep(millis);
             MultiStateObject.this.notify(slot);

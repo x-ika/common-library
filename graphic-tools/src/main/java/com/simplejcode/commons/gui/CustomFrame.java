@@ -33,7 +33,7 @@ public class CustomFrame extends JFrame {
         validate();
     }
 
-    public void setJMenuBar(String[][] menuItemNames, final Object handler, Method onException, Method... actions) {
+    public void setJMenuBar(String[][] menuItemNames, Object handler, Method onException, Method... actions) {
         setJMenuBar(GraphicUtils.createMenuBar(menuItemNames, handler, onException, actions));
     }
 

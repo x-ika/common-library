@@ -70,7 +70,7 @@ public class ChatPanel extends JPanel {
         lowerTextArea.setText(text);
     }
 
-    public void writeText(final String message, final Color color) {
+    public void writeText(String message, Color color) {
         EventQueue.invokeLater(() -> {
             try {
 //                    StyleConstants.setForeground(style, color);

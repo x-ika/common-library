@@ -7,6 +7,8 @@ import java.util.*;
 
 public class AsynchronousConnectionManager implements AsynchronousConnectionListener {
 
+    private static final int IO_DELAY = 50;
+
     protected final int port, pingInterval, soTimout;
     protected boolean running;
 
@@ -89,7 +91,7 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
 
     //-----------------------------------------------------------------------------------
 
-    public void messageReceived(final AsynchronousConnection source, byte[] message) {
+    public void messageReceived(AsynchronousConnection source, byte[] message) {
         notifyThread(readerThreadLock);
     }
 
@@ -135,7 +137,7 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
                 }
                 synchronized (readerThreadLock) {
                     try {
-                        readerThreadLock.wait(1000);
+                        readerThreadLock.wait(IO_DELAY);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -154,7 +156,7 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
                 }
                 synchronized (writerThreadLock) {
                     try {
-                        writerThreadLock.wait(1000);
+                        writerThreadLock.wait(IO_DELAY);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -180,7 +182,7 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
         }).start();
     }
 
-    private void notifyThread(final Object threadLockObject) {
+    private void notifyThread(Object threadLockObject) {
         synchronized (threadLockObject) {
             threadLockObject.notify();
         }

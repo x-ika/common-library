@@ -12,6 +12,8 @@ public final class ThreadUtils {
 
     //-----------------------------------------------------------------------------------
 
+    private static final int WAIT_ACCURACY = 20;
+
     private static Map<String, AtomicInteger> threadNumbers = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
@@ -90,13 +92,16 @@ public final class ThreadUtils {
     }
 
     public static void waitFor(Object lock, Supplier<Boolean> condition, long timeout) {
-        long end = timeout == 0 ? 0 : System.currentTimeMillis() + timeout;
+        waitUntil(lock, condition, timeout == 0 ? 0 : System.currentTimeMillis() + timeout);
+    }
+
+    public static void waitUntil(Object lock, Supplier<Boolean> condition, long endTime) {
         //noinspection SynchronizationOnLocalVariableOrMethodParameter
         synchronized (lock) {
             while (!condition.get()) {
                 try {
-                    lock.wait(50);
-                    if (timeout != 0 && System.currentTimeMillis() > end) {
+                    lock.wait(WAIT_ACCURACY);
+                    if (endTime != 0 && System.currentTimeMillis() > endTime) {
                         break;
                     }
                 } catch (InterruptedException ignore) {

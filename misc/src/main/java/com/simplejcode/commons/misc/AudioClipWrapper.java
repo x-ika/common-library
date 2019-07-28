@@ -31,7 +31,7 @@ class AudioClipWrapper {
     }
 
 
-    void play(final boolean loop) {
+    void play(boolean loop) {
         ThreadUtils.executeInNewThread(() -> {
             try {
                 audioClip = AudioSystem.getClip();

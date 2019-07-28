@@ -24,7 +24,7 @@ public class DesktopFrame extends CustomFrame {
 
             private BufferedImage image;
 
-            public void paintComponent(final Graphics g) {
+            public void paintComponent(Graphics g) {
                 if (image == null || image.getWidth() != getWidth() || image.getHeight() != getHeight()) {
                     image = new BufferedImage(getWidth(), getHeight(), BufferedImage.TYPE_INT_RGB);
                     Graphics2D gr = image.createGraphics();

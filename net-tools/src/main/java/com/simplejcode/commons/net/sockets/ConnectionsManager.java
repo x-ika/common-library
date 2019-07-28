@@ -109,11 +109,11 @@ public abstract class ConnectionsManager<T> extends ConnectionAdapter<T> {
 
     //-----------------------------------------------------------------------------------
 
-    public void messageReceived(final SocketConnection<T> source, final T message) {
+    public void messageReceived(SocketConnection<T> source, T message) {
         new Thread(() -> handleMessageReceived(source, message)).start();
     }
 
-    public void disconnected(final SocketConnection<T> source) {
+    public void disconnected(SocketConnection<T> source) {
         removeConnection(source);
     }
 
