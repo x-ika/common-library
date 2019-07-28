@@ -61,6 +61,12 @@ public final class ThreadUtils {
         createThread(runnable).start();
     }
 
+    public static void executeInNewThread(Runnable runnable, Thread.UncaughtExceptionHandler handler) {
+        Thread thread = createThread(runnable);
+        thread.setUncaughtExceptionHandler(handler);
+        thread.start();
+    }
+
     public static void executeInNewThread(String name, Runnable runnable) {
         executeInNewThread(name, false, runnable);
     }
