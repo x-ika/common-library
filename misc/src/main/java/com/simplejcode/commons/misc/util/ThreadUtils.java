@@ -14,9 +14,14 @@ public final class ThreadUtils {
 
     private static final int WAIT_ACCURACY = 20;
 
+    private static final String DEFAULT_THREAD_NAME = "Custom Thread";
+
     private static Map<String, AtomicInteger> threadNumbers = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
+    /*
+    Various
+     */
 
     public static void sleep(long millis) {
         try {
@@ -39,9 +44,16 @@ public final class ThreadUtils {
     }
 
     //-----------------------------------------------------------------------------------
+    /*
+    Factory
+     */
 
     public static Thread createThread(Runnable runnable) {
-        return new Thread(runnable);
+        return createThread(DEFAULT_THREAD_NAME, true, runnable);
+    }
+
+    public static Thread createThread(Runnable runnable, Thread.UncaughtExceptionHandler handler) {
+        return createThread(DEFAULT_THREAD_NAME, true, runnable, handler);
     }
 
     public static Thread createThread(String name, Runnable runnable) {
@@ -49,24 +61,36 @@ public final class ThreadUtils {
     }
 
     public static Thread createThread(String name, boolean countThreads, Runnable runnable) {
+        return createThread(name, countThreads, runnable, null);
+    }
+
+    public static Thread createThread(String name, boolean countThreads,
+                                      Runnable runnable,
+                                      Thread.UncaughtExceptionHandler handler)
+    {
         if (countThreads) {
             name += "-" + threadNumbers.computeIfAbsent(name, k -> new AtomicInteger()).incrementAndGet();
         }
-        return new Thread(runnable, name);
+        Thread thread = new Thread(runnable, name);
+        thread.setUncaughtExceptionHandler(handler);
+        return thread;
     }
 
     public static ThreadFactory createThreadFactory(String name) {
         return r -> createThread(name, r);
     }
 
+    //-----------------------------------------------------------------------------------
+    /*
+    Execution
+     */
+
     public static void executeInNewThread(Runnable runnable) {
         createThread(runnable).start();
     }
 
     public static void executeInNewThread(Runnable runnable, Thread.UncaughtExceptionHandler handler) {
-        Thread thread = createThread(runnable);
-        thread.setUncaughtExceptionHandler(handler);
-        thread.start();
+        createThread(runnable, handler).start();
     }
 
     public static void executeInNewThread(String name, Runnable runnable) {
@@ -78,6 +102,9 @@ public final class ThreadUtils {
     }
 
     //-----------------------------------------------------------------------------------
+    /*
+    Waiting
+     */
 
     public static void wait(Object lock, long timeout) {
         try {
