@@ -89,7 +89,7 @@ public final class FileSystemUtils {
             writer.write(text);
             writer.close();
         } catch (IOException e) {
-            throw new RuntimeException("From write");
+            throw convert(e);
         }
     }
 

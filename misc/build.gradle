@@ -5,9 +5,14 @@ configurations {
     testCompile.extendsFrom junit
 
     compileOnly.extendsFrom javaxXmlBind
+    compileOnly.extendsFrom mail
+    compileOnly.extendsFrom ws
+    compileOnly.extendsFrom ejb
+
+    compileOnly.extendsFrom lombok
     compileOnly.extendsFrom log4j
     compileOnly.extendsFrom apacheCommons
-    compileOnly.extendsFrom gson
+    compileOnly.extendsFrom jsoniter
     compileOnly.extendsFrom poi
 
 }

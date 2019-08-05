@@ -1,5 +1,6 @@
 package com.simplejcode.commons.misc.util;
 
+import javax.ejb.EJBException;
 import java.io.*;
 import java.lang.reflect.*;
 
@@ -29,7 +30,8 @@ public final class ExceptionUtils {
     public static Throwable retrieveCause(Throwable throwable) {
         return retrieveCause(throwable,
                 UndeclaredThrowableException.class,
-                InvocationTargetException.class);
+                InvocationTargetException.class,
+                EJBException.class);
     }
 
     public static Throwable retrieveCauseIncludingCustoms(Throwable throwable) {

@@ -1,7 +1,5 @@
 package com.simplejcode.commons.misc.util;
 
-import com.google.gson.*;
-
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -18,11 +16,9 @@ public final class HttpUtils {
     public static final String METHOD_PUT =     "PUT";
     public static final String METHOD_DELETE =  "DELETE";
 
-    public static final String JSON_CONTENT_TYPE = "application/json";
+    public static final String CONTENT_TYPE_JSON = "application/json";
 
     private static final String UTF8 = "UTF-8";
-
-    private static final Gson GSON = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").create();
 
     //-----------------------------------------------------------------------------------
     /*
@@ -124,7 +120,7 @@ public final class HttpUtils {
 
     public static HttpResponse post(String uri, Map<String, String> headers, Object requestBodyObject) {
         headers.put("Content-Type", "application/json");
-        return request(uri, METHOD_POST, headers, GSON.toJson(requestBodyObject), UTF8);
+        return request(uri, METHOD_POST, headers, FlatJsonParser.serialize(requestBodyObject), UTF8);
     }
 
     public static HttpResponse post(String uri, Map<String, String> headers, String data, String charsetName) {

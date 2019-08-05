@@ -6,10 +6,12 @@ import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
 import java.util.*;
 
-@SuppressWarnings({"unchecked"})
+@SuppressWarnings("unchecked")
 public class BeanUtils {
 
     private static final String NO_IGNORE = "";
+
+    public static final BeanUtils EMPTY_INSTANCE = new BeanUtils();
 
 
     private TwoWayMap<Class> classMappings;
@@ -178,15 +180,6 @@ public class BeanUtils {
                     setter.invoke(t2, cloneClass(getter.invoke(t1), rightType, memory, NO_IGNORE, depth != null ? depth - 1 : null));
                 }
 
-                // 4. custom converters (localDate <-> sqlDate)
-                Object getterValue = getter.invoke(t1);
-                if (getterValue != null) {
-                    if (rightType.equals(java.sql.Date.class) && leftType.equals(java.time.LocalDate.class)) {
-                        setter.invoke(t2, java.sql.Date.valueOf((java.time.LocalDate) getterValue));
-                    } else if (leftType.equals(java.sql.Date.class) && rightType.equals(java.time.LocalDate.class)) {
-                        setter.invoke(t2, ((java.sql.Date) getterValue).toLocalDate());
-                    }
-                }
             }
 
         } catch (Exception e) {
@@ -204,13 +197,17 @@ public class BeanUtils {
         if (Queue.class.isAssignableFrom(clazz)) {
             return new ArrayDeque<>();
         }
-        throw new RuntimeException("Unknown collection type: " + clazz);
+        throw generate("Unknown collection type: " + clazz);
     }
 
     //-----------------------------------------------------------------------------------
 
     private static RuntimeException convert(Exception e) {
         return ExceptionUtils.wrap(e);
+    }
+
+    private static RuntimeException generate(String message) {
+        return ExceptionUtils.generate(message);
     }
 
 }

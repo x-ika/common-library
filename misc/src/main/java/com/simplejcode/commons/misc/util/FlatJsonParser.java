@@ -1,11 +1,11 @@
 package com.simplejcode.commons.misc.util;
 
-import com.google.gson.*;
+import com.jsoniter.JsonIterator;
+import com.jsoniter.output.JsonStream;
 
 import java.math.BigDecimal;
 import java.util.*;
 
-@SuppressWarnings("unchecked")
 public final class FlatJsonParser {
 
     private FlatJsonParser() {
@@ -13,21 +13,22 @@ public final class FlatJsonParser {
 
     //-----------------------------------------------------------------------------------
 
-    private static final Gson GSON = new GsonBuilder().create();
-
-
     public static Object parse(String json) {
         if (json.charAt(0) == '[') {
-            return parse(json, List.class);
+            return JsonIterator.deserialize(json, List.class);
         }
         if (json.charAt(0) == '{') {
-            return parse(json, Map.class);
+            return JsonIterator.deserialize(json, Map.class);
         }
         throw generate("JSON type not supported");
     }
 
     public static <T> T parse(String json, Class<T> clazz) {
-        return GSON.fromJson(json, clazz);
+        return JsonIterator.deserialize(json, clazz);
+    }
+
+    public static String serialize(Object object) {
+        return JsonStream.serialize(object);
     }
 
     //-----------------------------------------------------------------------------------
@@ -35,9 +36,15 @@ public final class FlatJsonParser {
     public static Object extractObject(Object content, Object... keys) {
         for (Object key : keys) {
             if (key instanceof String) {
+                if (!(content instanceof Map)) {
+                    return null;
+                }
                 content = ((Map) content).get(key);
             }
             if (key instanceof Integer) {
+                if (!(content instanceof List)) {
+                    return null;
+                }
                 content = ((List) content).get((Integer) key);
             }
         }

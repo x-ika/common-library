@@ -3,6 +3,7 @@ package com.simplejcode.commons.misc.util;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.util.*;
 
 public final class ExcelUtils {
@@ -78,6 +79,43 @@ public final class ExcelUtils {
             out.close();
         } catch (IOException e) {
             throw convert(e);
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    public static List<ExcelRow> parseFile(InputStream inputStream, int numberOfColumns) throws IOException {
+        Workbook workbook = WorkbookFactory.create(inputStream);
+        Sheet sheet = workbook.getSheetAt(0);
+
+        List<ExcelRow> rows = new ArrayList<>();
+
+        for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+            Row row = sheet.getRow(i);
+
+            ExcelRow excelRow = new ExcelRow();
+            for (int j = 0; j < numberOfColumns; j++) {
+                excelRow.getCells().add(new ExcelCell(getCellValue(row.getCell(j))));
+            }
+            rows.add(excelRow);
+        }
+
+        return rows;
+    }
+
+    private static Object getCellValue(Cell cell) {
+        if (cell == null) {
+            return null;
+        }
+        switch (cell.getCellType()) {
+            case NUMERIC:
+                return new BigDecimal(cell.getNumericCellValue());
+            case BOOLEAN:
+                return cell.getBooleanCellValue();
+            case STRING:
+                return cell.getStringCellValue();
+            default:
+                return null;
         }
     }
 

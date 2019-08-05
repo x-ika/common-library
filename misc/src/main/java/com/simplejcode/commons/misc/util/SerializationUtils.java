@@ -35,6 +35,9 @@ public final class SerializationUtils {
     }
 
     public static String listToString(List<?> list, String delimiter) {
+        if (list.isEmpty()) {
+            return "";
+        }
         return StreamUtils.reduce(list, new StringBuilder(), (s, t) -> s.append(delimiter).append(encode(t))).substring(1);
     }
 

@@ -38,14 +38,13 @@ public final class DecimalUtils {
 
     //-----------------------------------------------------------------------------------
 
-    public static BigDecimal inPercents(BigDecimal a, BigDecimal b) {
-        return inPercents(a, b, 0);
+    public static BigDecimal percentOf(BigDecimal amount, BigDecimal percents) {
+        return amount.multiply(percents).movePointLeft(2);
     }
 
-    public static BigDecimal inPercents(BigDecimal a, BigDecimal b, int scale) {
-        BigDecimal percent = a == null || b == null || b.signum() == 0 ? BigDecimal.ZERO :
+    public static BigDecimal inPercents(BigDecimal a, BigDecimal b) {
+        return a == null || b == null || b.signum() == 0 ? BigDecimal.ZERO :
                 a.divide(b, MathContext.DECIMAL64).movePointRight(2);
-        return setScale(percent, scale);
     }
 
     //-----------------------------------------------------------------------------------

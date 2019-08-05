@@ -1,6 +1,6 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.util.FileSystemUtils;
+import com.simplejcode.commons.misc.util.*;
 import org.apache.commons.configuration2.PropertiesConfiguration;
 
 import java.io.*;
@@ -64,7 +64,7 @@ public class PropertyManager {
 
             URL url = FileSystemUtils.getFileURL(propertiesFileName);
             if (url == null) {
-                throw new FileNotFoundException("Configuration was not found");
+                throw generate("Configuration was not found");
             }
             URLConnection conn = url.openConnection();
 
@@ -81,7 +81,7 @@ public class PropertyManager {
             }
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw convert(e);
         }
 
     }
@@ -90,8 +90,18 @@ public class PropertyManager {
         try {
             properties.write(new FileWriter(propertiesFileName));
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw convert(e);
         }
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static RuntimeException convert(Exception e) {
+        return ExceptionUtils.wrap(e);
+    }
+
+    private static RuntimeException generate(String message) {
+        return ExceptionUtils.generate(message);
     }
 
 }

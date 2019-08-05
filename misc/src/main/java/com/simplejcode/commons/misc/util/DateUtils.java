@@ -103,9 +103,20 @@ public final class DateUtils {
     Java 1.8
      */
 
+    public static final ZoneOffset OFFSET_UTC = ZoneOffset.UTC;
+
+
+    public static LocalDateTime fromTimestamp(long millis) {
+        return fromTimestamp(millis, OFFSET_UTC);
+    }
+
     public static LocalDateTime fromTimestamp(long millis, ZoneOffset originOffset) {
         return LocalDateTime.ofEpochSecond(millis / 1000, (int) (millis % 1000 * 1000_000), originOffset);
 //        return LocalDateTime.ofInstant(Instant.ofEpochMilli(time), ZoneId.systemDefault());
+    }
+
+    public static long toTimestamp(LocalDateTime time) {
+        return toTimestamp(time, OFFSET_UTC);
     }
 
     public static long toTimestamp(LocalDateTime time, ZoneOffset offset) {
@@ -116,6 +127,14 @@ public final class DateUtils {
         return dateTime.atOffset(fromOffset).withOffsetSameInstant(toOffset).toLocalDateTime();
     }
 
+
+    public static LocalDateTime parseDateTimeDefault(String dateTime) {
+        return LocalDateTime.parse(dateTime);
+    }
+
+    public static LocalDateTime parseDateTime(String dateTime, String pattern) {
+        return LocalDateTime.parse(dateTime, DateTimeFormatter.ofPattern(pattern));
+    }
 
     public static String formatDateTime(LocalDateTime time, String pattern) {
         return time.format(DateTimeFormatter.ofPattern(pattern));
