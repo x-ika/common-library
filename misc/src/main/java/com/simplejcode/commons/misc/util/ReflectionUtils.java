@@ -2,7 +2,7 @@ package com.simplejcode.commons.misc.util;
 
 import java.lang.reflect.Method;
 
-@SuppressWarnings({"unchecked"})
+@SuppressWarnings("unchecked")
 public final class ReflectionUtils {
 
     private ReflectionUtils() {

@@ -1,6 +1,8 @@
 package com.simplejcode.commons.misc.util;
 
 import java.math.*;
+import java.util.List;
+import java.util.function.Function;
 
 public final class DecimalUtils {
 
@@ -55,6 +57,16 @@ public final class DecimalUtils {
 
     public static boolean isNegative(BigDecimal decimal) {
         return decimal.signum() < 0;
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    public static <T> BigDecimal sum(List<T> list, Function<T, BigDecimal> mapper) {
+        BigDecimal sum = BigDecimal.ZERO;
+        for (T t : list) {
+            sum = sum.add(mapper.apply(t));
+        }
+        return sum;
     }
 
 }

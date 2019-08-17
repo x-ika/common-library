@@ -84,23 +84,27 @@ public final class ExcelUtils {
 
     //-----------------------------------------------------------------------------------
 
-    public static List<ExcelRow> parseFile(InputStream inputStream, int numberOfColumns) throws IOException {
-        Workbook workbook = WorkbookFactory.create(inputStream);
-        Sheet sheet = workbook.getSheetAt(0);
+    public static List<ExcelRow> parseFile(InputStream inputStream, int numberOfColumns) {
+        try {
+            Workbook workbook = WorkbookFactory.create(inputStream);
+            Sheet sheet = workbook.getSheetAt(0);
 
-        List<ExcelRow> rows = new ArrayList<>();
+            List<ExcelRow> rows = new ArrayList<>();
 
-        for (int i = 0; i <= sheet.getLastRowNum(); i++) {
-            Row row = sheet.getRow(i);
+            for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+                Row row = sheet.getRow(i);
 
-            ExcelRow excelRow = new ExcelRow();
-            for (int j = 0; j < numberOfColumns; j++) {
-                excelRow.getCells().add(new ExcelCell(getCellValue(row.getCell(j))));
+                ExcelRow excelRow = new ExcelRow();
+                for (int j = 0; j < numberOfColumns; j++) {
+                    excelRow.getCells().add(new ExcelCell(getCellValue(row.getCell(j))));
+                }
+                rows.add(excelRow);
             }
-            rows.add(excelRow);
-        }
 
-        return rows;
+            return rows;
+        } catch (IOException e) {
+            throw convert(e);
+        }
     }
 
     private static Object getCellValue(Cell cell) {

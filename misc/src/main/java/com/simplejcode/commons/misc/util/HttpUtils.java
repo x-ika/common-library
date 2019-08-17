@@ -162,6 +162,8 @@ public final class HttpUtils {
         try {
 
             HttpURLConnection conn = (HttpURLConnection) new URL(uri).openConnection();
+            conn.setConnectTimeout(10_000);
+            conn.setReadTimeout(60_000);
 
             conn.setRequestMethod(httpMethod);
 

@@ -1,7 +1,5 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.util.ObjectUtils;
-
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
@@ -28,8 +26,6 @@ public class InMemoryCache {
     }
 
 
-    private final TimeUnit timeUnit;
-
     private final long millis;
 
     private final CacheEntry[] cache;
@@ -41,23 +37,18 @@ public class InMemoryCache {
     private int currentIndex;
 
 
-    public InMemoryCache(TimeUnit timeUnit, int maximumStoreDuration) {
-        this.timeUnit = timeUnit;
-        millis = timeUnit.toMillis(1);
-        cache = new CacheEntry[maximumStoreDuration];
+    public InMemoryCache(TimeUnit timeUnit, int minimumStoreDuration, int maximumStoreDuration) {
+        millis = timeUnit.toMillis(minimumStoreDuration);
+        cache = new CacheEntry[maximumStoreDuration / minimumStoreDuration];
         map = new HashMap<>();
         currentIndex = 0;
-        lastUpdateTime = System.currentTimeMillis();
+        lastUpdateTime = System.currentTimeMillis() / millis * millis;
     }
 
     //-----------------------------------------------------------------------------------
     /*
     Public API
      */
-
-    public TimeUnit getTimeUnit() {
-        return timeUnit;
-    }
 
     public synchronized <T> T get(String key) {
         update();
@@ -96,14 +87,20 @@ public class InMemoryCache {
 
     @Override
     public synchronized String toString() {
+        String PREFIX = "\n    ";
         StringBuilder sb = new StringBuilder();
-        sb.append('\n').append(map.size());
+        sb.append("InMemoryCache {");
+        sb.append(PREFIX).append("Cache Size = ").append(map.size());
         for (int i = 0; i < cache.length; i++) {
-            sb.append('\n').append(i).append(": ");
+            if (cache[i] == null) {
+                continue;
+            }
+            sb.append(PREFIX).append(i).append(": ");
             for (CacheEntry entry = cache[i]; entry != null; entry = entry.next) {
-                sb.append(" {").append(entry.key).append(':').append(entry.value).append('}');
+                sb.append(" [").append(entry.key).append('=').append(entry.value).append(']');
             }
         }
+        sb.append("\n}");
         return sb.toString();
     }
 
@@ -123,13 +120,21 @@ public class InMemoryCache {
     }
 
     private Object removeEntry(String key) {
-        CacheEntry entry = map.get(key);
+        CacheEntry entry = map.remove(key);
         if (entry == null) {
             return null;
         }
         // eliminate entry
-        CacheEntry prev = ObjectUtils.nvl(entry.prev, cache[entry.index]);
-        prev.next = entry.next;
+        CacheEntry prev = entry.prev;
+        CacheEntry next = entry.next;
+        if (prev == null) {
+            cache[entry.index] = next;
+        } else {
+            prev.next = next;
+            if (next != null) {
+                next.prev = prev;
+            }
+        }
         return entry.value;
     }
 

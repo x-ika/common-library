@@ -27,8 +27,13 @@ public final class ObjectUtils {
         return t != null ? t : def.get();
     }
 
+
     public static <O, T> T nvl(O o, Function<O, T> get) {
-        return o != null ? get.apply(o) : null;
+        return nvl(o, get, (T) null);
+    }
+
+    public static <O, T> T nvl(O o, Function<O, T> get, T def) {
+        return o != null ? get.apply(o) : def;
     }
 
     public static <O, T> T nvl(O o, Function<O, T> get, Supplier<T> def) {

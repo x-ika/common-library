@@ -50,8 +50,14 @@ public final class BeanDescriptorsCache {
             descriptorMap.put(clazz, map);
 
         } catch (IntrospectionException e) {
-            throw ExceptionUtils.wrap(e);
+            throw convert(e);
         }
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private static RuntimeException convert(Exception e) {
+        return ExceptionUtils.wrap(e);
     }
 
 }
