@@ -90,7 +90,7 @@ subprojects {
         // third party libraries
         log4j
         lombok
-        apacheCommons
+        apacheConfiguration
         gson
         jsoniter
         poi
@@ -112,7 +112,7 @@ subprojects {
         log4j                          'log4j:log4j:1.2.17'
         lombok                         'org.projectlombok:lombok:1.18.8'
         annotationProcessor            ('org.projectlombok:lombok:1.18.8')
-        apacheCommons                  'org.apache.commons:commons-configuration2:2.0'
+        apacheConfiguration            'org.apache.commons:commons-configuration2:2.0'
         gson                           'com.google.code.gson:gson:2.8.5'
         jsoniter                       'com.jsoniter:jsoniter:0.9.23'
         poi                            'org.apache.poi:poi:4.0.1'
