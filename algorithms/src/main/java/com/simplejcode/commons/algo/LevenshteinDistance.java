@@ -1,6 +1,6 @@
 package com.simplejcode.commons.algo;
 
-import java.util.*;
+import java.util.Arrays;
 
 public final class LevenshteinDistance {
 

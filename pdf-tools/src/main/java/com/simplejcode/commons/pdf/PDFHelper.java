@@ -1,8 +1,8 @@
 package com.simplejcode.commons.pdf;
 
-import com.simplejcode.commons.pdf.layout.*;
 import com.simplejcode.commons.pdf.layout.Container;
 import com.simplejcode.commons.pdf.layout.Rectangle;
+import com.simplejcode.commons.pdf.layout.*;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.*;
@@ -13,8 +13,8 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.text.*;
 import java.time.Duration;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 
 /**
  * @author I. Merabishvili | HighPots

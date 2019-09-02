@@ -134,7 +134,7 @@ public class Polyhedron {
             }
         }
 
-        return new Polyhedron[] {
+        return new Polyhedron[]{
                 new Polyhedron(c1.toArray(new Point3D[0])),
                 new Polyhedron(c2.toArray(new Point3D[0]))
         };

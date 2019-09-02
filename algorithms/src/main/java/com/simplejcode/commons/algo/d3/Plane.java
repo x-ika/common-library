@@ -21,7 +21,7 @@ public class Plane {
         d = z - a * x - b * y;
     }
 
-    public Plane(Point3D a,  Point3D b, Point3D c) {
+    public Plane(Point3D a, Point3D b, Point3D c) {
         // https://en.wikipedia.org/wiki/Plane_(geometry)#Method_2
 
         d = -MatrixUtils.det9(

@@ -64,7 +64,8 @@ public final class FrameAccess implements ControllerListener, BufferTransferHand
     public synchronized void controllerUpdate(ControllerEvent evt) {
         if (evt instanceof ConfigureCompleteEvent ||
                 evt instanceof RealizeCompleteEvent ||
-                evt instanceof PrefetchCompleteEvent) {
+                evt instanceof PrefetchCompleteEvent)
+        {
             stateTransitionOK = true;
             notifyAll();
         } else if (evt instanceof ResourceUnavailableEvent) {

@@ -1,8 +1,8 @@
 package com.simplejcode.commons.pdf.layout;
 
 import java.awt.*;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 
 /**
  * @author I. Merabishvili | HighPots

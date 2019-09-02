@@ -235,7 +235,7 @@ public class TestRunner {
     }
 
     private static Polyhedron getPiramid() {
-        return new Polyhedron(new Point3D[] {
+        return new Polyhedron(new Point3D[]{
                 new Point3D(0, 0, 0),
                 new Point3D(1, 0, 0),
                 new Point3D(0, 1, 0),

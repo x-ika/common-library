@@ -11,7 +11,8 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 
 public final class VideoWriter
-        implements ControllerListener, DataSinkListener, PullBufferStream {
+        implements ControllerListener, DataSinkListener, PullBufferStream
+{
 
     private static final String PATH = "out";
 
@@ -45,7 +46,8 @@ public final class VideoWriter
     public synchronized void controllerUpdate(ControllerEvent evt) {
         if (evt instanceof ConfigureCompleteEvent ||
                 evt instanceof RealizeCompleteEvent ||
-                evt instanceof PrefetchCompleteEvent) {
+                evt instanceof PrefetchCompleteEvent)
+        {
             stateTransitionOK = true;
             notifyAll();
         } else if (evt instanceof ResourceUnavailableEvent) {
