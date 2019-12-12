@@ -86,6 +86,9 @@ public class BeanUtils {
         if (rightClass == null) {
             rightClass = classMappings.get(leftClass.getSuperclass());
         }
+        if (rightClass == null) {
+            throw ExceptionUtils.generate("No mapping class found for " + leftClass);
+        }
         return cloneClass(t1, (Class<T2>) rightClass, ignoreProperties, null);
     }
 
@@ -162,10 +165,9 @@ public class BeanUtils {
                     }
                     // 1.3 need to clone
                     Class<?> elementClass = collection.iterator().next().getClass();
-                    Class<?> toElementClass = classMappings.get(elementClass);
-                    if (toElementClass != null) {
-                        setter.invoke(t2, cloneCollection(collection, rightType, toElementClass));
-                    }
+                    Class<?> toElementClass = ObjectUtils.nvl(classMappings.get(elementClass), elementClass);
+                    // Workaround: class.getField().getGenericType()
+                    setter.invoke(t2, cloneCollection(collection, rightType, toElementClass));
                     continue;
                 }
 

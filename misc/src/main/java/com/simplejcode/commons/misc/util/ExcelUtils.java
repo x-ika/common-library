@@ -43,9 +43,9 @@ public final class ExcelUtils {
         return style;
     }
 
-    public static Font createFont(Workbook workbook, int height) {
+    public static Font createFont(Workbook workbook, boolean bold, int height) {
         Font font = workbook.createFont();
-        font.setBold(true);
+        font.setBold(bold);
         font.setFontHeight((short) height);
         return font;
     }
@@ -56,6 +56,32 @@ public final class ExcelUtils {
             Cell col = row.createCell(colInd++);
             col.setCellValue(value == null ? "" : value.toString());
             col.setCellStyle(style);
+        }
+    }
+
+    public static void populate(Sheet sheet, CellStyle[] styles, int rowInd, int colInd, List<?> values) {
+        Row row = sheet.getRow(rowInd);
+        for (int i = 0; i < styles.length; i++) {
+            Cell col = row.createCell(colInd++);
+            col.setCellStyle(styles[i]);
+            Object value = values.get(i);
+            if (value == null) {
+                continue;
+            }
+            if (value instanceof Boolean) {
+                col.setCellValue((Boolean) value);
+                continue;
+            }
+            if (value instanceof Double) {
+                col.setCellType(CellType.NUMERIC);
+                col.setCellValue((Double) value);
+                continue;
+            }
+            if (value instanceof Date) {
+                col.setCellValue((Date) value);
+                continue;
+            }
+            col.setCellValue(value.toString());
         }
     }
 

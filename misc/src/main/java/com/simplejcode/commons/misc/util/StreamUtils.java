@@ -36,6 +36,10 @@ public final class StreamUtils {
         return collection.stream().map(mapper).distinct().collect(Collectors.toList());
     }
 
+    public static <K, V> Set<V> mapToSet(Collection<K> collection, Function<K, V> mapper) {
+        return collection.stream().map(mapper).collect(Collectors.toSet());
+    }
+
     //-----------------------------------------------------------------------------------
 
     public static <K, V> V reduce(Collection<K> collection, V initial, BiFunction<V, K, V> reducer) {
