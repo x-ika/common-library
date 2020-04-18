@@ -1,5 +1,7 @@
 group 'com.simplejcode.commons'
 
+version '1.1.0'
+
 configurations {
 
     testCompile.extendsFrom junit
@@ -13,6 +15,9 @@ configurations {
     compileOnly.extendsFrom log4j
     compileOnly.extendsFrom apacheConfiguration
     compileOnly.extendsFrom jsoniter
+    compileOnly.extendsFrom gson
     compileOnly.extendsFrom poi
+    compileOnly.extendsFrom googleTwoFA
+    compileOnly.extendsFrom googleQrCode
 
 }

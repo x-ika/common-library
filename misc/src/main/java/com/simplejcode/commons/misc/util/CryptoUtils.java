@@ -57,6 +57,14 @@ public final class CryptoUtils {
         return encryptUsing("HmacSHA256", key, data);
     }
 
+    public static String hmacSha384(String key, String data) {
+        return toHex(hmacSha384(key.getBytes(), data.getBytes()));
+    }
+
+    public static byte[] hmacSha384(byte[] key, byte[] data) {
+        return encryptUsing("HmacSHA384", key, data);
+    }
+
     public static String hmacSha512(String key, String data) {
         return toHex(hmacSha512(key.getBytes(), data.getBytes()));
     }

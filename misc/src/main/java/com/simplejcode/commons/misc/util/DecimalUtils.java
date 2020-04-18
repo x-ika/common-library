@@ -34,8 +34,12 @@ public final class DecimalUtils {
         return setScale(d, newScale);
     }
 
-    public static BigDecimal setScale(BigDecimal d, int newScale) {
-        return d.setScale(newScale, RoundingMode.HALF_UP).stripTrailingZeros();
+    public static BigDecimal setScale(BigDecimal d, int maxScale) {
+        return d.setScale(maxScale, RoundingMode.HALF_UP).stripTrailingZeros();
+    }
+
+    public static BigDecimal truncate(BigDecimal d, int maxScale) {
+        return d.setScale(maxScale, RoundingMode.DOWN).stripTrailingZeros();
     }
 
     //-----------------------------------------------------------------------------------
@@ -47,6 +51,10 @@ public final class DecimalUtils {
     public static BigDecimal inPercents(BigDecimal a, BigDecimal b) {
         return a == null || b == null || b.signum() == 0 ? BigDecimal.ZERO :
                 a.divide(b, MathContext.DECIMAL64).movePointRight(2);
+    }
+
+    public static BigDecimal changePercent(BigDecimal prevValue, BigDecimal curValue) {
+        return inPercents(curValue, prevValue).subtract(DecimalUtils.HUNDRED);
     }
 
     //-----------------------------------------------------------------------------------
@@ -67,6 +75,24 @@ public final class DecimalUtils {
             sum = sum.add(mapper.apply(t));
         }
         return sum;
+    }
+
+    public static <T> BigDecimal min(List<T> list, Function<T, BigDecimal> mapper) {
+        BigDecimal min = null;
+        for (T t : list) {
+            BigDecimal cur = mapper.apply(t);
+            min = min == null ? cur : min.min(cur);
+        }
+        return min;
+    }
+
+    public static <T> BigDecimal max(List<T> list, Function<T, BigDecimal> mapper) {
+        BigDecimal max = null;
+        for (T t : list) {
+            BigDecimal cur = mapper.apply(t);
+            max = max == null ? cur : max.max(cur);
+        }
+        return max;
     }
 
 }

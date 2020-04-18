@@ -35,7 +35,7 @@ public final class MailUtils {
             authenticator = null;
         }
 
-        Session session = Session.getDefaultInstance(properties, authenticator);
+        Session session = Session.getInstance(properties, authenticator);
 
         //compose the message
         try {

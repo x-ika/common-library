@@ -1,5 +1,7 @@
 package com.simplejcode.commons.misc.util;
 
+import java.net.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public final class StringUtils {
@@ -9,26 +11,44 @@ public final class StringUtils {
 
     //-----------------------------------------------------------------------------------
 
-    public static boolean isNotBlank(String s) {
-        return !isBlank(s);
-    }
-
     public static boolean isBlank(String s) {
         return s == null || s.isEmpty();
+    }
+
+    public static boolean isNotBlank(String s) {
+        return !isBlank(s);
     }
 
     public static boolean isNullOrEmpty(String s) {
         return s == null || s.trim().isEmpty();
     }
 
-    public static boolean isLatinAlphabetAndSpace(String s) {
-        return StringUtils.isNotBlank(s) && s.matches("^[a-zA-Z ]*$");
-    }
-
     //-----------------------------------------------------------------------------------
     /*
     Efficient Constructing-Parsing
      */
+
+    public static String concat(char delimiter, List<?> list) {
+        if (list.isEmpty()) {
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        for (Object t : list) {
+            sb.append(delimiter).append(t == null ? "" : t.toString());
+        }
+        return sb.substring(1);
+    }
+
+    public static String concat(char delimiter, String... s) {
+        if (s.length == 0) {
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        for (String p : s) {
+            sb.append(delimiter).append(p == null ? "" : p);
+        }
+        return sb.substring(1);
+    }
 
     public static String repeat(String s, int n) {
         if (n == 0) {
@@ -43,12 +63,12 @@ public final class StringUtils {
         return new String(result);
     }
 
-    public static String[] parse(String s, char delim, char brace) {
+    public static String[] parse(String s, char delimiter, char brace) {
         List<String> args = new ArrayList<>();
         int last = 0;
         boolean inside = false;
         for (int i = 0; i <= s.length(); i++) {
-            if (!inside && (i == s.length() || s.charAt(i) == delim)) {
+            if (!inside && (i == s.length() || s.charAt(i) == delimiter)) {
                 if (last < i) {
                     args.add(s.substring(last, i));
                 }
@@ -65,6 +85,16 @@ public final class StringUtils {
         }
 
         return args.toArray(new String[0]);
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    public static String encode(Object t) {
+        return URLEncoder.encode(t.toString(), StandardCharsets.UTF_8);
+    }
+
+    public static String decode(String s) {
+        return URLDecoder.decode(s, StandardCharsets.UTF_8);
     }
 
     //-----------------------------------------------------------------------------------

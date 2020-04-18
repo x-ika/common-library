@@ -25,20 +25,19 @@ public final class DateUtils {
     }
 
     public static LocalDateTime fromTimestamp(long millis, ZoneOffset originOffset) {
-        return LocalDateTime.ofEpochSecond(millis / 1000, (int) (millis % 1000 * 1000_000), originOffset);
-//        return LocalDateTime.ofInstant(Instant.ofEpochMilli(time), ZoneId.systemDefault());
+        return LocalDateTime.ofInstant(Instant.ofEpochMilli(millis), originOffset);
     }
 
-    public static long toTimestamp(LocalDateTime time) {
-        return toTimestamp(time, OFFSET_UTC);
+    public static long toTimestamp(LocalDateTime dateTime) {
+        return toTimestamp(dateTime, OFFSET_UTC);
     }
 
-    public static long toTimestamp(LocalDateTime time, ZoneOffset offset) {
-        return time.toInstant(offset).toEpochMilli();
+    public static long toTimestamp(LocalDateTime dateTime, ZoneOffset offset) {
+        return dateTime.toInstant(offset).toEpochMilli();
     }
 
-    public static long toTimestamp(ZonedDateTime time) {
-        return time.toInstant().toEpochMilli();
+    public static long toTimestamp(ZonedDateTime dateTime) {
+        return dateTime.toInstant().toEpochMilli();
     }
 
     public static LocalDateTime convertOffset(LocalDateTime dateTime, ZoneOffset fromOffset, ZoneOffset toOffset) {
@@ -55,8 +54,12 @@ public final class DateUtils {
         return LocalDateTime.parse(dateTime, formatter);
     }
 
-    public static String formatDateTime(LocalDateTime time, String pattern) {
-        return time.format(DateTimeFormatter.ofPattern(pattern));
+    public static String formatDateTime(LocalDateTime dateTime, String pattern) {
+        return formatDateTime(dateTime, DateTimeFormatter.ofPattern(pattern));
+    }
+
+    public static String formatDateTime(LocalDateTime dateTime, DateTimeFormatter formatter) {
+        return dateTime.format(formatter);
     }
 
     public static String currentTime() {
@@ -69,8 +72,34 @@ public final class DateUtils {
         return parseDateTimeAsLong(dateTime, pattern, OFFSET_UTC);
     }
 
+    public static long parseDateTimeAsLong(String dateTime, DateTimeFormatter formatter) {
+        return parseDateTimeAsLong(dateTime, formatter, OFFSET_UTC);
+    }
+
     public static long parseDateTimeAsLong(String dateTime, String pattern, ZoneOffset offset) {
-        return toTimestamp(parseDateTime(dateTime, DateTimeFormatter.ofPattern(pattern)), offset);
+        return parseDateTimeAsLong(dateTime, DateTimeFormatter.ofPattern(pattern), offset);
+    }
+
+    public static long parseDateTimeAsLong(String dateTime, DateTimeFormatter formatter, ZoneOffset offset) {
+        return toTimestamp(parseDateTime(dateTime, formatter), offset);
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    public static YearMonth parseYearMonth(String yearMonth, String pattern) {
+        return parseYearMonth(yearMonth, DateTimeFormatter.ofPattern(pattern));
+    }
+
+    public static YearMonth parseYearMonth(String yearMonth, DateTimeFormatter formatter) {
+        return YearMonth.parse(yearMonth, formatter);
+    }
+
+    public static String formatYearMonth(YearMonth yearMonth, String pattern) {
+        return formatYearMonth(yearMonth, DateTimeFormatter.ofPattern(pattern));
+    }
+
+    public static String formatYearMonth(YearMonth yearMonth, DateTimeFormatter formatter) {
+        return yearMonth.format(formatter);
     }
 
     //-----------------------------------------------------------------------------------

@@ -10,13 +10,20 @@ public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends
     private static Logger logger = Logger.getLogger(ObservableModel.class);
 
 
+    protected final String name;
+
     protected int version;
 
     protected final List<IModelListener<T, D>> eventListeners;
 
 
-    protected ObservableModel() {
-        eventListeners = new Vector<>();
+    protected ObservableModel(String name) {
+        this.name = name;
+        eventListeners = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
     }
 
     //-----------------------------------------------------------------------------------
@@ -54,7 +61,9 @@ public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends
 
     public void removeListener(IModelListener listener) {
         notifyListener(listener, null);
-        eventListeners.remove(listener);
+        synchronized (eventListeners) {
+            eventListeners.remove(listener);
+        }
     }
 
     //-----------------------------------------------------------------------------------

@@ -1,22 +1,11 @@
 package com.simplejcode.commons.misc;
 
-import java.util.*;
+import com.simplejcode.commons.misc.util.ObjectUtils;
 
-public class TwoWayMap<T> {
-
-    private Map<T, T> map;
-
-    public TwoWayMap() {
-        map = new HashMap<>();
-    }
-
-    public void put(T t1, T t2) {
-        map.put(t1, t2);
-        map.put(t2, t1);
-    }
+public class TwoWayMap<T> extends BiDirectionalMap<T, T> {
 
     public T get(T t) {
-        return map.get(t);
+        return ObjectUtils.nvl(getKey(t), getValue(t));
     }
 
 }

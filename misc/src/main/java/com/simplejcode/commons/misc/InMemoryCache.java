@@ -2,7 +2,7 @@ package com.simplejcode.commons.misc;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
+import java.util.function.*;
 
 @SuppressWarnings("unchecked")
 public class InMemoryCache {
@@ -71,16 +71,25 @@ public class InMemoryCache {
         return removeEntry(key);
     }
 
-    public synchronized <P, T> T getCached(String name, P param, Function<P, T> getter) {
-        return getCached(name, param, getter, cache.length - 1);
+    public <P, T> T getCached(String name, Supplier<T> supplier) {
+        return getCached(name, null, t -> supplier.get(), cache.length - 1);
     }
 
-    public synchronized <P, T> T getCached(String name, P param, Function<P, T> getter, int duration) {
+    public <P, T> T getCached(String name, P param, Function<P, T> function) {
+        return getCached(name, param, function, cache.length - 1);
+    }
+
+    public <P, T> T getCached(String name, P param, Function<P, T> function, int duration) {
         update();
         String key = generateCacheKey(name, param);
         T value = get(key);
         if (value == null) {
-            put(key, value = getter.apply(param), duration);
+            synchronized (this) {
+                value = get(key);
+                if (value == null) {
+                    put(key, value = function.apply(param), duration);
+                }
+            }
         }
         return value;
     }
@@ -138,7 +147,7 @@ public class InMemoryCache {
         return entry.value;
     }
 
-    private void update() {
+    private synchronized void update() {
         int passed = (int) ((System.currentTimeMillis() - lastUpdateTime) / millis);
         // optimize full cleanup
         if (passed >= cache.length) {

@@ -32,7 +32,7 @@ public class EventDispatcher {
     }
 
 
-    public void clear() {
+    public void resetTaskCount() {
         tasksInQueue.set(0);
     }
 
@@ -53,6 +53,10 @@ public class EventDispatcher {
             Thread thread = Thread.currentThread();
             thread.getUncaughtExceptionHandler().uncaughtException(thread, e);
         }
+    }
+
+    public boolean isServiceAlive(){
+        return executorService != null && !executorService.isShutdown();
     }
 
 }
