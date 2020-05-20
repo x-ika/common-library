@@ -7,9 +7,11 @@ public final class FastTimer {
 
     //-----------------------------------------------------------------------------------
 
+    private static String[] prefix;
     private static long[] start, total;
 
-    public static void init(int n) {
+    public static void init(int n, String... s) {
+        prefix = s;
         start = new long[n];
         total = new long[n];
     }
@@ -26,16 +28,16 @@ public final class FastTimer {
         return total[i];
     }
 
-    public static void print(int i) {
-        System.out.println("Time " + i + ": " + total[i] / 1e9);
-    }
-
     public static void printAll() {
         for (int i = 0; i < total.length; i++) {
             if (total[i] > 0) {
                 print(i);
             }
         }
+    }
+
+    public static void print(int i) {
+        System.out.printf("%11s Time(%d): %.3f\n", prefix[i], i, total[i] / 1e9);
     }
 
 }
