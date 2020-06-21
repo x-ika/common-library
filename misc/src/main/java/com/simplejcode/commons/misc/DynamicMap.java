@@ -21,7 +21,7 @@ public class DynamicMap<K> {
             if (o instanceof Map) {
                 map.putAll((Map) o);
             }
-        } catch (Exception e) {
+        } catch (Exception ignore) {
         }
     }
 

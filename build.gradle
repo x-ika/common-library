@@ -56,9 +56,10 @@ subprojects {
     }
 
     //-----------------------------------------------------------------------------------
-    // MAVEN
+    // PUBLISH
 
     apply plugin: 'maven-publish'
+
     publishing {
         repositories {
             mavenLocal()
