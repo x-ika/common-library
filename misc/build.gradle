@@ -1,23 +1,25 @@
 group 'com.simplejcode.commons'
 
-version '1.1.0'
+version '1.1.1'
 
 configurations {
 
     testCompile.extendsFrom junit
 
     compileOnly.extendsFrom javaxXmlBind
-    compileOnly.extendsFrom mail
-    compileOnly.extendsFrom ws
-    compileOnly.extendsFrom ejb
+    compileOnly.extendsFrom javaxMail
+    compileOnly.extendsFrom javaxServlet
+    compileOnly.extendsFrom javaxEJB
+    compileOnly.extendsFrom javaxWS
 
     compileOnly.extendsFrom lombok
-    compileOnly.extendsFrom log4j
+    compileOnly.extendsFrom apacheLog4j
     compileOnly.extendsFrom apacheConfiguration
-    compileOnly.extendsFrom jsoniter
-    compileOnly.extendsFrom gson
-    compileOnly.extendsFrom poi
+    compileOnly.extendsFrom apachePOI
+    compileOnly.extendsFrom googleGson
     compileOnly.extendsFrom googleTwoFA
     compileOnly.extendsFrom googleQrCode
+
+    compileOnly.extendsFrom jsoniter
 
 }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MultiSet<T> {
 
-    private Map<T, Integer> map;
+    private final Map<T, Integer> map;
 
     public MultiSet() {
         map = new HashMap<>();
@@ -20,11 +20,15 @@ public class MultiSet<T> {
     }
 
     public void add(T t) {
-        setCount(t, count(t) + 1);
+        update(t, 1);
     }
 
     public void remove(T t) {
-        setCount(t, count(t) - 1);
+        update(t, -1);
+    }
+
+    public void update(T t,  int deltaCount) {
+        setCount(t, count(t) + deltaCount);
     }
 
     public void removeAll(T t) {

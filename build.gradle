@@ -81,23 +81,28 @@ subprojects {
 
         // java ee api libraries
         javaxXmlBind
-        mail
-        ws
-        ejb
+        javaxMail
+        javaxServlet
+        javaxEJB
+        javaxWS
 
         // java ee implementation libraries
         hibernate
 
-        // third party libraries
-        log4j
+        // annotation processor
         lombok
+
+        // third party libraries
+        apacheLog4j
         apacheConfiguration
-        gson
-        jsoniter
-        gson
-        poi
-        googleTwoFA
+        apachePOI
+
+        googleGson
         googleQrCode
+        googleTwoFA
+
+        jsoniter
+        pdf
 
     }
 
@@ -106,24 +111,30 @@ subprojects {
         junit                          'junit:junit:4.12'
 
         javaxXmlBind                   'javax.xml.bind:jaxb-api:2.1'
-        mail                           'javax.mail:mail:1.4.3'
-        mail                           'javax.mail:mailapi:1.4.3'
-        ws                             'javax.websocket:javax.websocket-api:1.1'
-        ejb                            'javax.ejb:javax.ejb-api:3.2.2'
+        javaxMail                      'javax.mail:mail:1.4.3'
+        javaxMail                      'javax.mail:mailapi:1.4.3'
+        javaxServlet                   'javax.servlet:javax.servlet-api:3.1.0'
+        javaxEJB                       'javax.ejb:javax.ejb-api:3.2.2'
+        javaxWS                        'javax.websocket:javax.websocket-api:1.1'
 
         hibernate                      'org.hibernate:hibernate-core:5.3.1.Final'
 
-        log4j                          'log4j:log4j:1.2.17'
         lombok                         'org.projectlombok:lombok:1.18.8'
-        annotationProcessor            ('org.projectlombok:lombok:1.18.8')
+        annotationProcessor           ('org.projectlombok:lombok:1.18.8')
+
+        apacheLog4j                    'org.apache.logging.log4j:log4j:2.11.2'
+        apacheLog4j                    'org.apache.logging.log4j:log4j-api:2.11.2'
+        apacheLog4j                    'org.apache.logging.log4j:log4j-core:2.11.2'
         apacheConfiguration            'org.apache.commons:commons-configuration2:2.0'
-        gson                           'com.google.code.gson:gson:2.8.5'
-        jsoniter                       'com.jsoniter:jsoniter:0.9.23'
-        gson                           'com.google.code.gson:gson:2.8.6'
-        poi                            'org.apache.poi:poi:4.0.1'
-        poi                            'org.apache.poi:poi-ooxml:4.0.1'
-        googleTwoFA                    'com.warrenstrange:googleauth:1.2.0'
+        apachePOI                      'org.apache.poi:poi:4.0.1'
+        apachePOI                      'org.apache.poi:poi-ooxml:4.0.1'
+
+        googleGson                     'com.google.code.gson:gson:2.8.6'
+        googleQrCode                   'com.google.zxing:core:3.3.0'
         googleQrCode                   'com.google.zxing:javase:3.4.0'
+        googleTwoFA                    'com.warrenstrange:googleauth:1.2.0'
+
+        jsoniter                       'com.jsoniter:jsoniter:0.9.23'
 
     }
 

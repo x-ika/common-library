@@ -1,13 +1,13 @@
 package com.simplejcode.commons.misc._pattern.observable;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.*;
 
 @SuppressWarnings("unchecked")
 public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends ObservableDelta> {
 
-    private static Logger logger = Logger.getLogger(ObservableModel.class);
+    private static final Logger logger = LogManager.getLogger(ObservableModel.class);
 
 
     protected final String name;
@@ -16,6 +16,11 @@ public abstract class ObservableModel<T extends ObservableModel<T, D>, D extends
 
     protected final List<IModelListener<T, D>> eventListeners;
 
+
+    @Deprecated
+    protected ObservableModel() {
+        this("ND");
+    }
 
     protected ObservableModel(String name) {
         this.name = name;
