@@ -10,12 +10,20 @@ import java.io.*;
 public class AboutDialogPanel extends JPanel {
 
     private String name;
+    private String version;
+    private String author;
     private Image logo;
     private BufferedImage content;
 
     public AboutDialogPanel(String name, Image logo) {
-        this.logo = logo;
+        this(name, "1.0", "Irakli Merabishvili", logo);
+    }
+
+    public AboutDialogPanel(String name, String version, String author, Image logo) {
         this.name = name;
+        this.author = author;
+        this.version = version;
+        this.logo = logo;
     }
 
     public synchronized void init() {
@@ -28,8 +36,8 @@ public class AboutDialogPanel extends JPanel {
         g.fillRect(0, 0, 400, 120);
         g.setColor(Color.black);
         g.setFont(new Font("Curier", Font.PLAIN, 14));
-        g.drawString("Program Version 1.0", 10, 20);
-        g.drawString("© Irakli Merabishvili", 10, 50);
+        g.drawString("Program Version " + version, 10, 20);
+        g.drawString("© " + author, 10, 50);
         g.drawString("All rights reserved.", 10, 100);
 
         Point p1 = new Point(0, 120);

@@ -319,8 +319,9 @@ public final class GraphicUtils {
                         if (onException != null) {
                             try {
                                 onException.invoke(handler, ex);
-                            } catch (Exception e1) {
+                            } catch (Exception ignore) {
                                 // how many times?
+                                System.out.println("Error when invoking the error handler.");
                             }
                         } else {
                             ex.printStackTrace();
