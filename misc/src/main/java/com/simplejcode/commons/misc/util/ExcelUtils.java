@@ -110,7 +110,7 @@ public final class ExcelUtils {
 
     //-----------------------------------------------------------------------------------
 
-    public static List<ExcelRow> parseFile(InputStream inputStream, int numberOfColumns) {
+    public static List<ExcelRow> parseSingleSheetFile(InputStream inputStream, int numberOfColumns) {
         try {
             Workbook workbook = WorkbookFactory.create(inputStream);
             Sheet sheet = workbook.getSheetAt(0);
@@ -133,13 +133,54 @@ public final class ExcelUtils {
         }
     }
 
+    public static Map<String, List<ExcelRow>> parseFile(InputStream inputStream) {
+        try {
+            Workbook workbook = WorkbookFactory.create(inputStream);
+
+            Map<String, List<ExcelRow>> result = new HashMap<>();
+
+            int sheetCount = workbook.getNumberOfSheets();
+
+            for (int sheetInd = 0; sheetInd < sheetCount; sheetInd++) {
+
+                String sheetName = workbook.getSheetName(sheetInd);
+                Sheet sheet = workbook.getSheetAt(sheetInd);
+
+                List<ExcelRow> rows = new ArrayList<>();
+
+                int numberOfColumns = sheet.getRow(0).getLastCellNum();
+
+                for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+                    Row row = sheet.getRow(i);
+                    if (row == null) {
+                        break;
+                    }
+
+                    ExcelRow excelRow = new ExcelRow();
+                    for (int j = 0; j < numberOfColumns; j++) {
+                        Cell cell = row.getCell(j);
+                        excelRow.getCells().add(new ExcelCell(getCellValue(cell)));
+                    }
+                    rows.add(excelRow);
+                }
+
+                result.put(sheetName, rows);
+
+            }
+
+            return result;
+        } catch (IOException e) {
+            throw convert(e);
+        }
+    }
+
     private static Object getCellValue(Cell cell) {
         if (cell == null) {
             return null;
         }
         switch (cell.getCellType()) {
             case NUMERIC:
-                return new BigDecimal(cell.getNumericCellValue());
+                return BigDecimal.valueOf(cell.getNumericCellValue());
             case BOOLEAN:
                 return cell.getBooleanCellValue();
             case STRING:
