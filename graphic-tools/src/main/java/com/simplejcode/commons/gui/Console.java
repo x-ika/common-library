@@ -7,34 +7,35 @@ import java.awt.event.*;
 
 public class Console extends JPanel implements ActionListener, KeyListener {
 
-    private class NoWrapEditorKit extends StyledEditorKit {
+    private static class NoWrapEditorKit extends StyledEditorKit {
         public ViewFactory getViewFactory() {
             return new ViewFactory() {
                 public View create(Element elem) {
                     String kind = elem.getName();
                     if (kind != null) {
-                        if (kind.equals(AbstractDocument.ContentElementName)) {
-                            return new LabelView(elem);
-                        } else if (kind.equals(AbstractDocument.ParagraphElementName)) {
-                            return new ParagraphView(elem);
-                        } else if (kind.equals(AbstractDocument.SectionElementName)) {
-                            return new BoxView(elem, View.Y_AXIS) {
-                                public void layout(int width, int height) {
-                                    super.layout(Character.MAX_VALUE, height);
-                                }
-
-                                public float getMinimumSpan(int axis) {
-                                    if (axis == View.Y_AXIS) {
-                                        return super.getMinimumSpan(axis);
-                                    } else {
-                                        return super.getPreferredSpan(axis);
+                        switch (kind) {
+                            case AbstractDocument.ContentElementName:
+                                return new LabelView(elem);
+                            case AbstractDocument.ParagraphElementName:
+                                return new ParagraphView(elem);
+                            case AbstractDocument.SectionElementName:
+                                return new BoxView(elem, View.Y_AXIS) {
+                                    public void layout(int width, int height) {
+                                        super.layout(Character.MAX_VALUE, height);
                                     }
-                                }
-                            };
-                        } else if (kind.equals(StyleConstants.ComponentElementName)) {
-                            return new ComponentView(elem);
-                        } else if (kind.equals(StyleConstants.IconElementName)) {
-                            return new IconView(elem);
+
+                                    public float getMinimumSpan(int axis) {
+                                        if (axis == View.Y_AXIS) {
+                                            return super.getMinimumSpan(axis);
+                                        } else {
+                                            return super.getPreferredSpan(axis);
+                                        }
+                                    }
+                                };
+                            case StyleConstants.ComponentElementName:
+                                return new ComponentView(elem);
+                            case StyleConstants.IconElementName:
+                                return new IconView(elem);
                         }
                     }
                     // default to text display
