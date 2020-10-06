@@ -44,6 +44,8 @@ public class Console extends JPanel implements ActionListener, KeyListener {
         }
     }
 
+    private final boolean inputAllowed;
+
     private Window parent;
     private JTextField textField;
     private JTextPane textArea;
@@ -55,16 +57,21 @@ public class Console extends JPanel implements ActionListener, KeyListener {
 
 
     public Console() {
-        this(null);
+        this(null, true);
     }
 
     public Console(Window parent) {
+        this(parent, true);
+    }
+
+    public Console(Window parent, boolean inputAllowed) {
         this.parent = parent;
-        init();
+        this.inputAllowed = inputAllowed;
+        init(inputAllowed);
         textField.requestFocus();
     }
 
-    private void init() {
+    private void init(boolean inputAllowed) {
 
         textArea = new JTextPane();
         textArea.setEditorKit(new NoWrapEditorKit());
@@ -88,8 +95,11 @@ public class Console extends JPanel implements ActionListener, KeyListener {
 
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         add(scrollPane);
-        add(textField);
-        add(button);
+
+        if (inputAllowed) {
+            add(textField);
+            add(button);
+        }
 
     }
 
@@ -99,6 +109,7 @@ public class Console extends JPanel implements ActionListener, KeyListener {
      */
 
     public String readLine() {
+        checkInputAllowed();
         try {
             while (true) {
                 synchronized (lock) {
@@ -150,6 +161,7 @@ public class Console extends JPanel implements ActionListener, KeyListener {
     //-----------------------------------------------------------------------------------
 
     public void setInputText(String text) {
+        checkInputAllowed();
         textField.setText(text);
     }
 
@@ -175,6 +187,14 @@ public class Console extends JPanel implements ActionListener, KeyListener {
     public void dispose() {
         if (parent != null) {
             parent.dispose();
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
+
+    private void checkInputAllowed() {
+        if (!inputAllowed) {
+            throw new UnsupportedOperationException("Input disallowed!");
         }
     }
 
