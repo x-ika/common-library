@@ -28,7 +28,7 @@ public final class HttpServletRequestParser {
 
     private static String checkHeader(HttpServletRequest request, String name) {
         String header = request.getHeader(name);
-        return StringUtils.isNullOrEmpty(header) || header.equalsIgnoreCase("unknown") ? null : header;
+        return StringUtils.isBlank(header) || header.equalsIgnoreCase("unknown") ? null : header;
     }
 
     public static String getClientOS(HttpServletRequest request) {

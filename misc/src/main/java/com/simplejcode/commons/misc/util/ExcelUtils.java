@@ -141,6 +141,8 @@ public final class ExcelUtils {
 
             int sheetCount = workbook.getNumberOfSheets();
 
+            DataFormatter formatter = new DataFormatter();
+
             for (int sheetInd = 0; sheetInd < sheetCount; sheetInd++) {
 
                 String sheetName = workbook.getSheetName(sheetInd);
@@ -159,7 +161,8 @@ public final class ExcelUtils {
                     ExcelRow excelRow = new ExcelRow();
                     for (int j = 0; j < numberOfColumns; j++) {
                         Cell cell = row.getCell(j);
-                        excelRow.getCells().add(new ExcelCell(getCellValue(cell)));
+                        String value = formatter.formatCellValue(cell);
+                        excelRow.getCells().add(new ExcelCell(value.isBlank() ? null : value));
                     }
                     rows.add(excelRow);
                 }
