@@ -42,7 +42,7 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
             startPinging();
         }
         startReading();
-        startWritting();
+        startWriting();
     }
 
     public synchronized void stop() {
@@ -146,7 +146,7 @@ public class AsynchronousConnectionManager implements AsynchronousConnectionList
         }).start();
     }
 
-    private void startWritting() {
+    private void startWriting() {
         new Thread(() -> {
             while (running) {
                 synchronized (connections) {

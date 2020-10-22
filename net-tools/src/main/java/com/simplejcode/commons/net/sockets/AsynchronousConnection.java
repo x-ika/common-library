@@ -30,7 +30,7 @@ public class AsynchronousConnection {
 
     protected final byte[] pingMessage, exitMessage;
 
-    protected boolean reading, writting, closed;
+    protected boolean reading, writing, closed;
 
     protected final byte[] readQueue;
     protected int index;
@@ -53,7 +53,7 @@ public class AsynchronousConnection {
         readBuffer = ByteBuffer.allocateDirect(bufferCapacity);
         writeBuffer = ByteBuffer.allocateDirect(bufferCapacity);
 
-        readHandler = new CompletionHandler<>() {
+        readHandler = new CompletionHandler<Integer, Void>() {
             public void completed(Integer result, Void attachment) {
                 readCompleted(result);
             }
@@ -62,7 +62,7 @@ public class AsynchronousConnection {
                 readFailed(exc);
             }
         };
-        writeHandler = new CompletionHandler<>() {
+        writeHandler = new CompletionHandler<Integer, byte[]>() {
             public void completed(Integer result, byte[] attachment) {
                 writeCompleted(result, attachment);
             }
@@ -141,8 +141,8 @@ public class AsynchronousConnection {
         if (!writeLock.tryLock()) {
             return;
         }
-        if (!closed && !writting && !writeQueue.isEmpty()) {
-            writting = true;
+        if (!closed && !writing && !writeQueue.isEmpty()) {
+            writing = true;
             writeBuffer.clear();
             byte[] message = writeQueue.poll();
             writeBuffer.put(message);
@@ -228,14 +228,14 @@ public class AsynchronousConnection {
 
     private void writeCompleted(Integer result, byte[] message) {
         writeLock.lock();
-        writting = false;
+        writing = false;
         writeLock.unlock();
         notifyListeners(EVENT_MESSAGE_SENT, message, null);
     }
 
     private void writeFailed(Throwable e, byte[] message) {
         writeLock.lock();
-        writting = false;
+        writing = false;
         writeLock.unlock();
         notifyListeners(EVENT_SENDING_FAILED, message, e);
     }

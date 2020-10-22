@@ -162,7 +162,7 @@ public final class ExcelUtils {
                     for (int j = 0; j < numberOfColumns; j++) {
                         Cell cell = row.getCell(j);
                         String value = formatter.formatCellValue(cell);
-                        excelRow.getCells().add(new ExcelCell(value.isBlank() ? null : value));
+                        excelRow.getCells().add(new ExcelCell(StringUtils.isBlank(value) ? null : value));
                     }
                     rows.add(excelRow);
                 }
