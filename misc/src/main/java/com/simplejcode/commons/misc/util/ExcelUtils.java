@@ -110,6 +110,7 @@ public final class ExcelUtils {
 
     //-----------------------------------------------------------------------------------
 
+    @Deprecated
     public static List<ExcelRow> parseSingleSheetFile(InputStream inputStream, int numberOfColumns) {
         try {
             Workbook workbook = WorkbookFactory.create(inputStream);

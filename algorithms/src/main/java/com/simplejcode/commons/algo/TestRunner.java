@@ -7,8 +7,9 @@ import java.util.*;
 public class TestRunner {
 
     public static void main(String[] args) {
-        loanCalculator(27600, 0.0864, 900);
+        calcBonus();
         System.exit(0);
+        loanCalculator(27600, 0.0864, 900);
         test1();
         test2();
         test3();
@@ -17,7 +18,64 @@ public class TestRunner {
         test6();
         test7();
         test8();
+        testImageProcessor();
     }
+
+    //-----------------------------------------------------------------------------------
+
+    public static void calcBonus() {
+
+        int bonus = 0;
+
+        for (int i = 0; i < 10; i++) {
+
+            // first year - 8 months
+            if (i == 0) {
+                bonus += 80_000 * 2 / 3;
+            }
+            // current year - subtract 3 * 40% = 120%
+            if (i == 2) {
+                bonus += 80_000 * 10.8 / 12;
+            }
+            // any other year
+            if (i != 0 && i != 2) {
+                bonus += 80_000;
+            }
+
+            int x = (int) Math.round(0.3 * bonus);
+            System.out.println(x);
+            bonus -= x;
+
+        }
+    }
+
+    public static void loanCalculator(double base, double percent, double payment) {
+        double totalPercent = 0, totalBase = 0;
+        for (int i = 1; ; i++) {
+
+            double p = base * percent / 12;
+            double basePayed = payment - p;
+
+            totalPercent += p;
+            totalBase += basePayed;
+            base -= basePayed;
+
+            System.out.println("+-----+-----------+-----------+-----------+");
+            System.out.printf("| %-3d | %-9.2f | %-9.2f | %-9.2f |\n", i, p, basePayed, base);
+
+            if (base <= 0) {
+                System.out.println("+-----+-----------+-----------+-----------+");
+                System.out.println("N_MONTH:        " + i);
+                System.out.println("LAST PAYMENT:   " + (base + payment));
+                System.out.println("TOTAL PERCENT:  " + totalPercent);
+                System.out.println("SUM PAYED:      " + (i * payment + base));
+                break;
+            }
+
+        }
+    }
+
+    //-----------------------------------------------------------------------------------
 
     private static void test1() {
         int n = 100;
@@ -222,7 +280,9 @@ public class TestRunner {
     private static void test8() {
 
         System.out.println(GeometryUtils.getVolume(getCube(), 0, 0, 0.5, Math.atan(0.5), 0));
+        System.out.println(GeometryUtils.getVolume(getPyramid(), 0, 0, 0.5, 0, 0));
 
+        testEnd();
     }
 
     private static Polyhedron getCube() {
@@ -234,7 +294,7 @@ public class TestRunner {
         return new Polyhedron(ps);
     }
 
-    private static Polyhedron getPiramid() {
+    private static Polyhedron getPyramid() {
         return new Polyhedron(new Point3D[]{
                 new Point3D(0, 0, 0),
                 new Point3D(1, 0, 0),
@@ -243,66 +303,40 @@ public class TestRunner {
         });
     }
 
+    private static void testImageProcessor() {
+        ImageProcessor img = new ImageProcessor(4, 6);
+
+        int[] a = {
+                1, 2, 3, 4,
+                0, 0, 2, 5,
+                0, 0, 0, 0,
+                1, 1, 1, 1,
+                9, 8, 7, 6,
+                5, 5, 5, 5,
+        };
+
+        img.calculateRowColumnSums(a);
+
+        System.out.println(img.getSum(0, 11)); // 17
+        System.out.println(img.getSum(12, 23)); // 54
+        System.out.println();
+
+        System.out.println(img.getRowSum(0, 0, 3)); // 10
+        System.out.println(img.getRowSum(0, 2, 2)); // 3
+        System.out.println(img.getRowSum(4, 0, 1)); // 17
+        System.out.println(img.getRowSum(4, 2, 2)); // 7
+        System.out.println();
+
+        System.out.println(img.getColSum(0, 0, 5)); // 16
+        System.out.println(img.getColSum(0, 2, 2)); // 0
+        System.out.println(img.getColSum(3, 5, 5)); // 5
+        System.out.println(img.getColSum(3, 4, 5)); // 11
+        System.out.println();
+    }
+
     private static void testEnd() {
         System.out.println("--------------------------------------------------\n");
         System.out.println("--------------------------------------------------\n");
-    }
-
-//    public static void testImageProcessor() {
-//        ImageProcessor img = new ImageProcessor(4, 6);
-//
-//        int[] a = {
-//                1, 2, 3, 4,
-//                0, 0, 2, 5,
-//                0, 0, 0, 0,
-//                1, 1, 1, 1,
-//                9, 8, 7, 6,
-//                5, 5, 5, 5,
-//        };
-//
-//        img.calculateRowColumnSums(a);
-//
-//        System.out.println(img.getSum(0, 11)); // 17
-//        System.out.println(img.getSum(12, 23)); // 54
-//        System.out.println();
-//
-//        System.out.println(img.getRowSum(0, 0, 3)); // 10
-//        System.out.println(img.getRowSum(0, 2, 2)); // 3
-//        System.out.println(img.getRowSum(4, 0, 1)); // 17
-//        System.out.println(img.getRowSum(4, 2, 2)); // 7
-//        System.out.println();
-//
-//        System.out.println(img.getColSum(0, 0, 5)); // 16
-//        System.out.println(img.getColSum(0, 2, 2)); // 0
-//        System.out.println(img.getColSum(3, 5, 5)); // 5
-//        System.out.println(img.getColSum(3, 4, 5)); // 11
-//        System.out.println();
-//    }
-
-    public static void loanCalculator(double base, double percent, double payment) {
-        double totalPercent = 0, totalBase = 0;
-        for (int i = 1; ; i++) {
-
-            double p = base * percent / 12;
-            double basePayed = payment - p;
-
-            totalPercent += p;
-            totalBase += basePayed;
-            base -= basePayed;
-
-            System.out.println("+-----+-----------+-----------+-----------+");
-            System.out.printf("| %-3d | %-9.2f | %-9.2f | %-9.2f |\n", i, p, basePayed, base);
-
-            if (base <= 0) {
-                System.out.println("+-----+-----------+-----------+-----------+");
-                System.out.println("N_MONTH:        " + i);
-                System.out.println("LAST PAYMENT:   " + (base + payment));
-                System.out.println("TOTAL PERCENT:  " + totalPercent);
-                System.out.println("SUM PAYED:      " + (i * payment + base));
-                break;
-            }
-
-        }
     }
 
 }
