@@ -2,8 +2,6 @@ package com.simplejcode.commons.algo;
 
 import java.util.*;
 
-import static java.lang.Math.min;
-
 @SuppressWarnings("unchecked")
 public final class ArrayUtils {
 
@@ -52,9 +50,9 @@ public final class ArrayUtils {
             }
             swap(p, j++, k--);
         }
-        s = min(i - a, j - i);
+        s = Math.min(i - a, j - i);
         swap(p, a, j - s, s);
-        s = min(t - k, b - t - 1);
+        s = Math.min(t - k, b - t - 1);
         swap(p, j, b - s, s);
         if ((s = j - i) > 1) {
             quicksort(x, p, a, a + s);
@@ -110,9 +108,9 @@ public final class ArrayUtils {
             }
             swap(p, j++, k--);
         }
-        s = min(i - a, j - i);
+        s = Math.min(i - a, j - i);
         swap(p, a, j - s, s);
-        s = min(t - k, b - t - 1);
+        s = Math.min(t - k, b - t - 1);
         swap(p, j, b - s, s);
         if ((s = j - i) > 1) {
             quicksort(x, p, a, a + s);
