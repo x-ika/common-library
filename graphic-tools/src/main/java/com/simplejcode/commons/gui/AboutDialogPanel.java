@@ -9,9 +9,10 @@ import java.io.*;
 
 public class AboutDialogPanel extends JPanel {
 
-    private String name;
-    private String version;
-    private String author;
+    private final String name;
+    private final String version;
+    private final String author;
+
     private Image logo;
     private BufferedImage content;
 

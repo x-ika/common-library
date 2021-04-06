@@ -5,7 +5,7 @@ import com.simplejcode.commons.misc.util.ThreadUtils;
 @Deprecated
 public class MultiStateObject {
 
-    private long[] endWait = new long[33];
+    private final long[] endWait = new long[33];
     private int waiting;
     private volatile int state;
 

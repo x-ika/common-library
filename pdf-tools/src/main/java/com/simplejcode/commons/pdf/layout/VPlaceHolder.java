@@ -1,11 +1,9 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class VPlaceHolder extends View {
 
-    private float w, h;
+    private final float w;
+    private final float h;
 
     public VPlaceHolder(float w, float h) {
         this.w = w;

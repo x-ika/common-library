@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 /**
- * @author I. Merabishvili | HighPots
+ * @author I. Merabishvili
  * <p>
  * This class is responsible for the actual drawing
  */

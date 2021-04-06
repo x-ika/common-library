@@ -2,9 +2,6 @@ package com.simplejcode.commons.pdf.layout;
 
 import java.awt.*;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class ContainerGrid extends com.simplejcode.commons.pdf.layout.Container {
 
     private View[][] grid;

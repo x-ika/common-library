@@ -4,9 +4,10 @@ import java.util.Arrays;
 
 public class IntHashSet {
 
-    private int size, msk;
-    private int[] count;
-    private int[][] data;
+    private int size;
+    private final int msk;
+    private final int[] count;
+    private final int[][] data;
 
 
     public IntHashSet(int numChunks, int chunkSize) {

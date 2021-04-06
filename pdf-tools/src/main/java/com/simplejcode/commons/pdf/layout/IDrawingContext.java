@@ -1,7 +1,7 @@
 package com.simplejcode.commons.pdf.layout;
 
 /**
- * @author I. Merabishvili | HighPots
+ * @author I. Merabishvili
  * <p>
  * An object is used by the {@link IGraphics} object to perform drawing. It
  * should provide neccessary methods for the corresponding {@link IGraphics}

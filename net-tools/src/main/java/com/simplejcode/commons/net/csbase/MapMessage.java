@@ -6,7 +6,7 @@ public class MapMessage extends Message {
 
     private static final long serialVersionUID = 6546456465587978923L;
 
-    private Map<String, Object> map = new HashMap<>();
+    private final Map<String, Object> map = new HashMap<>();
 
     public MapMessage(Object object) {
         super(object);

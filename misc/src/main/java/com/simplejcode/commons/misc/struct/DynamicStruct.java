@@ -4,7 +4,7 @@ import java.util.*;
 
 public class DynamicStruct {
 
-    private Map<String, Object> map = new HashMap<>();
+    private final Map<String, Object> map = new HashMap<>();
 
 
     public DynamicStruct() {

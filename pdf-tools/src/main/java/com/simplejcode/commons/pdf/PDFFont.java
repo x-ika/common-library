@@ -5,9 +5,6 @@ import org.apache.pdfbox.pdmodel.font.PDFont;
 
 import java.io.IOException;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class PDFFont implements IFont {
 
     /**

@@ -5,9 +5,9 @@ import java.util.function.BiConsumer;
 
 public class WSEndpoint extends Endpoint {
 
-    private BiConsumer<Session, EndpointConfig> onOpen;
-    private BiConsumer<Session, CloseReason> onClose;
-    private BiConsumer<Session, Throwable> onError;
+    private final BiConsumer<Session, EndpointConfig> onOpen;
+    private final BiConsumer<Session, CloseReason> onClose;
+    private final BiConsumer<Session, Throwable> onError;
 
     private WSSessionWrapper sessionWrapper;
 

@@ -16,7 +16,7 @@ public final class ThreadUtils {
 
     private static final String DEFAULT_THREAD_NAME = "Custom Thread";
 
-    private static Map<String, AtomicInteger> threadNumbers = new Hashtable<>();
+    private static final Map<String, AtomicInteger> THREAD_NUMBERS = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
     /*
@@ -69,7 +69,7 @@ public final class ThreadUtils {
                                       Thread.UncaughtExceptionHandler handler)
     {
         if (countThreads) {
-            name += "-" + threadNumbers.computeIfAbsent(name, k -> new AtomicInteger()).incrementAndGet();
+            name += "-" + THREAD_NUMBERS.computeIfAbsent(name, k -> new AtomicInteger()).incrementAndGet();
         }
         Thread thread = new Thread(runnable, name);
         thread.setUncaughtExceptionHandler(handler);

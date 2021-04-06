@@ -9,13 +9,16 @@ import java.text.SimpleDateFormat;
 
 public class ChatPanel extends JPanel {
 
-    private JButton button1, button2;
+    private final JButton button1;
+    private final JButton button2;
 
-    private JComponent southPanel, southEastPanel;
-    private JTextPane upperTextArea, lowerTextArea;
+    private final JComponent southPanel;
+    private final JComponent southEastPanel;
+    private final JTextPane upperTextArea;
+    private final JTextPane lowerTextArea;
 
-    private Document doc;
-    private Style style;
+    private final Document doc;
+    private final Style style;
 
     public ChatPanel() {
         upperTextArea = new JTextPane();

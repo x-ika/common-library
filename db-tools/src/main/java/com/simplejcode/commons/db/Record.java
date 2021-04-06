@@ -21,7 +21,7 @@ public class Record implements Serializable {
     }
 
     private final int mask;
-    private Item[] data;
+    private final Item[] data;
 
     public Record(int size) {
         data = new Item[Integer.highestOneBit(size)];

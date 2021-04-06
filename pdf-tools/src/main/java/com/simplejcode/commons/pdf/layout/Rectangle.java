@@ -1,8 +1,5 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class Rectangle {
 
     protected float x1, y1, x2, y2;

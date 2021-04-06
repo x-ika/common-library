@@ -6,7 +6,8 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class JButtons extends JPanel {
-    private JButton[] buttons;
+
+    private final JButton[] buttons;
 
     public JButtons(ActionListener al, Color bgColor, String... texts) {
         JPanel panel = new JPanel(new GridLayout(1, 2, 10, 0));
@@ -42,4 +43,5 @@ public class JButtons extends JPanel {
     public JButton get(int index) {
         return buttons[index];
     }
+
 }

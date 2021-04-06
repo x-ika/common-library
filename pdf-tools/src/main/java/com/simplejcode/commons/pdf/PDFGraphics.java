@@ -8,14 +8,11 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public final class PDFGraphics implements IGraphics {
 
-    private BasicPDFDocument context;
+    private final BasicPDFDocument context;
 
-    private int pageIndex;
+    private final int pageIndex;
 
     public PDFGraphics(BasicPDFDocument context, int pageIndex) {
         this.context = context;

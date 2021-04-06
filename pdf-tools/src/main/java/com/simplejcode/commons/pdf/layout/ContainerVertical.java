@@ -1,8 +1,5 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class ContainerVertical extends Container {
 
     private float gap;

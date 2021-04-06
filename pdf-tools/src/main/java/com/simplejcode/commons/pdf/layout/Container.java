@@ -3,7 +3,7 @@ package com.simplejcode.commons.pdf.layout;
 import java.util.*;
 
 /**
- * @author I. Merabishvili | HighPots
+ * @author I. Merabishvili
  * <p>
  * Basic PDF element containing another elements
  * <p>

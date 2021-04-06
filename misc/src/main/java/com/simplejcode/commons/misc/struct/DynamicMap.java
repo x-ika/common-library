@@ -6,11 +6,11 @@ import java.util.*;
 @SuppressWarnings("unchecked")
 public class DynamicMap<K> {
 
-    private boolean keepSmaller;
+    private final boolean keepSmaller;
 
-    private String fileName;
+    private final String fileName;
 
-    private Map<K, Double> map = new HashMap<>();
+    private final Map<K, Double> map = new HashMap<>();
 
 
     public DynamicMap(boolean keepSmaller, String fileName) {

@@ -55,9 +55,9 @@ public final class MailUtils {
 
     private static class SMTPAuthenticator extends javax.mail.Authenticator {
 
-        private String username;
+        private final String username;
 
-        private String password;
+        private final String password;
 
         SMTPAuthenticator(String username, String password) {
             this.username = username;

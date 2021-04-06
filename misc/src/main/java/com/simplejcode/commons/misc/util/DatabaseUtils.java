@@ -340,7 +340,7 @@ public final class DatabaseUtils {
 
     public static final Object DEFAULT = new Object();
 
-    private static Map<Class, String> mappedTypes = new Hashtable<>();
+    private static final Map<Class, String> mappedTypes = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
 

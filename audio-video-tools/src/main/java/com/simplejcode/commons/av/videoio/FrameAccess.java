@@ -10,7 +10,7 @@ import javax.media.protocol.*;
  */
 public final class FrameAccess implements ControllerListener, BufferTransferHandler {
 
-    private ImageHandler handler;
+    private final ImageHandler handler;
 
     private int imgWidth, imgHeight;
     private boolean stateTransitionOK = true;

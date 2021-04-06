@@ -2,13 +2,10 @@ package com.simplejcode.commons.pdf.layout;
 
 import java.awt.image.BufferedImage;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class VImage extends View {
 
-    private BufferedImage image;
-    private float scale;
+    private final BufferedImage image;
+    private final float scale;
 
     public VImage(Alignments alignments, BufferedImage image, float scale) {
         super(alignments);

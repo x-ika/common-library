@@ -1,8 +1,5 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public abstract class Border extends View {
 
     protected View view;

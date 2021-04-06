@@ -11,7 +11,7 @@ import java.util.List;
 @SuppressWarnings("unchecked")
 public class HibernateDAO {
 
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
 
     public HibernateDAO(String resource, String url) {

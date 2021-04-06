@@ -21,7 +21,7 @@ public class DatabaseRowModel implements Serializable {
     }
 
     private final int mask;
-    private Item[] data;
+    private final Item[] data;
 
     public DatabaseRowModel(int size) {
         data = new Item[Integer.highestOneBit(size)];

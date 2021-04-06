@@ -274,7 +274,7 @@ public class DatabaseUtils {
 
     public static final Object DEFAULT = new Object();
 
-    private static Map<Class, String> map = new Hashtable<>();
+    private static final Map<Class, String> map = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
 

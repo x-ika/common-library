@@ -6,11 +6,13 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class ColorChooser extends JFrame implements ActionListener {
+
     public static Color color = new Color(238, 238, 238);
+
     private final String OK = "Set", CANCEL = "Cancel", DEFAULT = "Default";
-    private JColorChooser[] ch = new JColorChooser[5];
-    private ChatPanel chatWindow;
-    private JTabbedPane panel;
+    private final JColorChooser[] ch = new JColorChooser[5];
+    private final ChatPanel chatWindow;
+    private final JTabbedPane panel;
 
     public ColorChooser(ChatPanel u) {
         super("Choose Color");
@@ -61,4 +63,5 @@ public class ColorChooser extends JFrame implements ActionListener {
             }
         }
     }
+
 }

@@ -11,7 +11,7 @@ public final class SerializationUtils {
 
     //-----------------------------------------------------------------------------------
 
-    private static Gson GSON = new GsonBuilder().create();
+    private static final Gson GSON = new GsonBuilder().create();
 
     //-----------------------------------------------------------------------------------
 

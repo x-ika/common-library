@@ -1,11 +1,8 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class ContainerHorizontal extends Container {
 
-    private float gap;
+    private final float gap;
 
     public ContainerHorizontal() {
         this(0);

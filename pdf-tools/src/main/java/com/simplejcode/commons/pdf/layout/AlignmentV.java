@@ -1,7 +1,7 @@
 package com.simplejcode.commons.pdf.layout;
 
 /**
- * @author I. Merabishvili | HighPots
+ * @author I. Merabishvili
  * <p>
  * Top - decreasing Y
  * Bottom - increasing Y

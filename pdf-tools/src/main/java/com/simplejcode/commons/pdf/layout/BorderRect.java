@@ -2,13 +2,10 @@ package com.simplejcode.commons.pdf.layout;
 
 import java.awt.*;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class BorderRect extends Border {
 
-    private Color color;
-    private float width;
+    private final Color color;
+    private final float width;
 
     public BorderRect(View view, Color color, float width) {
         super(view);

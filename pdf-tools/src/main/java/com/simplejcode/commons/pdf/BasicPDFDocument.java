@@ -7,9 +7,6 @@ import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import java.io.*;
 import java.util.Stack;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public abstract class BasicPDFDocument<T> implements IDrawingContext {
 
     protected T model;

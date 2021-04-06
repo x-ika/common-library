@@ -16,9 +16,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.*;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public final class PDFHelper {
 
     private PDFHelper() {

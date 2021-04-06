@@ -6,13 +6,13 @@ import com.simplejcode.commons.misc.util.*;
 import java.lang.reflect.Method;
 import java.util.*;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "rawtypes"})
 public class BeanUtils {
 
     public static final BeanUtils EMPTY_INSTANCE = new BeanUtils();
 
 
-    private TwoWayMap<Class> classMappings;
+    private final TwoWayMap<Class> classMappings;
 
 
     public BeanUtils(TwoWayMap<Class> classMappings) {

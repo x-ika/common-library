@@ -1,8 +1,5 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public class Margins {
 
     protected float fromY2, fromX2, fromY1, fromX1;

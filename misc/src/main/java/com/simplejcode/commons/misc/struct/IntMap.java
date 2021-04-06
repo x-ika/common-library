@@ -18,8 +18,8 @@ public class IntMap {
 
 
     private int size;
-    private int[] count;
-    private Entry[] data;
+    private final int[] count;
+    private final Entry[] data;
 
 
     public IntMap(int size) {

@@ -3,7 +3,7 @@ package com.simplejcode.commons.pdf.layout;
 import java.awt.*;
 
 /**
- * @author I. Merabishvili | HighPots
+ * @author I. Merabishvili
  * <p>
  * Basic element which can be drawn.
  * <p>

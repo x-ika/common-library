@@ -6,10 +6,11 @@ import java.awt.image.BufferedImage;
 import java.util.Random;
 
 public class GameWindow extends Frame implements KeyListener, MouseMotionListener {
+
     private static final int W = 1280, H = 1024;
 
     private boolean repaint = true;
-    private BufferedImage buffer;
+    private final BufferedImage buffer;
 
     public GameWindow() {
         super("Game");
@@ -98,4 +99,5 @@ public class GameWindow extends Frame implements KeyListener, MouseMotionListene
 
     public void keyReleased(KeyEvent e) {
     }
+
 }

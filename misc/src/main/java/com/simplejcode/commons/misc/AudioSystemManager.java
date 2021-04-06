@@ -4,7 +4,7 @@ import java.util.*;
 
 public class AudioSystemManager {
 
-    private static AudioSystemManager instance = new AudioSystemManager();
+    private static final AudioSystemManager instance = new AudioSystemManager();
 
     public static AudioSystemManager getInstance() {
         return instance;
@@ -15,7 +15,7 @@ public class AudioSystemManager {
     class
      */
 
-    private List<AudioClipWrapper> audioClips = new ArrayList<>();
+    private final List<AudioClipWrapper> audioClips = new ArrayList<>();
 
     private boolean soundEnabled;
 

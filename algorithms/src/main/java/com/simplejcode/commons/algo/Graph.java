@@ -19,8 +19,8 @@ public class Graph {
         }
     }
 
-    private List<Edge>[] edges;
-    private boolean[][] hasEdge;
+    private final List<Edge>[] edges;
+    private final boolean[][] hasEdge;
     private int nEdges;
 
     public Graph(int size) {

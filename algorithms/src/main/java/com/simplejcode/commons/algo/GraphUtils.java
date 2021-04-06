@@ -44,7 +44,8 @@ public final class GraphUtils {
 
     public static int[] dijkstra2(int s, int[][] d) {
         class V implements Comparable<V> {
-            int i, d;
+            final int i;
+            final int d;
 
             public V(int i, int d) {
                 this.i = i;
@@ -492,14 +493,14 @@ public final class GraphUtils {
     private static final int maxnode = 5000;
     private static final int maxedge = 250000;
 
-    private static int[] head = new int[maxnode];
-    private static int[] point = new int[maxedge];
-    private static int[] next = new int[maxedge];
-    private static int[] flow = new int[maxedge];
-    private static int[] capa = new int[maxedge];
-    private static int[] dist = new int[maxnode];
-    private static int[] Q = new int[maxnode];
-    private static int[] work = new int[maxnode];
+    private static final int[] head = new int[maxnode];
+    private static final int[] point = new int[maxedge];
+    private static final int[] next = new int[maxedge];
+    private static final int[] flow = new int[maxedge];
+    private static final int[] capa = new int[maxedge];
+    private static final int[] dist = new int[maxnode];
+    private static final int[] Q = new int[maxnode];
+    private static final int[] work = new int[maxnode];
 
     public static int dinicFlow(int[][] c, int s, int t) {
         int n = c.length, nedge = 0, maxFlow = 0;

@@ -5,8 +5,13 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class ColorTest extends JPanel implements AdjustmentListener {
+
     private Color c;
-    private JScrollBar sbRed, sbGreen, sbBlue, sbA, sbV;
+    private final JScrollBar sbRed;
+    private final JScrollBar sbGreen;
+    private final JScrollBar sbBlue;
+    private final JScrollBar sbA;
+    private final JScrollBar sbV;
 
     public ColorTest() {
         super(null);
@@ -62,4 +67,5 @@ public class ColorTest extends JPanel implements AdjustmentListener {
     public void adjustmentValueChanged(AdjustmentEvent e) {
         repaint();
     }
+
 }

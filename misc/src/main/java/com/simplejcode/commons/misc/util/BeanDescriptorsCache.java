@@ -11,25 +11,25 @@ public final class BeanDescriptorsCache {
 
     //-----------------------------------------------------------------------------------
 
-    private static Map<Class, BeanDescriptorInfo[]> readDescriptors = new HashMap<>();
-    private static Map<Class, Map<String, BeanDescriptorInfo>> writeDescriptors = new HashMap<>();
+    private static final Map<Class<?>, BeanDescriptorInfo[]> READ_DESCRIPTORS = new HashMap<>();
+    private static final Map<Class<?>, Map<String, BeanDescriptorInfo>> WRITE_DESCRIPTORS = new HashMap<>();
 
-    public static BeanDescriptorInfo[] getReadDescriptors(Class clazz) {
+    public static BeanDescriptorInfo[] getReadDescriptors(Class<?> clazz) {
         cacheDescriptors(clazz);
-        return readDescriptors.get(clazz);
+        return READ_DESCRIPTORS.get(clazz);
     }
 
-    public static Map<String, BeanDescriptorInfo> getWriteDescriptors(Class clazz) {
+    public static Map<String, BeanDescriptorInfo> getWriteDescriptors(Class<?> clazz) {
         cacheDescriptors(clazz);
-        return writeDescriptors.get(clazz);
+        return WRITE_DESCRIPTORS.get(clazz);
     }
 
     private static void cacheDescriptors(Class<?> clazz) {
-        if (writeDescriptors.containsKey(clazz)) {
+        if (WRITE_DESCRIPTORS.containsKey(clazz)) {
             return;
         }
         synchronized (BeanDescriptorsCache.class) {
-            if (writeDescriptors.containsKey(clazz)) {
+            if (WRITE_DESCRIPTORS.containsKey(clazz)) {
                 return;
             }
             try {
@@ -51,8 +51,8 @@ public final class BeanDescriptorsCache {
                     }
                 }
 
-                readDescriptors.put(clazz, readersList.toArray(new BeanDescriptorInfo[0]));
-                writeDescriptors.put(clazz, writersMap);
+                READ_DESCRIPTORS.put(clazz, readersList.toArray(new BeanDescriptorInfo[0]));
+                WRITE_DESCRIPTORS.put(clazz, writersMap);
 
             } catch (IntrospectionException e) {
                 throw convert(e);

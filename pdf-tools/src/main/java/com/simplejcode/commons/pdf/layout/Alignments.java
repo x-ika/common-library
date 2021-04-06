@@ -1,8 +1,5 @@
 package com.simplejcode.commons.pdf.layout;
 
-/**
- * @author I. Merabishvili | HighPots
- */
 public enum Alignments {
 
     TOP_LEFT(AlignmentV.TOP, AlignmentH.LEFT),

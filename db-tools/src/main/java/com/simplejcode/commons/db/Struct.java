@@ -21,7 +21,7 @@ public class Struct implements Serializable {
     }
 
     private final int mask;
-    private Struct.Item[] data;
+    private final Struct.Item[] data;
 
     public Struct(int size) {
         data = new Struct.Item[Integer.highestOneBit(size)];

@@ -6,9 +6,10 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class FieldAndButton extends JPanel {
-    private JTextField field;
 
-    private JButton button;
+    private final JTextField field;
+
+    private final JButton button;
 
     public FieldAndButton(ActionListener al, int columns, String text, Color bgColor) {
         field = new JTextField(columns);
@@ -37,4 +38,5 @@ public class FieldAndButton extends JPanel {
     public void setText(String text) {
         field.setText(text);
     }
+
 }

@@ -5,10 +5,10 @@ import java.io.*;
 
 public class SimpleAudioRecorder extends Thread {
 
-    private TargetDataLine line;
-    private AudioFileFormat.Type targetType;
-    private AudioInputStream audioInputStream;
-    private File outputFile;
+    private final TargetDataLine line;
+    private final AudioFileFormat.Type targetType;
+    private final AudioInputStream audioInputStream;
+    private final File outputFile;
 
     public SimpleAudioRecorder(TargetDataLine line, AudioFileFormat.Type targetType, File file) {
         this.line = line;

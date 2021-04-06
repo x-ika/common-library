@@ -5,9 +5,9 @@ import java.awt.*;
 
 public class LoginForm extends JFrame {
 
-    private JTextField host;
-    private JTextField name;
-    private JTextField password;
+    private final JTextField host;
+    private final JTextField name;
+    private final JTextField password;
 
     public LoginForm(Action okAction, Action cancelAction) {
         super("Login");

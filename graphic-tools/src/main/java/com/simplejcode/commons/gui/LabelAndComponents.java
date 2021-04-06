@@ -9,9 +9,9 @@ public class LabelAndComponents<T extends JComponent> extends JPanel {
     private static final int DEFAULT_MARGIN = 5;
 
 
-    private JLabel label;
+    private final JLabel label;
 
-    private T[] components;
+    private final T[] components;
 
     @SafeVarargs
     public LabelAndComponents(String text, Color bgColor, T... components) {

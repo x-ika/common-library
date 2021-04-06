@@ -9,7 +9,8 @@ import java.util.*;
 
 public class DesktopFrame extends CustomFrame {
 
-    private BufferedImage background, foreground;
+    private final BufferedImage background;
+    private final BufferedImage foreground;
 
     protected List<JInternalFrame> internalFrames = new ArrayList<>();
 

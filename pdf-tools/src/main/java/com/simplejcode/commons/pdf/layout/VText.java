@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.*;
 
 /**
- * @author I. Merabishvili | HighPots
+ * @author I. Merabishvili
  * <p>
  * This class represents the text.
  * Split logic is applied to the text before drawn
@@ -14,9 +14,9 @@ import java.util.*;
  */
 public class VText extends View {
 
-    private IFont font;
-    private Color color;
-    private String text;
+    private final IFont font;
+    private final Color color;
+    private final String text;
 
     private List<String> lines;
 
