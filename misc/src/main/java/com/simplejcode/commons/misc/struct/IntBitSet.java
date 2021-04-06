@@ -1,4 +1,4 @@
-package com.simplejcode.commons.algo;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.Arrays;
 
@@ -10,11 +10,14 @@ public class IntBitSet {
     private static final int WORD_MASK = 0xffffffff;
     private static final int UWORD_MASK = 0x7fffffff;
 
+
     private final int[] word;
+
 
     public IntBitSet(int nBits) {
         word = new int[calcSize(nBits)];
     }
+
 
     public int cardinality() {
         int sum = 0;
@@ -129,6 +132,7 @@ public class IntBitSet {
         }
         return ret.toString();
     }
+
 
     private static int calcSize(int nBits) {
         return (nBits - 1 >> ADDRESS_BITS_PER_WORD) + 1;

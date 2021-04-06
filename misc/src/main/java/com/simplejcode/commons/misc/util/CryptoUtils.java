@@ -49,6 +49,14 @@ public final class CryptoUtils {
         return getDigest("SHA-256", data);
     }
 
+    public static String sha512(String data) {
+        return toHex(sha512(data.getBytes()));
+    }
+
+    public static byte[] sha512(byte[] data) {
+        return getDigest("SHA-512", data);
+    }
+
     public static String hmacSha256(String key, String data) {
         return toHex(hmacSha256(key.getBytes(), data.getBytes()));
     }

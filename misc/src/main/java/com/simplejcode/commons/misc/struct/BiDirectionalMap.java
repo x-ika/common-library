@@ -1,11 +1,11 @@
-package com.simplejcode.commons.misc;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.*;
 
 public class BiDirectionalMap<T1, T2> {
 
-    private Map<T1, T2> map1;
-    private Map<T2, T1> map2;
+    private final Map<T1, T2> map1;
+    private final Map<T2, T1> map2;
 
     public BiDirectionalMap() {
         map1 = new HashMap<>();

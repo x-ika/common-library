@@ -12,11 +12,15 @@ public final class StringUtils {
     //-----------------------------------------------------------------------------------
 
     public static boolean isBlank(String s) {
-        return s == null || s.trim().isEmpty();
+        return s == null || s.isEmpty();
     }
 
-    public static boolean isEmpty(String s) {
-        return s == null || s.isEmpty();
+    public static boolean isNotBlank(String s) {
+        return !isBlank(s);
+    }
+
+    public static boolean isNullOrEmpty(String s) {
+        return s == null || s.trim().isEmpty();
     }
 
     //-----------------------------------------------------------------------------------
@@ -24,7 +28,7 @@ public final class StringUtils {
     Efficient Constructing-Parsing
      */
 
-    public static String concat(char delimiter, List<?> list) {
+    public static String concat(String delimiter, List<?> list) {
         if (list.isEmpty()) {
             return "";
         }
@@ -32,10 +36,10 @@ public final class StringUtils {
         for (Object t : list) {
             sb.append(delimiter).append(t == null ? "" : t.toString());
         }
-        return sb.substring(1);
+        return sb.substring(delimiter.length());
     }
 
-    public static String concat(char delimiter, String... s) {
+    public static String concat(String delimiter, String... s) {
         if (s.length == 0) {
             return "";
         }
@@ -43,7 +47,7 @@ public final class StringUtils {
         for (String p : s) {
             sb.append(delimiter).append(p == null ? "" : p);
         }
-        return sb.substring(1);
+        return sb.substring(delimiter.length());
     }
 
     public static String repeat(String s, int n) {

@@ -1,13 +1,13 @@
-package com.simplejcode.commons.misc;
+package com.simplejcode.commons.misc.cache;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.function.*;
+import java.util.function.Function;
 
 @SuppressWarnings("unchecked")
-public class InMemoryCache {
+public class InMemoryCache implements ICache {
 
-    private final class CacheEntry {
+    private static final class CacheEntry {
 
         String key;
         Object value;
@@ -37,9 +37,9 @@ public class InMemoryCache {
     private int currentIndex;
 
 
-    public InMemoryCache(TimeUnit timeUnit, int minimumStoreDuration, int maximumStoreDuration) {
-        millis = timeUnit.toMillis(minimumStoreDuration);
-        cache = new CacheEntry[maximumStoreDuration / minimumStoreDuration];
+    public InMemoryCache(TimeUnit precisionUnit, int precisionDuration, int maximumStoreDuration) {
+        millis = precisionUnit.toMillis(precisionDuration);
+        cache = new CacheEntry[maximumStoreDuration + 1];
         map = new HashMap<>();
         currentIndex = 0;
         lastUpdateTime = System.currentTimeMillis() / millis * millis;
@@ -50,38 +50,41 @@ public class InMemoryCache {
     Public API
      */
 
+    @Override
+    public int getMaximumDuration() {
+        return cache.length - 1;
+    }
+
+    @Override
     public synchronized <T> T get(String key) {
         update();
         CacheEntry entry = map.get(key);
         return entry == null ? null : (T) entry.value;
     }
 
-    public synchronized void put(String key, Object value) {
-        put(key, value, cache.length - 1);
-    }
-
+    @Override
     public synchronized void put(String key, Object value, int duration) {
         update();
         removeEntry(key);
         putEntry(key, value, duration);
     }
 
-    public synchronized Object remove(String key) {
+    @Override
+    public synchronized <T> T remove(String key) {
         update();
-        return removeEntry(key);
+        CacheEntry entry = removeEntry(key);
+        return entry == null ? null : (T) entry.value;
     }
 
-    public <P, T> T getCached(String name, Supplier<T> supplier) {
-        return getCached(name, null, t -> supplier.get(), cache.length - 1);
+    @Override
+    public synchronized void clear() {
+        clear0();
     }
 
-    public <P, T> T getCached(String name, P param, Function<P, T> function) {
-        return getCached(name, param, function, cache.length - 1);
-    }
-
-    public <P, T> T getCached(String name, P param, Function<P, T> function, int duration) {
+    @Override
+    public <P, T> T cacheFunction(String name, P param, Function<P, T> function, int duration) {
         update();
-        String key = generateCacheKey(name, param);
+        String key = ICache.generateCacheKey(name, param);
         T value = get(key);
         if (value == null) {
             synchronized (this) {
@@ -128,7 +131,7 @@ public class InMemoryCache {
         map.put(key, cache[index] = entry);
     }
 
-    private Object removeEntry(String key) {
+    private CacheEntry removeEntry(String key) {
         CacheEntry entry = map.remove(key);
         if (entry == null) {
             return null;
@@ -144,14 +147,14 @@ public class InMemoryCache {
                 next.prev = prev;
             }
         }
-        return entry.value;
+        return entry;
     }
 
     private synchronized void update() {
         int passed = (int) ((System.currentTimeMillis() - lastUpdateTime) / millis);
         // optimize full cleanup
         if (passed >= cache.length) {
-            clear();
+            clear0();
         } else {
             clearAll(passed);
         }
@@ -159,7 +162,7 @@ public class InMemoryCache {
         currentIndex = getIndex(passed);
     }
 
-    private void clear() {
+    private void clear0() {
         Arrays.fill(cache, null);
         map.clear();
     }
@@ -179,19 +182,6 @@ public class InMemoryCache {
 
     private int getIndex(int duration) {
         return (currentIndex + duration) % cache.length;
-    }
-
-    //-----------------------------------------------------------------------------------
-    /*
-    Static API
-     */
-
-    public static String generateCacheKey(Object... s) {
-        StringBuilder sb = new StringBuilder();
-        for (Object p : s) {
-            sb.append('#').append(p);
-        }
-        return sb.toString();
     }
 
 }

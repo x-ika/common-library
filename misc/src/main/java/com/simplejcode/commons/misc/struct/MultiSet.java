@@ -1,4 +1,4 @@
-package com.simplejcode.commons.algo;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.*;
 
@@ -6,9 +6,11 @@ public class MultiSet<T> {
 
     private final Map<T, Integer> map;
 
+
     public MultiSet() {
         map = new HashMap<>();
     }
+
 
     public boolean contains(T t) {
         return count(t) > 0;

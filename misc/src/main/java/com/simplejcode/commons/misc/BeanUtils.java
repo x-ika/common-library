@@ -1,5 +1,6 @@
 package com.simplejcode.commons.misc;
 
+import com.simplejcode.commons.misc.struct.TwoWayMap;
 import com.simplejcode.commons.misc.util.*;
 
 import java.lang.reflect.Method;
@@ -134,6 +135,9 @@ public class BeanUtils {
             if (clazz == null) {
                 clazz = (Class<T2>) leftClass;
             }
+        }
+        if (clazz.isEnum()) {
+            return (T2) t1;
         }
         // 4. create and memorize instance
         try {

@@ -1,18 +1,20 @@
-package com.simplejcode.commons.algo;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.Arrays;
 
-public class FastHashSet {
+public class IntHashSet {
 
     private int size, msk;
     private int[] count;
     private int[][] data;
 
-    public FastHashSet(int numChunks, int chunkSize) {
+
+    public IntHashSet(int numChunks, int chunkSize) {
         msk = numChunks - 1;
         count = new int[numChunks];
         data = new int[numChunks][chunkSize];
     }
+
 
     public int getSize() {
         return size;

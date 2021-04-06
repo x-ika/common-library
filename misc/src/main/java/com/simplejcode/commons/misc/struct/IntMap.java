@@ -1,4 +1,4 @@
-package com.simplejcode.commons.algo;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.Arrays;
 
@@ -16,14 +16,17 @@ public class IntMap {
         }
     }
 
+
     private int size;
     private int[] count;
     private Entry[] data;
+
 
     public IntMap(int size) {
         data = new Entry[size];
         count = new int[size];
     }
+
 
     public void add(int i, int k) {
         int ind = i & data.length - 1;

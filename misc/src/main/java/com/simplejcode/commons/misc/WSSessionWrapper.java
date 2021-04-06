@@ -5,6 +5,10 @@ import java.net.URI;
 
 public class WSSessionWrapper {
 
+    private static final String TIMEOUT_PROPERTY = "io.undertow.websocket.CONNECT_TIMEOUT";
+
+    private static final int DEFAULT_WEB_SOCKET_TIMEOUT_SECONDS = 15;
+
     /**
      * Session object
      */
@@ -13,7 +17,7 @@ public class WSSessionWrapper {
     /**
      * The associated Endpoint instance
      */
-    private Endpoint endpoint;
+    private final Endpoint endpoint;
 
 
     public WSSessionWrapper(Endpoint endpoint) {
@@ -22,8 +26,13 @@ public class WSSessionWrapper {
 
 
     public void connect(String uri) throws Exception {
+        connect(uri, DEFAULT_WEB_SOCKET_TIMEOUT_SECONDS);
+    }
+
+    public void connect(String uri, int timeOut) throws Exception {
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
         ClientEndpointConfig config = ClientEndpointConfig.Builder.create().build();
+        config.getUserProperties().put(TIMEOUT_PROPERTY, timeOut);
         container.connectToServer(endpoint, config, new URI(uri));
     }
 

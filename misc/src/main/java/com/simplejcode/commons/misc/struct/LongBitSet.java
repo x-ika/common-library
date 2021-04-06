@@ -1,4 +1,4 @@
-package com.simplejcode.commons.algo;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.Arrays;
 
@@ -10,11 +10,14 @@ public class LongBitSet {
     private static final long WORD_MASK = 0xffffffffffffffffL;
     private static final long UWORD_MASK = 0x7fffffffffffffffL;
 
+
     private final long[] word;
+
 
     public LongBitSet(int nBits) {
         word = new long[calcSize(nBits)];
     }
+
 
     public int cardinality() {
         int sum = 0;
@@ -129,6 +132,7 @@ public class LongBitSet {
         }
         return ret.toString();
     }
+
 
     private static int calcSize(int nBits) {
         return (nBits - 1 >> ADDRESS_BITS_PER_WORD) + 1;

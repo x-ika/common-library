@@ -69,13 +69,23 @@ public final class DecimalUtils {
 
     //-----------------------------------------------------------------------------------
 
-    public static <T> BigDecimal sum(List<T> list, Function<T, BigDecimal> mapper) {
-        BigDecimal sum = BigDecimal.ZERO;
-        for (T t : list) {
-            sum = sum.add(mapper.apply(t));
-        }
-        return sum;
+    public static <T> BigDecimal min(BigDecimal a, BigDecimal b) {
+        return a == null ? b : b == null ? a : a.min(b);
     }
+
+    public static <T> BigDecimal max(BigDecimal a, BigDecimal b) {
+        return a == null ? b : b == null ? a : a.max(b);
+    }
+
+    public static <T> BigDecimal sum(BigDecimal a, BigDecimal b) {
+        return a == null ? b : b == null ? a : a.add(b);
+    }
+
+    public static <T> BigDecimal sub(BigDecimal a, BigDecimal b) {
+        return a == null ? b : b == null ? a : a.subtract(b);
+    }
+
+    //-----------------------------------------------------------------------------------
 
     public static <T> BigDecimal min(List<T> list, Function<T, BigDecimal> mapper) {
         BigDecimal min = null;
@@ -93,6 +103,14 @@ public final class DecimalUtils {
             max = max == null ? cur : max.max(cur);
         }
         return max;
+    }
+
+    public static <T> BigDecimal sum(List<T> list, Function<T, BigDecimal> mapper) {
+        BigDecimal sum = BigDecimal.ZERO;
+        for (T t : list) {
+            sum = sum.add(mapper.apply(t));
+        }
+        return sum;
     }
 
 }

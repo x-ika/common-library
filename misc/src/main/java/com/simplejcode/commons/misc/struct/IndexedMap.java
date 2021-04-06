@@ -1,13 +1,13 @@
-package com.simplejcode.commons.misc;
+package com.simplejcode.commons.misc.struct;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class IndexedMap<E, I> {
 
-    private Map<E, I> indexMap;
+    private final Map<E, I> indexMap;
 
-    private Map<I, Collection<E>> collectionMap;
+    private final Map<I, Collection<E>> collectionMap;
 
 
     public IndexedMap() {
@@ -22,8 +22,16 @@ public class IndexedMap<E, I> {
     }
 
     public synchronized void index(E element, I index) {
+        reindex(element, index);
+    }
 
-        I oldIndex = indexMap.put(element, index);
+    public synchronized void remove(E element) {
+        reindex(element, null);
+    }
+
+    private synchronized void reindex(E element, I index) {
+
+        I oldIndex = index == null ? indexMap.remove(element) : indexMap.put(element, index);
 
         if (index != null && index.equals(oldIndex)) {
             return;

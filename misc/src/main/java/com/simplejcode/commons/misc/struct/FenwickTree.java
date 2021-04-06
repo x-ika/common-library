@@ -1,12 +1,14 @@
-package com.simplejcode.commons.algo;
+package com.simplejcode.commons.misc.struct;
 
 public class FenwickTree {
 
-    private long[] t;
+    private final long[] t;
+
 
     public FenwickTree(int n) {
         t = new long[n];
     }
+
 
     // Adds value to the i-th element
     public void add(int i, long value) {

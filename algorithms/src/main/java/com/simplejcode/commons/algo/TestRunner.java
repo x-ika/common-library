@@ -11,7 +11,7 @@ public class TestRunner {
         System.exit(0);
         loanCalculator(27600, 0.0864, 900);
         test1();
-        test2();
+//        test2();
         test3();
         test4();
         test5();
@@ -129,38 +129,38 @@ public class TestRunner {
         testEnd();
     }
 
-    private static void test2() {
-        int n = 1000, m = 1000000;
-        int[] a = new int[n];
-        Random r = new Random(1);
-        for (int iter = 0; iter < 10; iter++) {
-
-            for (int i = 0; i < n; i++) {
-                a[i] = r.nextInt(m);
-            }
-
-            int res1 = 0;
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < i; j++) {
-                    if (a[i] < a[j]) {
-                        res1++;
-                    }
-                }
-            }
-            System.out.println("inversions = " + res1);
-            long startTime = System.nanoTime();
-            long res2 = 0;
-            FenwickTree tree = new FenwickTree(m);
-            for (int i = n; i-- > 0; ) {
-                res2 += tree.sum(a[i] - 1);
-                tree.add(a[i], 1);
-            }
-            System.out.println("inversions = " + res2);
-            System.out.println("Time: " + (System.nanoTime() - startTime) / 1e9);
-            System.out.println("");
-        }
-        testEnd();
-    }
+//    private static void test2() {
+//        int n = 1000, m = 1000000;
+//        int[] a = new int[n];
+//        Random r = new Random(1);
+//        for (int iter = 0; iter < 10; iter++) {
+//
+//            for (int i = 0; i < n; i++) {
+//                a[i] = r.nextInt(m);
+//            }
+//
+//            int res1 = 0;
+//            for (int i = 0; i < a.length; i++) {
+//                for (int j = 0; j < i; j++) {
+//                    if (a[i] < a[j]) {
+//                        res1++;
+//                    }
+//                }
+//            }
+//            System.out.println("inversions = " + res1);
+//            long startTime = System.nanoTime();
+//            long res2 = 0;
+//            FenwickTree tree = new FenwickTree(m);
+//            for (int i = n; i-- > 0; ) {
+//                res2 += tree.sum(a[i] - 1);
+//                tree.add(a[i], 1);
+//            }
+//            System.out.println("inversions = " + res2);
+//            System.out.println("Time: " + (System.nanoTime() - startTime) / 1e9);
+//            System.out.println("");
+//        }
+//        testEnd();
+//    }
 
     private static void test3() {
         System.out.println("Should print {{0, 1} {2}}");
