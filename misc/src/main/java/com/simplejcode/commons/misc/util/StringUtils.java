@@ -102,6 +102,30 @@ public final class StringUtils {
     Longest Increasing/Common Subsequence
      */
 
+    public static int lis(int[] a) {
+        int[] ts = new int[a.length];
+        int sz = 0;
+        for (int x : a) {
+            // min index for which ts[ind] >= a[i] or sz
+            int ind = minInd(ts, -1, sz, x);
+            ts[ind] = x;
+            sz = Math.max(sz, ind + 1);
+        }
+        return sz;
+    }
+
+    private static int minInd(int[] a, int min, int max, int x) {
+        while (max - min > 1) {
+            int mid = min + max >> 1;
+            if (a[mid] < x) {
+                min = mid;
+            } else {
+                max = mid;
+            }
+        }
+        return max;
+    }
+
     public static int lis(int[] a, int[][] dp) {
         int[] b = a.clone();
         Arrays.sort(a);
