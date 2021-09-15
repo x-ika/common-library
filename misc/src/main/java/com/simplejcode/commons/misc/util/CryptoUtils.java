@@ -27,8 +27,25 @@ public final class CryptoUtils {
         return new String(value);
     }
 
+    public static byte[] fromHex(String s) {
+        int n = s.length();
+        byte[] data = new byte[n >> 1];
+        for (int i = 0; i < n; i += 2) {
+            data[i >> 1] = byteValue(s.charAt(i), s.charAt(i + 1));
+        }
+        return data;
+    }
+
     public static int hexValue(int t) {
         return t < 10 ? '0' + t : 'A' + t - 10;
+    }
+
+    public static byte byteValue(char h1, char h2) {
+        return (byte) (intValue(h1) << 4 | intValue(h2));
+    }
+
+    public static int intValue(char hex) {
+        return '0' <= hex && hex <= '9' ? hex - '0' : hex - 'A' + 10;
     }
 
     //-----------------------------------------------------------------------------------

@@ -8,7 +8,7 @@ import java.io.ByteArrayInputStream;
 import java.sql.*;
 import java.util.*;
 
-public class DatabaseUtils {
+public final class DatabaseUtils {
 
     public static DataSource getDataSource(String resourceName) throws NamingException {
         InitialContext initialContext = new InitialContext();
@@ -274,7 +274,7 @@ public class DatabaseUtils {
 
     public static final Object DEFAULT = new Object();
 
-    private static final Map<Class, String> map = new Hashtable<>();
+    private static final Map<Class, String> mappedTypes = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
 
@@ -304,7 +304,8 @@ public class DatabaseUtils {
             }
         }
 
-        StringBuilder sql = new StringBuilder("begin ");
+        StringBuilder sql = new StringBuilder(1 << 8);
+        sql.append("begin ");
         if (methodType == MethodType.FUNCTION) {
             sql.append("? := ");
         }
@@ -320,7 +321,7 @@ public class DatabaseUtils {
         CallableStatement statement = null;
         try {
 
-            if (Arrays.stream(inputParams).anyMatch(p -> p != null && map.containsKey(p.getClass()))) {
+            if (Arrays.stream(inputParams).anyMatch(p -> p != null && mappedTypes.containsKey(p.getClass()))) {
                 c = c.getMetaData().getConnection();
             }
 
@@ -372,8 +373,6 @@ public class DatabaseUtils {
             closeStatement(statement);
         }
     }
-
-    //-----------------------------------------------------------------------------------
 
     //-----------------------------------------------------------------------------------
 
