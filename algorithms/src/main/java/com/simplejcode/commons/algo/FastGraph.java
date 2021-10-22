@@ -16,7 +16,7 @@ public final class FastGraph {
 
     // subgraph index by vertex
     public static int[] GP;
-    // subgraph vertext index by vertex
+    // subgraph vertex index by vertex
     public static int[] VP;
 
     public static class Graph {
