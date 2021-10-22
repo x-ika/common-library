@@ -1,10 +1,10 @@
 group 'com.simplejcode.commons'
 version '1.0'
 
-dependencies {
+configurations {
 
     testCompile.extendsFrom junit
 
-    compileOnly 'javax.media:jmf:2.1.1e'
+    compileOnly.extendsFrom javaxMedia
 
 }

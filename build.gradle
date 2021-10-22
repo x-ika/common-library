@@ -80,6 +80,7 @@ subprojects {
         junit
 
         // java ee api libraries
+        javaxMedia
         javaxXmlBind
         javaxMail
         javaxServlet
@@ -110,6 +111,7 @@ subprojects {
 
         junit                          'junit:junit:4.12'
 
+        javaxMedia                     'javax.media:jmf:2.1.1e'
         javaxXmlBind                   'javax.xml.bind:jaxb-api:2.1'
         javaxMail                      'javax.mail:mail:1.4.3'
         javaxMail                      'javax.mail:mailapi:1.4.3'
@@ -135,6 +137,7 @@ subprojects {
         googleTwoFA                    'com.warrenstrange:googleauth:1.2.0'
 
         jsoniter                       'com.jsoniter:jsoniter:0.9.23'
+        pdf                            'org.apache.pdfbox:pdfbox:2.0.11'
 
     }
 
