@@ -1,6 +1,7 @@
 package com.simplejcode.commons.misc;
 
 import javax.websocket.*;
+import java.io.IOException;
 import java.util.function.BiConsumer;
 
 public class WSEndpoint extends Endpoint {
@@ -28,6 +29,17 @@ public class WSEndpoint extends Endpoint {
 
     @Override
     public void onOpen(Session session, EndpointConfig config) {
+        MessageHandler.Whole<PongMessage> pongMessageWhole = new MessageHandler.Whole<PongMessage>() {
+            @Override
+            public void onMessage(PongMessage message) {
+                try {
+                    session.getAsyncRemote().sendPong(message.getApplicationData());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        session.addMessageHandler(pongMessageWhole);
         sessionWrapper.setSession(session);
         onOpen.accept(session, config);
     }

@@ -21,7 +21,7 @@ class AudioClipWrapper {
         this.autoPlayMode = autoPlayMode;
         try {
             AudioInputStream ais = AudioSystem.getAudioInputStream(
-                    new BufferedInputStream(FileSystemUtils.getResource(fileName)));
+                    new BufferedInputStream(IOUtils.getResource(fileName)));
             format = ais.getFormat();
             audio = new byte[(int) 1e5];
             audio = Arrays.copyOf(audio, ais.read(audio));

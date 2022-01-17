@@ -1,7 +1,7 @@
 package com.simplejcode.commons.misc.util;
 
 import java.math.*;
-import java.util.List;
+import java.util.Collection;
 import java.util.function.Function;
 
 public final class DecimalUtils {
@@ -78,16 +78,16 @@ public final class DecimalUtils {
     }
 
     public static <T> BigDecimal sum(BigDecimal a, BigDecimal b) {
-        return a == null ? b : b == null ? a : a.add(b);
+        return ObjectUtils.nvl(a, BigDecimal.ZERO).add(ObjectUtils.nvl(b, BigDecimal.ZERO));
     }
 
     public static <T> BigDecimal sub(BigDecimal a, BigDecimal b) {
-        return a == null ? b : b == null ? a : a.subtract(b);
+        return ObjectUtils.nvl(a, BigDecimal.ZERO).subtract(ObjectUtils.nvl(b, BigDecimal.ZERO));
     }
 
     //-----------------------------------------------------------------------------------
 
-    public static <T> BigDecimal min(List<T> list, Function<T, BigDecimal> mapper) {
+    public static <T> BigDecimal min(Collection<T> list, Function<T, BigDecimal> mapper) {
         BigDecimal min = null;
         for (T t : list) {
             BigDecimal cur = mapper.apply(t);
@@ -96,7 +96,7 @@ public final class DecimalUtils {
         return min;
     }
 
-    public static <T> BigDecimal max(List<T> list, Function<T, BigDecimal> mapper) {
+    public static <T> BigDecimal max(Collection<T> list, Function<T, BigDecimal> mapper) {
         BigDecimal max = null;
         for (T t : list) {
             BigDecimal cur = mapper.apply(t);
@@ -105,7 +105,7 @@ public final class DecimalUtils {
         return max;
     }
 
-    public static <T> BigDecimal sum(List<T> list, Function<T, BigDecimal> mapper) {
+    public static <T> BigDecimal sum(Collection<T> list, Function<T, BigDecimal> mapper) {
         BigDecimal sum = BigDecimal.ZERO;
         for (T t : list) {
             sum = sum.add(mapper.apply(t));

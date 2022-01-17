@@ -42,6 +42,20 @@ public final class StreamUtils {
 
     //-----------------------------------------------------------------------------------
 
+    public static  <T, K> List<T> intersection(Collection<T> c1, Collection<T> c2, Function<T, K> toKey) {
+        Set<K> set = mapToSet(c1, toKey);
+        return filter(c2, t -> set.contains(toKey.apply(t)));
+    }
+
+    public static  <T> List<T> union(Collection<? extends T> c1, Collection<? extends T> c2) {
+        List<T> list = new ArrayList<>(c1.size() + c2.size());
+        list.addAll(c1);
+        list.addAll(c2);
+        return list;
+    }
+
+    //-----------------------------------------------------------------------------------
+
     public static <K, V> V reduce(Collection<K> collection, V initial, BiFunction<V, K, V> reducer) {
         for (K k : collection) {
             initial = reducer.apply(initial, k);
@@ -67,16 +81,42 @@ public final class StreamUtils {
         return collection.stream().collect(Collectors.toMap(toKey, toValue, (a, b) -> a));
     }
 
-    public static <T, K> Map<K, List<T>> list2list(Collection<T> collection, Function<T, K> toKey) {
-        return list2list(collection, toKey, Function.identity());
+    public static <T, K> Map<K, List<T>> groupBy(Collection<T> collection, Function<T, K> toKey) {
+        return groupBy(collection, toKey, Function.identity());
     }
 
-    public static <T, K, V> Map<K, List<V>> list2list(Collection<T> collection, Function<T, K> toKey, Function<T, V> toValue) {
+    public static <T, K, V> Map<K, List<V>> groupBy(Collection<T> collection, Function<T, K> toKey, Function<T, V> toValue) {
         Map<K, List<V>> map = new HashMap<>();
         for (T t : collection) {
             K key = toKey.apply(t);
             List<V> sublist = map.computeIfAbsent(key, k -> new ArrayList<>());
             sublist.add(toValue.apply(t));
+        }
+        return map;
+    }
+
+    public static <T, K> Map<K, T> groupBy(Collection<T> collection,
+                                           Function<T, K> toKey,
+                                           BiFunction<T, T, T> aggregator)
+    {
+        return groupBy(collection, toKey, Function.identity(), aggregator);
+    }
+
+    public static <T, K, V> Map<K, V> groupBy(Collection<T> collection,
+                                              Function<T, K> toKey,
+                                              Function<T, V> toValue,
+                                              BiFunction<V, V, V> aggregator)
+    {
+        Map<K, V> map = new HashMap<>();
+        for (T t : collection) {
+            K key = toKey.apply(t);
+            V v1 = map.get(key);
+            V v2 = toValue.apply(t);
+            if (v1 == null) {
+                map.put(key, v2);
+            } else {
+                map.put(key, aggregator.apply(v1, v2));
+            }
         }
         return map;
     }

@@ -182,10 +182,10 @@ public final class HttpUtils {
             int minOk = HttpURLConnection.HTTP_OK;
             int maxOk = 299;
             if (responseCode < minOk || responseCode > maxOk) {
-                return new HttpResponse(responseCode, FileSystemUtils.read(conn.getErrorStream(), charsetName));
+                return new HttpResponse(responseCode, IOUtils.read(conn.getErrorStream(), charsetName));
             }
 
-            return new HttpResponse(responseCode, FileSystemUtils.read(conn.getInputStream(), charsetName), true);
+            return new HttpResponse(responseCode, IOUtils.read(conn.getInputStream(), charsetName), true);
 
         } catch (IOException e) {
             throw convert(e);

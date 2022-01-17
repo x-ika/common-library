@@ -40,4 +40,14 @@ public final class ObjectUtils {
         return o != null ? get.apply(o) : def.get();
     }
 
+    //-----------------------------------------------------------------------------------
+
+    public static <T extends Comparable<T>> T min(T t1, T t2) {
+        return t1.compareTo(t2) < 0 ? t1 : t2;
+    }
+
+    public static <T extends Comparable<T>> T max(T t1, T t2) {
+        return t1.compareTo(t2) > 0 ? t1 : t2;
+    }
+
 }

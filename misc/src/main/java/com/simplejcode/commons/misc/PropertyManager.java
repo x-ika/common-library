@@ -62,7 +62,7 @@ public class PropertyManager {
 
         try {
 
-            URL url = FileSystemUtils.getFileURL(propertiesFileName);
+            URL url = IOUtils.getFileURL(propertiesFileName);
             if (url == null) {
                 throw generate("Configuration was not found");
             }

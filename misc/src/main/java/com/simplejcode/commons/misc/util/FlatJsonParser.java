@@ -39,13 +39,13 @@ public final class FlatJsonParser {
                 if (!(content instanceof Map)) {
                     return null;
                 }
-                content = ((Map) content).get(key);
+                content = ((Map<?, ?>) content).get(key);
             }
             if (key instanceof Integer) {
                 if (!(content instanceof List)) {
                     return null;
                 }
-                content = ((List) content).get((Integer) key);
+                content = ((List<?>) content).get((Integer) key);
             }
         }
         return content;
@@ -57,7 +57,7 @@ public final class FlatJsonParser {
     }
 
     public static List<?> extractList(Object content, Object... keys) {
-        return (List) extractObject(content, keys);
+        return (List<?>) extractObject(content, keys);
     }
 
     public static List<?> extractListOrEmpty(Object content, Object... keys) {
@@ -66,11 +66,11 @@ public final class FlatJsonParser {
     }
 
     public static int extractInt(Object content, Object... keys) {
-        return (int) Double.parseDouble(extractString(content, keys));
+        return Integer.parseInt(extractStringWithCheck(content, keys));
     }
 
     public static long extractLong(Object content, Object... keys) {
-        return (long) Double.parseDouble(extractString(content, keys));
+        return Long.parseLong(extractStringWithCheck(content, keys));
     }
 
     public static boolean extractBoolean(Object content, Object... keys) {
@@ -80,6 +80,14 @@ public final class FlatJsonParser {
     public static BigDecimal extractDecimal(Object content, Object... keys) {
         String val = extractString(content, keys);
         return val == null ? null : new BigDecimal(val);
+    }
+
+    private static String extractStringWithCheck(Object content, Object[] keys) {
+        String s = extractString(content, keys);
+        if (s == null) {
+            throw generate("Not null expected at path: " + Arrays.toString(keys));
+        }
+        return s;
     }
 
     //-----------------------------------------------------------------------------------

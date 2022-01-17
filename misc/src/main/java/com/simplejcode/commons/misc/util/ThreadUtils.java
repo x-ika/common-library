@@ -16,7 +16,7 @@ public final class ThreadUtils {
 
     private static final String DEFAULT_THREAD_NAME = "Custom Thread";
 
-    private static final Map<String, AtomicInteger> THREAD_NUMBERS = new Hashtable<>();
+    private static Map<String, AtomicInteger> threadNumbers = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
     /*
@@ -57,19 +57,20 @@ public final class ThreadUtils {
     }
 
     public static Thread createThread(String name, Runnable runnable) {
-        return createThread(name, false, runnable);
+        return createThread(name, true, runnable);
     }
 
     public static Thread createThread(String name, boolean countThreads, Runnable runnable) {
         return createThread(name, countThreads, runnable, null);
     }
 
-    public static Thread createThread(String name, boolean countThreads,
+    public static Thread createThread(String name,
+                                      boolean countThreads,
                                       Runnable runnable,
                                       Thread.UncaughtExceptionHandler handler)
     {
         if (countThreads) {
-            name += "-" + THREAD_NUMBERS.computeIfAbsent(name, k -> new AtomicInteger()).incrementAndGet();
+            name += "-" + threadNumbers.computeIfAbsent(name, k -> new AtomicInteger()).incrementAndGet();
         }
         Thread thread = new Thread(runnable, name);
         thread.setUncaughtExceptionHandler(handler);
@@ -77,7 +78,14 @@ public final class ThreadUtils {
     }
 
     public static ThreadFactory createThreadFactory(String name) {
-        return r -> createThread(name, r);
+        return createThreadFactory(name, true, null);
+    }
+
+    public static ThreadFactory createThreadFactory(String name,
+                                                    boolean countThreads,
+                                                    Thread.UncaughtExceptionHandler handler)
+    {
+        return r -> createThread(name, countThreads, r, handler);
     }
 
     //-----------------------------------------------------------------------------------

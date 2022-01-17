@@ -1,7 +1,9 @@
 package com.simplejcode.commons.misc.util;
 
+import javax.activation.DataHandler;
 import javax.mail.*;
 import javax.mail.internet.*;
+import javax.mail.util.ByteArrayDataSource;
 import java.util.Properties;
 
 public final class MailUtils {
@@ -12,7 +14,7 @@ public final class MailUtils {
     //-----------------------------------------------------------------------------------
 
     public static boolean isValidEmail(String email) {
-        return !StringUtils.isBlank(email) && email.matches("(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-z0A-Z-9-]*[a-zA-Z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-zA-Z0-9-]*[a-zA-Z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])");
+        return StringUtils.isNotBlank(email) && email.matches("(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+[a-zA-Z0-9](?:[a-z0A-Z-9-]*[a-zA-Z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-zA-Z0-9-]*[a-zA-Z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])");
     }
 
     public static void sendMail(Mail mail) {
@@ -41,10 +43,39 @@ public final class MailUtils {
         try {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(mail.getFromMail()));
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(mail.getRecipient()));
+            message.addRecipients(Message.RecipientType.TO, InternetAddress.parse(mail.getRecipient()));
+            if (mail.getCarbonCopy() != null) {
+                message.addRecipients(Message.RecipientType.CC, InternetAddress.parse(mail.getCarbonCopy()));
+            }
+            if (mail.getBlindCarbonCopy() != null) {
+                message.addRecipients(Message.RecipientType.BCC, InternetAddress.parse(mail.getBlindCarbonCopy()));
+            }
             message.setSubject(mail.getMailSubject());
-            message.setText(mail.getContent());
-            message.setContent(mail.getContent(), "text/html; charset=utf-8");
+
+            Multipart multipart = new MimeMultipart();
+            BodyPart messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setText("Mail Body");
+
+            if (mail.getAttachments() != null) {
+                for (Mail.Attachment attachment : mail.getAttachments()) {
+                    MimeBodyPart attachmentPart = new MimeBodyPart();
+                    attachmentPart.setFileName(MimeUtility.encodeText(attachment.fileName));
+                    ByteArrayDataSource ds = new ByteArrayDataSource(attachment.data, attachment.mimeType);
+                    attachmentPart.setDataHandler(new DataHandler(ds));
+                    multipart.addBodyPart(attachmentPart);
+                }
+            }
+
+            MimeBodyPart bodyPart = new MimeBodyPart();
+            if (mail.getTextContent() != null) {
+                bodyPart.setText(mail.getTextContent());
+            }
+            if (mail.getHtmlContent() != null) {
+                bodyPart.setContent(mail.getHtmlContent(), "text/html; charset=utf-8");
+            }
+            multipart.addBodyPart(bodyPart);
+
+            message.setContent(multipart);
 
             // Send message
             Transport.send(message);
@@ -55,9 +86,9 @@ public final class MailUtils {
 
     private static class SMTPAuthenticator extends javax.mail.Authenticator {
 
-        private final String username;
+        private String username;
 
-        private final String password;
+        private String password;
 
         SMTPAuthenticator(String username, String password) {
             this.username = username;
