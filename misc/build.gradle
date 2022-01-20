@@ -8,7 +8,7 @@ configurations {
 
     compileOnly.extendsFrom javaxXmlBind
     compileOnly.extendsFrom javaxMail
-    compileOnly.extendsFrom javaxServlet
+    implementation.extendsFrom javaxServlet
     compileOnly.extendsFrom javaxEJB
     compileOnly.extendsFrom javaxWS
 

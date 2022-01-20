@@ -183,7 +183,7 @@ public final class DatabaseUtils {
     ORM Support
      */
 
-    private static final Map<Class, Method[]> settersByClass = new HashMap<>();
+    private static final Map<Class<?>, Method[]> settersByClass = new HashMap<>();
 
     public static List<DatabaseRowModel> cursorToList(ResultSet rset) throws SQLException {
         List<DatabaseRowModel> list = new ArrayList<>();
@@ -340,7 +340,7 @@ public final class DatabaseUtils {
 
     public static final Object DEFAULT = new Object();
 
-    private static final Map<Class, String> mappedTypes = new Hashtable<>();
+    private static final Map<Class<?>, String> MAPPED_TYPES = new Hashtable<>();
 
     //-----------------------------------------------------------------------------------
 
@@ -387,7 +387,7 @@ public final class DatabaseUtils {
         CallableStatement statement = null;
         try {
 
-            if (Arrays.stream(inputParams).anyMatch(p -> p != null && mappedTypes.containsKey(p.getClass()))) {
+            if (Arrays.stream(inputParams).anyMatch(p -> p != null && MAPPED_TYPES.containsKey(p.getClass()))) {
                 c = c.getMetaData().getConnection();
             }
 

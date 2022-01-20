@@ -4,14 +4,14 @@ import java.io.*;
 import java.net.*;
 import java.util.Arrays;
 
-public final class FileSystemUtils {
+public final class IOUtils {
 
-    private FileSystemUtils() {
+    private IOUtils() {
     }
 
     //-----------------------------------------------------------------------------------
 
-    private static final int DEFAULT_BUFFER_SIZE = 1 << 16;
+    private static final int DEFAULT_BUFFER_SIZE = 1 << 10;
 
     private static final String UTF8 = "UTF-8";
 
@@ -133,7 +133,7 @@ public final class FileSystemUtils {
         try {
             return new FileInputStream(path);
         } catch (IOException e) {
-            InputStream stream = FileSystemUtils.class.getResourceAsStream("/" + path);
+            InputStream stream = IOUtils.class.getResourceAsStream("/" + path);
             if (stream != null) {
                 return stream;
             }
@@ -151,7 +151,7 @@ public final class FileSystemUtils {
                 // continue
             }
         }
-        URL url = FileSystemUtils.class.getResource("/" + path);
+        URL url = IOUtils.class.getResource("/" + path);
         if (url != null) {
             return url;
         }

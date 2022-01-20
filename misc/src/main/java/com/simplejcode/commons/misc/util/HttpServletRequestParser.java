@@ -45,10 +45,10 @@ public final class HttpServletRequestParser {
         if (userAgent.contains("android")) {
             return "Android";
         }
-        if (userAgent.contains("iphone")) {
+        if (userAgent.contains("iphone") || userAgent.contains("ios")) {
             return "IPhone";
         }
-        return "UnKnown, More-Info: " + userAgent;
+        return "Unknown";
     }
 
     public static String getClientBrowser(HttpServletRequest request) {
@@ -56,18 +56,15 @@ public final class HttpServletRequestParser {
         final String userAgent = getUserAgent(request);
         final String lower = userAgent.toLowerCase();
 
-        // Edge
         if (lower.contains("msie")) {
             String[] s = fromOccurrenceSplitTwice(userAgent, "MSIE", ";", " ");
             return s[0].replace("MSIE", "IE") + "-" + s[1];
         }
 
-        // Safari
         if (lower.contains("safari") && lower.contains("version")) {
             return fromOccurrenceSplitTwice(userAgent, "Safari", " ", "/")[0] + "-" + fromOccurrenceSplitTwice(userAgent, "Version", " ", "/")[1];
         }
 
-        // Opera
         if (lower.contains("opera")) {
             return fromOccurrenceSplitTwice(userAgent, "Opera", " ", "/")[0] + "-" + fromOccurrenceSplitTwice(userAgent, "Version", " ", "/")[1];
         }
@@ -75,29 +72,29 @@ public final class HttpServletRequestParser {
             return fromOccurrenceSplitBy(userAgent, "OPR", " ")[0].replace("/", "-").replace("OPR", "Opera");
         }
 
-        // Chrome
         if (lower.contains("chrome")) {
             return fromOccurrenceSplitBy(userAgent, "Chrome", " ")[0].replace("/", "-");
         }
 
-        // Netscape
         if ((lower.contains("mozilla/7.0")) || (lower.contains("netscape6")) || (lower.contains("mozilla/4.7"))
                 || (lower.contains("mozilla/4.78")) || (lower.contains("mozilla/4.08")) || (lower.contains("mozilla/3")))
         {
             return "Netscape-?";
         }
 
-        // Firefox
         if (lower.contains("firefox")) {
             return fromOccurrenceSplitBy(userAgent, "Firefox", " ")[0].replace("/", "-");
         }
 
-        // IE
         if (lower.contains("rv")) {
             return "IE";
         }
 
-        return "UnKnown, More-Info: " + userAgent;
+        if (lower.contains("alamofire")) {
+            return fromOccurrenceSplitBy(userAgent, "alamofire", " ")[0].replace("/", "-");
+        }
+
+        return "Unknown, More-Info: " + userAgent;
     }
 
     public static String getUserAgent(HttpServletRequest request) {
