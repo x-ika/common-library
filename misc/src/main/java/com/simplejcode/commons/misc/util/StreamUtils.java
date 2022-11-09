@@ -11,6 +11,14 @@ public final class StreamUtils {
 
     //-----------------------------------------------------------------------------------
 
+    public static <T> List<T> collect(Iterable<T> iterable) {
+        List<T> result = new ArrayList<>();
+        iterable.forEach(result::add);
+        return result;
+    }
+
+    //-----------------------------------------------------------------------------------
+
     public static <T> T find(Collection<T> collection, Predicate<T> predicate) {
         for (T t : collection) {
             if (predicate.test(t)) {

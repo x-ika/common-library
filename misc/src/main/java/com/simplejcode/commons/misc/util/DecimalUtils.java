@@ -54,7 +54,7 @@ public final class DecimalUtils {
     }
 
     public static BigDecimal changePercent(BigDecimal prevValue, BigDecimal curValue) {
-        return inPercents(curValue, prevValue).subtract(DecimalUtils.HUNDRED);
+        return inPercents(curValue, prevValue).subtract(HUNDRED);
     }
 
     //-----------------------------------------------------------------------------------
@@ -69,48 +69,54 @@ public final class DecimalUtils {
 
     //-----------------------------------------------------------------------------------
 
-    public static <T> BigDecimal min(BigDecimal a, BigDecimal b) {
+    public static BigDecimal min(BigDecimal a, BigDecimal b) {
         return a == null ? b : b == null ? a : a.min(b);
     }
 
-    public static <T> BigDecimal max(BigDecimal a, BigDecimal b) {
+    public static BigDecimal max(BigDecimal a, BigDecimal b) {
         return a == null ? b : b == null ? a : a.max(b);
     }
 
-    public static <T> BigDecimal sum(BigDecimal a, BigDecimal b) {
+    public static BigDecimal sum(BigDecimal a, BigDecimal b) {
         return ObjectUtils.nvl(a, BigDecimal.ZERO).add(ObjectUtils.nvl(b, BigDecimal.ZERO));
     }
 
-    public static <T> BigDecimal sub(BigDecimal a, BigDecimal b) {
+    public static BigDecimal sub(BigDecimal a, BigDecimal b) {
         return ObjectUtils.nvl(a, BigDecimal.ZERO).subtract(ObjectUtils.nvl(b, BigDecimal.ZERO));
     }
 
     //-----------------------------------------------------------------------------------
 
     public static <T> BigDecimal min(Collection<T> list, Function<T, BigDecimal> mapper) {
-        BigDecimal min = null;
+        BigDecimal result = null;
         for (T t : list) {
-            BigDecimal cur = mapper.apply(t);
-            min = min == null ? cur : min.min(cur);
+            if (t != null) {
+                BigDecimal cur = mapper.apply(t);
+                result = result == null ? cur : result.min(cur);
+            }
         }
-        return min;
+        return result;
     }
 
     public static <T> BigDecimal max(Collection<T> list, Function<T, BigDecimal> mapper) {
-        BigDecimal max = null;
+        BigDecimal result = null;
         for (T t : list) {
-            BigDecimal cur = mapper.apply(t);
-            max = max == null ? cur : max.max(cur);
+            if (t != null) {
+                BigDecimal cur = mapper.apply(t);
+                result = result == null ? cur : result.max(cur);
+            }
         }
-        return max;
+        return result;
     }
 
     public static <T> BigDecimal sum(Collection<T> list, Function<T, BigDecimal> mapper) {
-        BigDecimal sum = BigDecimal.ZERO;
+        BigDecimal result = BigDecimal.ZERO;
         for (T t : list) {
-            sum = sum.add(mapper.apply(t));
+            if (t != null) {
+                result = result.add(mapper.apply(t));
+            }
         }
-        return sum;
+        return result;
     }
 
 }
