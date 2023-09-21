@@ -1,9 +1,9 @@
 package com.simplejcode.commons.misc.util;
 
-import javax.activation.DataHandler;
-import javax.mail.*;
-import javax.mail.internet.*;
-import javax.mail.util.ByteArrayDataSource;
+import jakarta.activation.DataHandler;
+import jakarta.mail.*;
+import jakarta.mail.internet.*;
+import jakarta.mail.util.ByteArrayDataSource;
 import java.util.Properties;
 
 public final class MailUtils {
@@ -84,7 +84,7 @@ public final class MailUtils {
         }
     }
 
-    private static class SMTPAuthenticator extends javax.mail.Authenticator {
+    private static class SMTPAuthenticator extends jakarta.mail.Authenticator {
 
         private String username;
 

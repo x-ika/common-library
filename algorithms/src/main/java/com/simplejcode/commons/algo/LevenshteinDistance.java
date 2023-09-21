@@ -85,7 +85,7 @@ public final class LevenshteinDistance {
         return dist;
     }
 
-    public static int getLevenshteinDistancce(String p, String q) {
+    public static int getLevenshteinDistance(String p, String q) {
         int n = p.length();
         int m = q.length();
 

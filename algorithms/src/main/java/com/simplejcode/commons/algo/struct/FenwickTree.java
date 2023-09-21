@@ -1,4 +1,4 @@
-package com.simplejcode.commons.misc.struct;
+package com.simplejcode.commons.algo.struct;
 
 public class FenwickTree {
 

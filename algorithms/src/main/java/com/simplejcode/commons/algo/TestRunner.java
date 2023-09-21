@@ -7,11 +7,9 @@ import java.util.*;
 public class TestRunner {
 
     public static void main(String[] args) {
-        calcBonus();
+        loanCalculator(34900, 0.0726, 580);
         System.exit(0);
-        loanCalculator(27600, 0.0864, 900);
         test1();
-//        test2();
         test3();
         test4();
         test5();
@@ -22,32 +20,6 @@ public class TestRunner {
     }
 
     //-----------------------------------------------------------------------------------
-
-    public static void calcBonus() {
-
-        int bonus = 0;
-
-        for (int i = 0; i < 10; i++) {
-
-            // first year - 8 months
-            if (i == 0) {
-                bonus += 80_000 * 2 / 3;
-            }
-            // current year - subtract 3 * 40% = 120%
-            if (i == 2) {
-                bonus += 80_000 * 10.8 / 12;
-            }
-            // any other year
-            if (i != 0 && i != 2) {
-                bonus += 80_000;
-            }
-
-            int x = (int) Math.round(0.3 * bonus);
-            System.out.println(x);
-            bonus -= x;
-
-        }
-    }
 
     public static void loanCalculator(double base, double percent, double payment) {
         double totalPercent = 0, totalBase = 0;
@@ -129,39 +101,6 @@ public class TestRunner {
         testEnd();
     }
 
-//    private static void test2() {
-//        int n = 1000, m = 1000000;
-//        int[] a = new int[n];
-//        Random r = new Random(1);
-//        for (int iter = 0; iter < 10; iter++) {
-//
-//            for (int i = 0; i < n; i++) {
-//                a[i] = r.nextInt(m);
-//            }
-//
-//            int res1 = 0;
-//            for (int i = 0; i < a.length; i++) {
-//                for (int j = 0; j < i; j++) {
-//                    if (a[i] < a[j]) {
-//                        res1++;
-//                    }
-//                }
-//            }
-//            System.out.println("inversions = " + res1);
-//            long startTime = System.nanoTime();
-//            long res2 = 0;
-//            FenwickTree tree = new FenwickTree(m);
-//            for (int i = n; i-- > 0; ) {
-//                res2 += tree.sum(a[i] - 1);
-//                tree.add(a[i], 1);
-//            }
-//            System.out.println("inversions = " + res2);
-//            System.out.println("Time: " + (System.nanoTime() - startTime) / 1e9);
-//            System.out.println("");
-//        }
-//        testEnd();
-//    }
-
     private static void test3() {
         System.out.println("Should print {{0, 1} {2}}");
         boolean[][] b = new boolean[][]{
@@ -213,7 +152,7 @@ public class TestRunner {
             }
             String q = sb.toString();
             long startTime = System.nanoTime();
-            System.out.println("LD: " + LevenshteinDistance.getLevenshteinDistancce(p, q));
+            System.out.println("LD: " + LevenshteinDistance.getLevenshteinDistance(p, q));
             System.out.println("Time: " + (System.nanoTime() - startTime) / 1e9);
             startTime = System.nanoTime();
             LevenshteinDistance.prepare(p);

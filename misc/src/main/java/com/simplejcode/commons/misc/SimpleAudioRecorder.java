@@ -1,4 +1,4 @@
-package com.simplejcode.commons.av.audio;
+package com.simplejcode.commons.misc;
 
 import javax.sound.sampled.*;
 import java.io.*;

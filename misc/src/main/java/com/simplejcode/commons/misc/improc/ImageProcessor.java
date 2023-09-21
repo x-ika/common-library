@@ -1,4 +1,4 @@
-package com.simplejcode.commons.av.improc;
+package com.simplejcode.commons.misc.improc;
 
 import java.awt.image.BufferedImage;
 import java.util.List;
@@ -47,7 +47,7 @@ public class ImageProcessor {
         return x << 16 | x << 8 | x;
     }
 
-    public static int proection(int c, int x) {
+    public static int projection(int c, int x) {
         return (c >> 16) / x * x << 16 | (c >> 8 & 255) / x * x << 8 | (c & 255) / x * x;
     }
 

@@ -1,6 +1,6 @@
 package com.simplejcode.commons.misc;
 
-import javax.websocket.*;
+import jakarta.websocket.*;
 import java.io.IOException;
 import java.util.function.BiConsumer;
 

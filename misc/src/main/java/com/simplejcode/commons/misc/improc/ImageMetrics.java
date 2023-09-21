@@ -1,10 +1,10 @@
-package com.simplejcode.commons.av.improc;
+package com.simplejcode.commons.misc.improc;
 
 import java.util.Arrays;
 
 public final class ImageMetrics {
+
     private static final int N = 12, M = 6;
-    //private static final double L = 0.657;
 
     private static int index, W, H;
 
@@ -149,4 +149,5 @@ public final class ImageMetrics {
             }
         }
     }
+
 }

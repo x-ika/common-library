@@ -79,13 +79,12 @@ subprojects {
         // test dependencies
         junit
 
-        // java ee api libraries
-        javaxMedia
-        javaxXmlBind
-        javaxMail
-        javaxServlet
-        javaxEJB
-        javaxWS
+        // jakarta api libraries
+        jakartaXmlBind
+        jakartaMail
+        jakartaServlet
+        jakartaEJB
+        jakartaWS
 
         // java ee implementation libraries
         hibernate
@@ -111,13 +110,11 @@ subprojects {
 
         junit                          'junit:junit:4.12'
 
-        javaxMedia                     'javax.media:jmf:2.1.1e'
-        javaxXmlBind                   'javax.xml.bind:jaxb-api:2.1'
-        javaxMail                      'javax.mail:mail:1.4.3'
-        javaxMail                      'javax.mail:mailapi:1.4.3'
-        javaxServlet                   'javax.servlet:javax.servlet-api:3.1.0'
-        javaxEJB                       'javax.ejb:javax.ejb-api:3.2.2'
-        javaxWS                        'javax.websocket:javax.websocket-api:1.1'
+        jakartaXmlBind                 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.1'
+        jakartaMail                    'jakarta.mail:jakarta.mail-api:2.1.2'
+        jakartaServlet                 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+        jakartaEJB                     'jakarta.ejb:jakarta.ejb-api:4.0.1'
+        jakartaWS                      'jakarta.websocket:jakarta.websocket-client-api:2.1.1'
 
         hibernate                      'org.hibernate:hibernate-core:5.3.1.Final'
 

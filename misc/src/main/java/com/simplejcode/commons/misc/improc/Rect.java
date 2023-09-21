@@ -1,4 +1,4 @@
-package com.simplejcode.commons.av.improc;
+package com.simplejcode.commons.misc.improc;
 
 import static java.lang.Math.*;
 

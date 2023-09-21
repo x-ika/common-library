@@ -1,6 +1,5 @@
 package com.simplejcode.commons.misc;
 
-import com.simplejcode.commons.misc.struct.TwoWayMap;
 import com.simplejcode.commons.misc.util.*;
 
 import java.lang.reflect.Method;

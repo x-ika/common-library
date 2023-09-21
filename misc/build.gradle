@@ -1,16 +1,15 @@
 group 'com.simplejcode.commons'
 
-version '1.2.2'
+version '1.3.0'
 
 configurations {
 
     testCompile.extendsFrom junit
 
-    compileOnly.extendsFrom javaxXmlBind
-    compileOnly.extendsFrom javaxMail
-    implementation.extendsFrom javaxServlet
-    compileOnly.extendsFrom javaxEJB
-    compileOnly.extendsFrom javaxWS
+    compileOnly.extendsFrom jakartaXmlBind
+    compileOnly.extendsFrom jakartaMail
+    implementation.extendsFrom jakartaServlet
+    compileOnly.extendsFrom jakartaWS
 
     compileOnly.extendsFrom lombok
     compileOnly.extendsFrom apacheLog4j

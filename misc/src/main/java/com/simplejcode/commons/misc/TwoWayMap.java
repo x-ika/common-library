@@ -1,4 +1,4 @@
-package com.simplejcode.commons.misc.struct;
+package com.simplejcode.commons.misc;
 
 import com.simplejcode.commons.misc.util.ObjectUtils;
 

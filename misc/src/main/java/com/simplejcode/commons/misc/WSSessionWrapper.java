@@ -1,6 +1,6 @@
 package com.simplejcode.commons.misc;
 
-import javax.websocket.*;
+import jakarta.websocket.*;
 import java.net.URI;
 
 public class WSSessionWrapper {

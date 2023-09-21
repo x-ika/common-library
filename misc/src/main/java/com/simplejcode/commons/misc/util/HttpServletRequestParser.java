@@ -1,6 +1,6 @@
 package com.simplejcode.commons.misc.util;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public final class HttpServletRequestParser {
 

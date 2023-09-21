@@ -3,7 +3,7 @@ package com.simplejcode.commons.misc.util;
 import org.w3c.dom.*;
 import org.xml.sax.InputSource;
 
-import javax.xml.bind.*;
+import jakarta.xml.bind.*;
 import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;

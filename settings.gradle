@@ -2,7 +2,6 @@ rootProject.name = 'common-library'
 
 include 'algorithms'
 include 'logical-analyzer'
-include 'audio-video-tools'
 include 'db-tools'
 include 'net-tools'
 include 'graphic-tools'
